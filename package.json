@@ -1,0 +1,28 @@
+{
+  "name": "a-galaxy-far-far-away",
+  "displayName": "A galaxy far, far away",
+  "description": "Themes for Visual Studio Code from a glaxy far, far away...",
+  "version": "1.0.0",
+  "publisher": "DanMad",
+  "repository": "https://github.com/DanMad/a-galaxy-far-far-away-theme",
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Imperial",
+        "uiTheme": "vs-dark",
+        "path": "./themes/imperial-theme.json"
+      },
+      {
+        "label": "Rebel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rebel-theme.json"
+      }
+    ]
+  }
+}
