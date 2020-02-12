@@ -6,9 +6,9 @@ The aim of this project is to provide users with a theme for Visual Studio Code 
 
 To install this theme, follow these steps:
 
-1 Launch Visual Studio Code
-2 Paste `ext install a-galaxy-far-far-away-theme`
-3 Press enter
+1. Launch Visual Studio Code
+2. Paste `ext install a-galaxy-far-far-away-theme`
+3. Press enter
 
 Alternatively, you can install this theme from the extension panel by searching for "A Galaxy Far, Far Away Theme".
 
