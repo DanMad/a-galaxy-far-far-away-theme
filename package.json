@@ -2,9 +2,25 @@
   "name": "a-galaxy-far-far-away",
   "displayName": "A Galaxy Far, Far Away",
   "description": "A theme for Visual Studio Code from a galaxy far, far away...",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "author": "DanMad",
   "publisher": "DanMad",
+  "license": "MIT",
+  "homepage": "https://github.com/DanMad/a-galaxy-far-far-away-theme#readme",
   "repository": "https://github.com/DanMad/a-galaxy-far-far-away-theme",
+  "bugs": {
+    "url": "https://github.com/DanMad/a-galaxy-far-far-away-theme/issues"
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "engines": {
     "vscode": "^1.42.0"
   },
@@ -24,15 +40,5 @@
         "path": "./themes/rogue-squadron-theme.json"
       }
     ]
-  },
-  "devDependencies": {
-    "husky": "^4.2.3",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   }
 }
