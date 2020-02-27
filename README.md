@@ -16,9 +16,14 @@ You can find this theme in the [Visual Studio Code Marketplace](https://marketpl
 
 ## Information
 
-This theme currently supports CSS, HTML, JavaScript, JSON, Markdown and Sass (SCSS), and is compliant with [WCAG 2.1](https://www.w3.org/TR/WCAG21/), Level AA.
+The color palette of this theme has been carefully chosen to reflect various galactical movements, while meeting [WCAG 2.1, Level AA Compliance Guidelines](https://www.w3.org/TR/WCAG21/).
+
+This theme currently supports CSS, HTML, JavaScript, JSON, Markdown and Sass (SCSS).
 
 ## Issues
 
-If you find a bug, please [post an issue](https://github.com/DanMad/a-galaxy-far-far-away-theme/issues).
-Ext
+If you encounter any bugs, please [post an issue](https://github.com/DanMad/a-galaxy-far-far-away-theme/issues).
+
+## Contributing
+
+Contributions are more than welcome. Please read through the [contributing guidelines](https://github.com/DanMad/a-galaxy-far-far-away-theme/blob/release/v1.0.0/CONTRIBUTING.md) prior to doing so.
