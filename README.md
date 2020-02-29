@@ -7,12 +7,16 @@ The aim of this project is to provide users with a theme for Visual Studio Code 
 To install this theme, follow these steps:
 
 1. Launch Visual Studio Code
-2. Paste `ext install a-galaxy-far-far-away-theme`
-3. Press enter
+2. Press `⌘ commamd` + `p` to open the _Command Palette_
+3. Paste `ext install a-galaxy-far-far-away-theme` into the _Command Palette_ and press `return`
+4. Click `Install` on the extension, in the _Extensions_ panel
+5. Select the theme you would like to use, from the three that are available:
+   - _Rogue Squadron_
+   - _The Clone Army_
+   - _The Empire_
 
-Alternatively, you can install this theme from the extension panel by searching for "A Galaxy Far, Far Away Theme".
-
-You can find this theme in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
+Alternatively, you can install this theme from the _Extensions_ panel by searching for
+`A Galaxy Far, Far Away Theme`, or from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=DanMad.a-galaxy-far-far-away).
 
 ## Information
 
