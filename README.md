@@ -11,9 +11,9 @@ To install this theme, follow these steps:
 3. Paste `ext install a-galaxy-far-far-away-theme` into the _Command Palette_ and press `return`
 4. Click `Install` on the extension, in the _Extensions_ panel
 5. Select the theme you would like to use, from the three that are available:
-   - _Rogue Squadron_
    - _The Clone Army_
    - _The Empire_
+   - _Rogue Squadron_
 
 Alternatively, you can install this theme from the _Extensions_ panel by searching for
 `A Galaxy Far, Far Away Theme` or from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=DanMad.a-galaxy-far-far-away).
