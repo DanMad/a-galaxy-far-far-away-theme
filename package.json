@@ -2,12 +2,21 @@
   "name": "a-galaxy-far-far-away-theme",
   "displayName": "A Galaxy Far, Far Away Theme",
   "description": "A theme for Visual Studio Code from a galaxy far, far away...",
+  "icon": "./img/icon.png",
   "version": "1.1.0",
   "author": "DanMad",
   "publisher": "DanMad",
   "license": "MIT",
+  "keywords": [
+    "The Empire",
+    "Rogue Squadron",
+    "Star Wars"
+  ],
   "homepage": "https://github.com/DanMad/a-galaxy-far-far-away-theme#readme",
-  "repository": "https://github.com/DanMad/a-galaxy-far-far-away-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanMad/a-galaxy-far-far-away-theme"
+  },
   "bugs": {
     "url": "https://github.com/DanMad/a-galaxy-far-far-away-theme/issues"
   },
