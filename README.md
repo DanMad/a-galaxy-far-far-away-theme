@@ -18,7 +18,7 @@ To install this theme, follow these steps:
    - _Rogue Squadron_
 
 Alternatively, you can install this theme from the _Extensions_ panel by searching for
-`A Galaxy Far, Far Away Theme` or from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=DanMad.a-galaxy-far-far-away).
+`A Galaxy Far, Far Away Theme` or from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=DanMad.a-galaxy-far-far-away-theme).
 
 ## Information
 

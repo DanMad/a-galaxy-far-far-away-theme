@@ -7,7 +7,10 @@
   "publisher": "DanMad",
   "license": "MIT",
   "homepage": "https://github.com/DanMad/a-galaxy-far-far-away-theme#readme",
-  "repository": "https://github.com/DanMad/a-galaxy-far-far-away-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanMad/a-galaxy-far-far-away-theme"
+  },
   "bugs": {
     "url": "https://github.com/DanMad/a-galaxy-far-far-away-theme/issues"
   },
