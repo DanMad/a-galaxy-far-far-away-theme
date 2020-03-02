@@ -2,17 +2,18 @@
   "name": "a-galaxy-far-far-away-theme",
   "displayName": "A Galaxy Far, Far Away Theme",
   "description": "A theme for Visual Studio Code from a galaxy far, far away...",
-  "icon": "./img/icon.png",
-  "version": "1.1.0",
+  "icon": "img/icon.png",
+  "version": "2.0.0",
   "author": "DanMad",
   "publisher": "DanMad",
   "license": "MIT",
+  "homepage": "https://github.com/DanMad/a-galaxy-far-far-away-theme#readme",
   "keywords": [
+    "The Clone Army",
     "The Empire",
     "Rogue Squadron",
     "Star Wars"
   ],
-  "homepage": "https://github.com/DanMad/a-galaxy-far-far-away-theme#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/DanMad/a-galaxy-far-far-away-theme"
@@ -23,7 +24,11 @@
   "devDependencies": {
     "husky": "^4.2.3",
     "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "vsce": "^1.74.0"
+  },
+  "scripts": {
+    "build": "vsce package"
   },
   "husky": {
     "hooks": {
