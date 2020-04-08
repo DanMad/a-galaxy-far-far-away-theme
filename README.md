@@ -37,6 +37,7 @@ This theme currently supports the following languages:
 - JSON
 - Markdown
 - Sass (SCSS)
+- TypeScript
 
 ## Issues
 
