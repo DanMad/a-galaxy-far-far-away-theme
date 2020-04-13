@@ -1,6 +1,6 @@
 # A theme for Visual Studio Code from a galaxy far, far away...
 
-![Rogue Squadron Theme example](./img/rogue-squadron-theme.png)
+![Rogue Squadron Theme example](./images/rogue-squadron-theme.png)
 
 The aim of this project is to provide users with a theme for Visual Studio Code from a galaxy far, far away...
 
@@ -25,9 +25,9 @@ Alternatively, you can install this theme from the _Extensions_ panel by searchi
 
 The color palette of this theme has been carefully chosen to reflect various galactical movements, while meeting [WCAG 2.1, Level AA Compliance Guidelines](https://www.w3.org/TR/WCAG21/).
 
-![The Empire palette](./img/the-empire-palette.png)
+![The Empire palette](./images/the-empire-palette.png)
 
-![Rogue Squadron palette](./img/rogue-squadron-palette.png)
+![Rogue Squadron palette](./images/rogue-squadron-palette.png)
 
 This theme currently supports the following languages:
 
