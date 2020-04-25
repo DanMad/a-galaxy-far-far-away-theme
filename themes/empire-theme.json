@@ -25,6 +25,9 @@
     "checkbox.border": "#960505",
     "checkbox.foreground": "#d1dce7",
 
+    "diffEditor.insertedTextBackground": "#787e73",
+    "diffEditor.removedTextBackground": "#fa0a0a",
+
     "dropdown.background": "#050709",
     "dropdown.border": "#960505",
     "dropdown.foreground": "#d1dce7",
@@ -42,6 +45,10 @@
     "editorCursor.foreground": "#960505",
     "editorGroup.border": "#0000",
     "editorGroupHeader.tabsBackground": "#050709",
+    "editorGutter.background": "#0000",
+    "editorGutter.modifiedBackground": "#f4f8fb",
+    "editorGutter.addedBackground": "#787e73",
+    "editorGutter.deletedBackground": "#fa0a0a",
     "editorLineNumber.foreground": "#6c83a0",
     "editorLineNumber.activeForeground": "#d1dce7",
     "editorPane.background": "#050709",
@@ -52,6 +59,12 @@
 
     "focusBorder": "#960505",
     "foreground": "#d1dce7",
+
+    "gitDecoration.modifiedResourceForeground": "#f4f8fb",
+    "gitDecoration.deletedResourceForeground": "#fa0a0a",
+    "gitDecoration.untrackedResourceForeground": "#787e73",
+    "gitDecoration.ignoredResourceForeground": "#6c83a0",
+    "gitDecoration.conflictingResourceForeground": "#960505",
 
     "input.background": "#050709",
     "input.border": "#0000",
