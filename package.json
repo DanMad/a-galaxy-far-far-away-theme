@@ -55,13 +55,18 @@
     "themes": [
       {
         "label": "The Empire",
-        "uiTheme": "vs-dark",
-        "path": "./themes/empire-theme.json"
+        "path": "./themes/empire-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "The Naboo",
+        "path": "./themes/the-naboo.json",
+        "uiTheme": "vs-dark"
       },
       {
         "label": "Rogue Squadron",
-        "uiTheme": "vs-dark",
-        "path": "./themes/rogue-squadron-theme.json"
+        "path": "./themes/rogue-squadron-theme.json",
+        "uiTheme": "vs-dark"
       }
     ]
   }
