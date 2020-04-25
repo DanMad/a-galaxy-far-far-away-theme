@@ -11,10 +11,18 @@
   "icon": "images/icon.png",
   "keywords": [
     "A galaxy far, far away",
-    "The Clone Army",
+    "A long time ago",
+    "Darth Vader",
     "The Empire",
+    "Jedi",
+    "Midichlorians",
+    "The Naboo",
+    "The Republic",
+    "Rogue Leader",
     "Rogue Squadron",
-    "Star Wars"
+    "Sith",
+    "Star Wars",
+    "X-wing"
   ],
   "repository": {
     "type": "git",
