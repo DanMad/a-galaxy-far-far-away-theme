@@ -39,6 +39,7 @@ This theme currently supports the following languages:
 - Markdown
 - Sass (SCSS)
 - TypeScript
+- XML
 
 ## Issues
 

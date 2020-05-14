@@ -128,8 +128,11 @@
       "scope": [
         "constant.language.null",
         "constant.language.undefined",
+        "keyword.operator.scss",
         "meta.template.expression",
         "punctuation.accessor",
+        "punctuation.definition.attribute-selector.begin.bracket.square.scss",
+        "punctuation.definition.attribute-selector.end.bracket.square.scss",
         "punctuation.definition.interpolation",
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
@@ -206,7 +209,12 @@
       }
     },
     {
-      "scope": ["constant.language", "constant.numeric", "string"],
+      "scope": [
+        "constant.language",
+        "constant.numeric",
+        "meta.attribute-selector.scss",
+        "string"
+      ],
       "settings": {
         "fontStyle": "bold",
         "foreground": "#fe696b"
