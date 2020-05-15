@@ -191,7 +191,12 @@
       }
     },
     {
-      "scope": ["markup.bold", "markup.italic", "variable"],
+      "scope": [
+        "markup.bold",
+        "markup.italic",
+        "support.class.console",
+        "variable"
+      ],
       "settings": {
         "foreground": "#fb4649"
       }
@@ -203,7 +208,7 @@
       }
     },
     {
-      "scope": ["markup.italic", "variable"],
+      "scope": ["markup.italic", "support.class.console", "variable"],
       "settings": {
         "fontStyle": "italic"
       }
@@ -235,7 +240,11 @@
     },
 
     {
-      "scope": ["constant.other.reference.link.markdown", "keyword.control"],
+      "scope": [
+        "constant.other.reference.link.markdown",
+        "keyword.control",
+        "support.type.primitive.ts"
+      ],
       "settings": {
         "foreground": "#afb6ab"
       }

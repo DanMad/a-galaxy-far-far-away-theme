@@ -196,7 +196,12 @@
       }
     },
     {
-      "scope": ["markup.bold", "markup.italic", "variable"],
+      "scope": [
+        "markup.bold",
+        "markup.italic",
+        "support.class.console",
+        "variable"
+      ],
       "settings": {
         "foreground": "#fa7611"
       }
@@ -208,7 +213,7 @@
       }
     },
     {
-      "scope": ["markup.italic", "variable"],
+      "scope": ["markup.italic", "support.class.console", "variable"],
       "settings": {
         "fontStyle": "italic"
       }
@@ -245,7 +250,7 @@
       }
     },
     {
-      "scope": "keyword.control",
+      "scope": ["keyword.control", "support.type.primitive.ts"],
       "settings": {
         "foreground": "#bd615f"
       }
