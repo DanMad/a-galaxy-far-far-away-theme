@@ -2,43 +2,44 @@
   "name": "a-galaxy-far-far-away-theme",
   "displayName": "A Galaxy Far, Far Away Theme",
   "description": "A theme for Visual Studio Code from a galaxy far, far away...",
-  "license": "MIT",
+  "icon": "images/icon.png",
   "author": "DanMad",
   "publisher": "DanMad",
-  "version": "2.0.0",
+  "license": "MIT",
   "private": true,
-  "homepage": "https://github.com/danmad/a-galaxy-far-far-away-theme#readme",
-  "icon": "images/icon.png",
-  "keywords": [
-    "A galaxy far, far away",
-    "A long time ago",
-    "Darth Vader",
-    "The Empire",
-    "Jedi",
-    "Midichlorians",
-    "The Naboo",
-    "The Republic",
-    "Rogue Leader",
-    "Rogue Squadron",
-    "Sith",
-    "Star Wars",
-    "X-wing"
+  "version": "2.0.0",
+  "categories": [
+    "Themes",
+    "Other"
   ],
+  "homepage": "https://github.com/danmad/a-galaxy-far-far-away-theme#readme",
+  "galleryBanner": {
+    "color": "#06090e",
+    "theme": "dark"
+  },
+  "keywords": [
+    "Dark theme",
+    "The Empire",
+    "Galaxy",
+    "Rogue Squadron",
+    "Theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/danmad/a-galaxy-far-far-away-theme/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/danmad/a-galaxy-far-far-away-theme"
   },
-  "bugs": {
-    "url": "https://github.com/danmad/a-galaxy-far-far-away-theme/issues"
+  "scripts": {
+    "build": "npx vsce package",
+    "deploy": "npx vsce publish"
   },
   "devDependencies": {
     "husky": "^4.2.3",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "vsce": "^1.74.0"
-  },
-  "scripts": {
-    "build": "vsce package"
   },
   "husky": {
     "hooks": {
@@ -48,9 +49,6 @@
   "engines": {
     "vscode": "^1.42.0"
   },
-  "categories": [
-    "Themes"
-  ],
   "contributes": {
     "themes": [
       {
