@@ -94,7 +94,7 @@
   },
   "tokenColors": [
     {
-      "scope": "constant.character.entity.named",
+      "scope": "constant.character.entity",
       "settings": {
         "foreground": "#787e73"
       }
@@ -131,13 +131,6 @@
       }
     },
     {
-      "name": "HTML elements",
-      "scope": "entity.name.tag.html",
-      "settings": {
-        "foreground": "#fa0a0a"
-      }
-    },
-    {
       "name": "HTML quotes",
       "scope": [
         "punctuation.definition.string.begin.html",
@@ -146,6 +139,13 @@
       "settings": {
         "fontStyle": "normal",
         "foreground": "#b1c0d1"
+      }
+    },
+    {
+      "name": "HTML tags",
+      "scope": "entity.name.tag.html",
+      "settings": {
+        "foreground": "#fa0a0a"
       }
     },
 
@@ -177,13 +177,6 @@
       "settings": {
         "fontStyle": "italic",
         "foreground": "#6c83a0"
-      }
-    },
-    {
-      "name": "CSS elements",
-      "scope": "entity.name.tag.css",
-      "settings": {
-        "foreground": "#fa0a0a"
       }
     },
     {
@@ -292,6 +285,13 @@
       ],
       "settings": {
         "foreground": "#b1c0d1"
+      }
+    },
+    {
+      "name": "CSS tags",
+      "scope": "entity.name.tag.css",
+      "settings": {
+        "foreground": "#fa0a0a"
       }
     },
     {
@@ -412,8 +412,19 @@
     },
 
     {
+      "name": "JavaScript booleans",
+      "scope": [
+        "constant.language.boolean.false.js",
+        "constant.language.boolean.true.js"
+      ],
+      "settings": {
+        "foreground": "#fe696b"
+      }
+    },
+    {
       "name": "JavaScript brackets",
       "scope": [
+        "meta.brace.round.js",
         "punctuation.definition.template-expression.begin.js",
         "punctuation.definition.template-expression.end.js"
       ],
@@ -456,23 +467,28 @@
       }
     },
     {
-      "name": "JavaScript functions (arrow)",
-      "scope": "storage.type.function.arrow.js",
+      "name": "JavaScript functions",
+      "scope": [
+        "entity.name.function.js",
+        "support.function.console.js",
+        "support.function.js"
+      ],
       "settings": {
-        "foreground": "#b1c0d1"
+        "foreground": "#fa0a0a"
       }
     },
     {
-      "name": "JavaScript functions",
-      "scope": ["entity.name.function.js", "support.function.console.js"],
+      "name": "JavaScript key-value separators",
+      "scope": "punctuation.separator.key-value.js",
       "settings": {
-        "foreground": "#fa0a0a"
+        "foreground": "#b1c0d1"
       }
     },
     {
       "name": "JavaScript keywords",
       "scope": [
         "keyword.control.conditional.js",
+        "keyword.control.default.js",
         "keyword.control.flow.js",
         "keyword.control.loop.js",
         "keyword.control.switch.js"
@@ -486,7 +502,7 @@
       "scope": "constant.language.null.js",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#6c83a0"
+        "foreground": "#91a5bc"
       }
     },
     {
@@ -500,12 +516,15 @@
       "name": "JavaScript object keys",
       "scope": "meta.object-literal.key.js",
       "settings": {
-        "foreground": "#fa7611"
+        "foreground": "#fb4649"
       }
     },
     {
       "name": "JavaScript object properties",
-      "scope": "variable.other.property.js",
+      "scope": [
+        "variable.other.object.property.js",
+        "variable.other.property.js"
+      ],
       "settings": {
         "foreground": "#fb4649"
       }
@@ -513,6 +532,23 @@
     {
       "name": "JavaScript object property accessors",
       "scope": "punctuation.accessor.js",
+      "settings": {
+        "foreground": "#b1c0d1"
+      }
+    },
+    {
+      "name": "JavaScript operators",
+      "scope": [
+        "keyword.operator.arithmetic.js",
+        "keyword.operator.assignment.compound.js",
+        "keyword.operator.assignment.js",
+        "keyword.operator.comparison.js",
+        "keyword.operator.decrement.js",
+        "keyword.operator.increment.js",
+        "keyword.operator.logical.js",
+        "keyword.operator.relational.js",
+        "keyword.operator.ternary.js"
+      ],
       "settings": {
         "foreground": "#b1c0d1"
       }
@@ -532,9 +568,13 @@
     {
       "name": "JavaScript storage",
       "scope": [
+        "keyword.control.export.js",
+        "keyword.control.from.js",
+        "keyword.control.import.js",
         "keyword.operator.new.js",
         "storage.modifier.js",
         "storage.type.class.js",
+        "storage.type.function.arrow.js",
         "storage.type.function.js",
         "storage.type.js",
         "storage.type.property.js"
@@ -575,15 +615,17 @@
       "scope": "constant.language.undefined.js",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#6c83a0"
+        "foreground": "#91a5bc"
       }
     },
     {
       "name": "JavaScript variables",
       "scope": [
+        "entity.name.type.module.js",
         "support.class.console.js",
         "variable.other.constant.js",
         "variable.other.object.js",
+        "variable.other.readwrite.alias.js",
         "variable.other.readwrite.js",
         "variable.parameter.js"
       ],
@@ -594,8 +636,74 @@
     },
 
     {
+      "name": "JSX attribute names",
+      "scope": "entity.other.attribute-name.js.jsx",
+      "settings": {
+        "foreground": "#e6e8e9"
+      }
+    },
+    {
+      "name": "JSX attribute values",
+      "scope": "string.quoted.double.js.jsx",
+      "settings": {
+        "foreground": "#fb4649"
+      }
+    },
+    {
+      "name": "JSX comments (block)",
+      "scope": "comment.block.js.jsx",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#91a5bc"
+      }
+    },
+    {
+      "name": "JSX comments (line)",
+      "scope": "comment.line.double-slash.js.jsx",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#6c83a0"
+      }
+    },
+    {
+      "name": "JSX keywords",
+      "scope": [
+        "keyword.control.export.js.jsx",
+        "keyword.control.import.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#f4f8fb"
+      }
+    },
+    {
+      "name": "JSX tags",
+      "scope": "entity.name.tag.js.jsx",
+      "settings": {
+        "foreground": "#fa0a0a"
+      }
+    },
+    {
+      "name": "JSX tags (compontents)",
+      "scope": "support.class.component.js.jsx",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+
+    {
+      "name": "TypeScript booleans",
+      "scope": [
+        "constant.language.boolean.false.ts",
+        "constant.language.boolean.true.ts"
+      ],
+      "settings": {
+        "foreground": "#fe696b"
+      }
+    },
+    {
       "name": "TypeScript brackets",
       "scope": [
+        "meta.brace.round.ts",
         "punctuation.definition.template-expression.begin.ts",
         "punctuation.definition.template-expression.end.ts"
       ],
@@ -639,7 +747,11 @@
     },
     {
       "name": "TypeScript functions",
-      "scope": ["entity.name.function.ts", "support.function.console.ts"],
+      "scope": [
+        "entity.name.function.ts",
+        "support.function.console.ts",
+        "support.function.ts"
+      ],
       "settings": {
         "foreground": "#fa0a0a"
       }
@@ -652,9 +764,17 @@
       }
     },
     {
+      "name": "TypeScript key-value separators",
+      "scope": "punctuation.separator.key-value.ts",
+      "settings": {
+        "foreground": "#b1c0d1"
+      }
+    },
+    {
       "name": "TypeScript keywords",
       "scope": [
         "keyword.control.conditional.ts",
+        "keyword.control.default.ts",
         "keyword.control.flow.ts",
         "keyword.control.loop.ts",
         "keyword.control.switch.ts"
@@ -668,7 +788,7 @@
       "scope": "constant.language.null.ts",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#6c83a0"
+        "foreground": "#91a5bc"
       }
     },
     {
@@ -682,12 +802,15 @@
       "name": "TypeScript object keys",
       "scope": "meta.object-literal.key.ts",
       "settings": {
-        "foreground": "#fa7611"
+        "foreground": "#fb4649"
       }
     },
     {
       "name": "TypeScript object properties",
-      "scope": ["variable.object.property.ts", "variable.other.property.ts"],
+      "scope": [
+        "variable.other.object.property.js",
+        "variable.other.property.js"
+      ],
       "settings": {
         "foreground": "#fb4649"
       }
@@ -695,6 +818,23 @@
     {
       "name": "TypeScript object property accessors",
       "scope": "punctuation.accessor.ts",
+      "settings": {
+        "foreground": "#b1c0d1"
+      }
+    },
+    {
+      "name": "TypeScript operators",
+      "scope": [
+        "keyword.operator.arithmetic.ts",
+        "keyword.operator.assignment.compound.ts",
+        "keyword.operator.assignment.ts",
+        "keyword.operator.comparison.ts",
+        "keyword.operator.decrement.ts",
+        "keyword.operator.increment.ts",
+        "keyword.operator.logical.ts",
+        "keyword.operator.relational.ts",
+        "keyword.operator.ternary.ts"
+      ],
       "settings": {
         "foreground": "#b1c0d1"
       }
@@ -714,9 +854,13 @@
     {
       "name": "TypeScript storage",
       "scope": [
+        "keyword.control.export.ts",
+        "keyword.control.from.ts",
+        "keyword.control.import.ts",
         "keyword.operator.new.ts",
         "storage.modifier.ts",
         "storage.type.class.ts",
+        "storage.type.function.arrow.ts",
         "storage.type.function.ts",
         "storage.type.interface.ts",
         "storage.type.ts",
@@ -765,15 +909,17 @@
       "scope": "constant.language.undefined.ts",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#6c83a0"
+        "foreground": "#91a5bc"
       }
     },
     {
       "name": "TypeScript variables",
       "scope": [
+        "entity.name.type.module.js",
         "support.class.console.ts",
         "variable.other.constant.ts",
         "variable.other.object.ts",
+        "variable.other.readwrite.alias.ts",
         "variable.other.readwrite.ts",
         "variable.parameter.ts"
       ],
@@ -784,10 +930,19 @@
     },
 
     {
+      "name": "JSON keys",
+      "scope": "support.type.property-name.json",
+      "settings": {
+        "foreground": "#fa0a0a"
+      }
+    },
+    {
       "name": "JSON quotes",
       "scope": [
         "punctuation.definition.string.begin.json",
-        "punctuation.definition.string.end.json"
+        "punctuation.definition.string.end.json",
+        "punctuation.support.type.property-name.begin.json",
+        "punctuation.support.type.property-name.end.json"
       ],
       "settings": {
         "foreground": "#b1c0d1"
@@ -797,24 +952,103 @@
       "name": "JSON values",
       "scope": "string.quoted.double.json",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#fe696b"
       }
     },
 
     {
-      "name": "JSX comments (block)",
-      "scope": "comment.block.js.jsx",
+      "name": "Markdown bold",
+      "scope": "markup.bold.markdown",
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "#91a5bc"
+        "fontStyle": "bold",
+        "foreground": "#fb4649"
       }
     },
     {
-      "name": "JSX comments (line)",
-      "scope": "comment.line.double-slash.js.jsx",
+      "name": "Markdown headings",
+      "scope": [
+        "heading.1.markdown",
+        "heading.2.markdown",
+        "heading.3.markdown",
+        "heading.4.markdown",
+        "heading.5.markdown",
+        "heading.6.markdown"
+      ],
+      "settings": {
+        "foreground": "#fa0a0a"
+      }
+    },
+    {
+      "name": "Markdown italics",
+      "scope": "markup.italic.markdown",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#fb4649"
+      }
+    },
+    {
+      "name": "Markdown link description",
+      "scope": [
+        "constant.other.reference.link.markdown",
+        "string.other.link.description.markdown"
+      ],
+      "settings": {
+        "foreground": "#f4f8fb"
+      }
+    },
+    {
+      "name": "Markdown link description title",
+      "scope": "string.other.link.description.title.markdown",
+      "settings": {
+        "foreground": "#fe696b"
+      }
+    },
+    {
+      "name": "Markdown quotation",
+      "scope": "markup.quote.markdown",
+      "settings": {
+        "foreground": "#787e73"
+      }
+    },
+
+    {
+      "name": "XML attribute names",
+      "scope": "entity.other.attribute-name.localname.xml",
+      "settings": {
+        "foreground": "#d1dce7"
+      }
+    },
+    {
+      "name": "XML attribute values",
+      "scope": ["string.quoted.double.xml", "string.quoted.single.xml"],
+      "settings": {
+        "foreground": "#fb4649"
+      }
+    },
+    {
+      "name": "XML comments",
+      "scope": "comment.block.xml",
       "settings": {
         "fontStyle": "italic",
         "foreground": "#6c83a0"
+      }
+    },
+    {
+      "name": "XML quotes",
+      "scope": [
+        "punctuation.definition.string.begin.xml",
+        "punctuation.definition.string.end.xml"
+      ],
+      "settings": {
+        "foreground": "#b1c0d1"
+      }
+    },
+    {
+      "name": "XML tags",
+      "scope": "entity.name.tag.html",
+      "settings": {
+        "foreground": "#fc991a"
       }
     }
   ]
