@@ -1,2 +1,11 @@
+# Directories
+/node_modules/
+
+# OS
 .DS_Store
-node_modules
+
+# Sketch files
+*.sketch
+
+# VSCode packages
+*.vsix
