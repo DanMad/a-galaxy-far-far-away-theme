@@ -1,22 +1,13 @@
 {
   "name": "a-galaxy-far-far-away-theme",
   "displayName": "A Galaxy Far, Far Away Theme",
-  "description": "A theme for Visual Studio Code from a galaxy far, far away...",
-  "icon": "images/icon.png",
-  "author": "DanMad",
-  "publisher": "DanMad",
-  "license": "MIT",
-  "private": true,
   "version": "2.0.0",
+  "private": true,
+  "description": "A theme for Visual Studio Code from a galaxy far, far away...",
   "categories": [
     "Themes",
     "Other"
   ],
-  "homepage": "https://github.com/danmad/a-galaxy-far-far-away-theme#readme",
-  "galleryBanner": {
-    "color": "#06090e",
-    "theme": "dark"
-  },
   "keywords": [
     "Dark theme",
     "The Empire",
@@ -24,6 +15,7 @@
     "Rogue Squadron",
     "Theme"
   ],
+  "homepage": "https://github.com/danmad/a-galaxy-far-far-away-theme#readme",
   "bugs": {
     "url": "https://github.com/danmad/a-galaxy-far-far-away-theme/issues"
   },
@@ -31,23 +23,13 @@
     "type": "git",
     "url": "https://github.com/danmad/a-galaxy-far-far-away-theme"
   },
+  "license": "MIT",
+  "author": "DanMad",
+  "publisher": "DanMad",
   "scripts": {
     "build": "npx vsce package",
-    "deploy": "npx vsce publish"
-  },
-  "devDependencies": {
-    "husky": "^4.2.3",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1",
-    "vsce": "^1.74.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
-  "engines": {
-    "vscode": "^1.42.0"
+    "deploy": "npx vsce publish",
+    "sort": "npx sort-package-json"
   },
   "contributes": {
     "themes": [
@@ -62,5 +44,24 @@
         "uiTheme": "vs-dark"
       }
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "vsce": "^1.74.0"
+  },
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#06090e",
+    "theme": "dark"
   }
 }
