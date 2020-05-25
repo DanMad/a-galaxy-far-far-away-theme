@@ -461,18 +461,18 @@
       }
     },
     {
-      "name": "SCSS functions",
-      "scope": ["support.function.misc.scss"],
-      "settings": {
-        "foreground": "#b6ad9d"
-      }
-    },
-    {
-      "name": "SCSS important",
-      "scope": "keyword.other.important.scss",
+      "name": "SCSS default, global and important",
+      "scope": ["keyword.other.default.scss", "keyword.other.important.scss"],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#538397"
+      }
+    },
+    {
+      "name": "SCSS functions",
+      "scope": ["entity.name.function.scss", "support.function.misc.scss"],
+      "settings": {
+        "foreground": "#b6ad9d"
       }
     },
     {
@@ -481,15 +481,20 @@
         "punctuation.definition.keyword.scss",
         "keyword.control.at-rule.charset.scss",
         "keyword.control.at-rule.fontface.scss",
+        "keyword.control.at-rule.function.scss",
         "keyword.control.at-rule.import.scss",
         "keyword.control.at-rule.include.scss",
         "keyword.control.at-rule.keyframes.scss",
         "keyword.control.at-rule.media.scss",
         "keyword.control.at-rule.mixin.scss",
         "keyword.control.at-rule.supports.scss",
+        "keyword.control.content.scss",
         "keyword.control.each.scss",
+        "keyword.control.else.scss",
         "keyword.control.for.scss",
         "keyword.control.if.scss",
+        "keyword.control.return.scss",
+        "keyword.control.warn.scss",
         "keyword.control.while.scss"
       ],
       "settings": {
