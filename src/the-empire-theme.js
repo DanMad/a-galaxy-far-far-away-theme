@@ -934,6 +934,7 @@ module.exports = {
         `storage.type.function.ts`,
         `storage.type.interface.ts`,
         `storage.type.ts`,
+        `storage.type.type.ts`,
         `storage.type.property.ts`
       ],
       settings: {
@@ -969,7 +970,7 @@ module.exports = {
     },
     // TypeScript types
     {
-      scope: `support.type.primitive.ts`,
+      scope: [`entity.name.type.alias.ts`, `support.type.primitive.ts`],
       settings: {
         foreground: olive[2]
       }

@@ -615,6 +615,7 @@
         "storage.type.function.ts",
         "storage.type.interface.ts",
         "storage.type.ts",
+        "storage.type.type.ts",
         "storage.type.property.ts"
       ],
       "settings": { "foreground": "#b6ad9d" }
@@ -636,7 +637,7 @@
       "settings": { "fontStyle": "bold", "foreground": "#cbced0" }
     },
     {
-      "scope": "support.type.primitive.ts",
+      "scope": ["entity.name.type.alias.ts", "support.type.primitive.ts"],
       "settings": { "foreground": "#bd615f" }
     },
     {
