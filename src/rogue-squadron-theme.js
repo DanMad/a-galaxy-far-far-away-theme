@@ -1,7 +1,5 @@
 `use strict`;
 
-// Config
-// =============================================================================
 const name = `Rogue Squadron`;
 const type = `dark`;
 
@@ -38,8 +36,6 @@ const blue = {
 
 const transparent = `#0000`;
 
-// Export
-// =============================================================================
 module.exports = {
   name,
   type,
@@ -222,10 +218,59 @@ module.exports = {
   },
 
   tokenColors: [
+    // Global
+    {
+      scope: `comment`,
+      settings: {
+        foreground: grey[4]
+      }
+    },
+    {
+      scope: `constant`,
+      settings: {
+        foreground: orange[3]
+      }
+    },
     {
       scope: `constant.character.entity`,
       settings: {
         foreground: red[1]
+      }
+    },
+    {
+      scope: `keyword`,
+      settings: {
+        foreground: red[1]
+      }
+    },
+    {
+      scope: `storage`,
+      settings: {
+        foreground: beige
+      }
+    },
+    {
+      scope: `storage.type`,
+      settings: {
+        foreground: beige // ??
+      }
+    },
+    {
+      scope: `string`,
+      settings: {
+        foreground: orange[3]
+      }
+    },
+    {
+      scope: `support`,
+      settings: {
+        foreground: beige
+      }
+    },
+    {
+      scope: `variable`,
+      settings: {
+        foreground: orange[2]
       }
     },
 
@@ -274,13 +319,6 @@ module.exports = {
         foreground: grey[1]
       }
     },
-    // CSS attribute values
-    {
-      scope: [`string.quoted.double.css`, `string.quoted.single.css`],
-      settings: {
-        foreground: orange[3]
-      }
-    },
     // CSS classes
     {
       scope: `entity.other.attribute-name.class.css`,
@@ -297,19 +335,12 @@ module.exports = {
         foreground: grey[4]
       }
     },
-    // CSS entities
-    {
-      scope: `punctuation.definition.entity.css`,
-      settings: {
-        fontStyle: `normal`,
-        foreground: grey[2]
-      }
-    },
     // CSS functions
     {
       scope: [
         `support.function.calc.css`,
         `support.function.misc.css`,
+        `support.function.timing-function.css`,
         `support.function.transform.css`
       ],
       settings: {
@@ -341,44 +372,32 @@ module.exports = {
         foreground: blue[2]
       }
     },
-    // CSS keywords
+    // CSS operators
     {
       scope: [
-        `keyword.control.at-rule.css`,
-        `keyword.control.at-rule.font-face.css`,
-        `keyword.control.at-rule.import.css`,
-        `keyword.control.at-rule.keyframes.css`,
-        `keyword.control.at-rule.media.css`,
-        `keyword.control.at-rule.supports.css`,
-        `punctuation.definition.keyword.css`
+        `entity.other.keyframe-offset.css`,
+        `keyword.operator.combinator.css`,
+        `keyword.operator.logical.all.media.css`,
+        `keyword.operator.logical.and.media.css`,
+        `keyword.operator.logical.only.media.css`,
+        `keyword.operator.pattern.css`
       ],
       settings: {
-        foreground: red[1]
+        foreground: grey[2]
       }
     },
-    // CSS media types
+    // CSS property names
     {
-      scope: `support.constant.media.css`,
+      scope: `support.type.property-name.css`,
       settings: {
-        foreground: red[1]
+        foreground: grey[2]
       }
     },
-    // CSS numbers
+    // CSS property names (vendored)
     {
-      scope: `constant.numeric.css`,
+      scope: `support.type.vendored.property-name.css`,
       settings: {
-        foreground: orange[3]
-      }
-    },
-    // CSS property values
-    {
-      scope: [
-        `support.constant.color.current.css`,
-        `support.constant.color.w3c-standard-color-name.css`,
-        `support.constant.property-value.css`
-      ],
-      settings: {
-        foreground: beige
+        foreground: grey[3]
       }
     },
     // CSS pseudo-classses
@@ -395,6 +414,14 @@ module.exports = {
         foreground: grey[1]
       }
     },
+    // CSS punctuation
+    {
+      scope: `punctuation.definition.entity.css`,
+      settings: {
+        fontStyle: `normal`,
+        foreground: grey[2]
+      }
+    },
     // CSS tags
     {
       scope: `entity.name.tag.css`,
@@ -402,12 +429,39 @@ module.exports = {
         foreground: orange[1]
       }
     },
+    // CSS units
+    {
+      scope: [
+        `entity.other.keyframe-offset.percentage.css`,
+        `keyword.other.unit.%.css`,
+        `keyword.other.unit.ch.css`,
+        `keyword.other.unit.cm.css`,
+        `keyword.other.unit.deg.css`,
+        `keyword.other.unit.em.css`,
+        `keyword.other.unit.ex.css`,
+        `keyword.other.unit.in.css`,
+        `keyword.other.unit.mm.css`,
+        `keyword.other.unit.ms.css`,
+        `keyword.other.unit.pc.css`,
+        `keyword.other.unit.percentage.css`,
+        `keyword.other.unit.pt.css`,
+        `keyword.other.unit.px.css`,
+        `keyword.other.unit.rem.css`,
+        `keyword.other.unit.s.css`,
+        `keyword.other.unit.vmax.css`,
+        `keyword.other.unit.vmin.css`,
+        `keyword.other.unit.vh.css`,
+        `keyword.other.unit.vw.css`
+      ],
+      settings: {
+        foreground: orange[3]
+      }
+    },
     // CSS variables
     {
       scope: [`variable.css`, `variable.argument.css`],
       settings: {
-        fontStyle: `italic`,
-        foreground: orange[2]
+        fontStyle: `italic`
       }
     },
 
@@ -420,11 +474,7 @@ module.exports = {
     },
     // SCSS attribute values
     {
-      scope: [
-        `meta.attribute-selector.scss`,
-        `string.quoted.double.scss`,
-        `string.quoted.single.scss`
-      ],
+      scope: `meta.attribute-selector.scss`,
       settings: {
         foreground: orange[3]
       }
@@ -439,6 +489,7 @@ module.exports = {
         `punctuation.section.function.scss`
       ],
       settings: {
+        fontStyle: `regular`,
         foreground: grey[2]
       }
     },
@@ -454,11 +505,10 @@ module.exports = {
     {
       scope: `comment.line.scss`,
       settings: {
-        fontStyle: `italic`,
-        foreground: grey[4]
+        fontStyle: `italic`
       }
     },
-    // SCSS default, global and important
+    // SCSS default and important
     {
       scope: [`keyword.other.default.scss`, `keyword.other.important.scss`],
       settings: {
@@ -473,37 +523,11 @@ module.exports = {
         foreground: beige
       }
     },
-    // SCSS keywords
+    // SCSS operators
     {
-      scope: [
-        `punctuation.definition.keyword.scss`,
-        `keyword.control.at-rule.charset.scss`,
-        `keyword.control.at-rule.fontface.scss`,
-        `keyword.control.at-rule.function.scss`,
-        `keyword.control.at-rule.import.scss`,
-        `keyword.control.at-rule.include.scss`,
-        `keyword.control.at-rule.keyframes.scss`,
-        `keyword.control.at-rule.media.scss`,
-        `keyword.control.at-rule.mixin.scss`,
-        `keyword.control.at-rule.supports.scss`,
-        `keyword.control.content.scss`,
-        `keyword.control.each.scss`,
-        `keyword.control.else.scss`,
-        `keyword.control.for.scss`,
-        `keyword.control.if.scss`,
-        `keyword.control.return.scss`,
-        `keyword.control.warn.scss`,
-        `keyword.control.while.scss`
-      ],
+      scope: [`keyword.control.operator.css.scss`, `keyword.operator.scss`],
       settings: {
-        foreground: red[1]
-      }
-    },
-    // SCSS media types
-    {
-      scope: `support.constant.media.scss`,
-      settings: {
-        foreground: red[1]
+        foreground: grey[2]
       }
     },
     // SCSS punctuation
@@ -513,29 +537,27 @@ module.exports = {
         foreground: grey[2]
       }
     },
+    // SCSS tags
+    {
+      scope: `meta.property-name.scss`,
+      settings: {
+        foreground: orange[1]
+      }
+    },
     // SCSS variables
     {
       scope: `variable.scss`,
       settings: {
-        fontStyle: `italic`,
-        foreground: orange[2]
+        fontStyle: `italic`
       }
     },
 
-    // JavaScript booleans
-    {
-      scope: [
-        `constant.language.boolean.false.js`,
-        `constant.language.boolean.true.js`
-      ],
-      settings: {
-        foreground: orange[3]
-      }
-    },
     // JavaScript brackets
     {
       scope: [
         `meta.brace.round.js`,
+        `meta.brace.square.js`,
+        `punctuation.definition.block.js`,
         `punctuation.definition.template-expression.begin.js`,
         `punctuation.definition.template-expression.end.js`
       ],
@@ -573,8 +595,7 @@ module.exports = {
     {
       scope: `comment.line.double-slash.js`,
       settings: {
-        fontStyle: `italic`,
-        foreground: grey[4]
+        fontStyle: `italic`
       }
     },
     // JavaScript functions
@@ -595,19 +616,6 @@ module.exports = {
         foreground: grey[2]
       }
     },
-    // JavaScript keywords
-    {
-      scope: [
-        `keyword.control.conditional.js`,
-        `keyword.control.default.js`,
-        `keyword.control.flow.js`,
-        `keyword.control.loop.js`,
-        `keyword.control.switch.js`
-      ],
-      settings: {
-        foreground: red[1]
-      }
-    },
     // JavaScript null
     {
       scope: `constant.language.null.js`,
@@ -616,26 +624,9 @@ module.exports = {
         foreground: grey[3]
       }
     },
-    // JavaScript numbers
-    {
-      scope: `constant.numeric.decimal.js`,
-      settings: {
-        foreground: orange[3]
-      }
-    },
     // JavaScript object keys
     {
       scope: `meta.object-literal.key.js`,
-      settings: {
-        foreground: orange[2]
-      }
-    },
-    // JavaScript object properties
-    {
-      scope: [
-        `variable.other.object.property.js`,
-        `variable.other.property.js`
-      ],
       settings: {
         foreground: orange[2]
       }
@@ -682,17 +673,6 @@ module.exports = {
         foreground: beige
       }
     },
-    // JavaScript strings
-    {
-      scope: [
-        `string.template.js`,
-        `string.quoted.double.js`,
-        `string.quoted.single.js`
-      ],
-      settings: {
-        foreground: orange[3]
-      }
-    },
     // JavaScript super
     {
       scope: `variable.language.super.js`,
@@ -724,13 +704,13 @@ module.exports = {
         `support.class.console.js`,
         `variable.other.constant.js`,
         `variable.other.object.js`,
+        `variable.other.object.property.js`,
         `variable.other.readwrite.alias.js`,
         `variable.other.readwrite.js`,
         `variable.parameter.js`
       ],
       settings: {
-        fontStyle: `italic`,
-        foreground: orange[2]
+        fontStyle: `italic`
       }
     },
 
@@ -760,8 +740,7 @@ module.exports = {
     {
       scope: `comment.line.double-slash.js.jsx`,
       settings: {
-        fontStyle: `italic`,
-        foreground: grey[4]
+        fontStyle: `italic`
       }
     },
     // JSX keywords
@@ -786,20 +765,12 @@ module.exports = {
       }
     },
 
-    // TypeScript booleans
-    {
-      scope: [
-        `constant.language.boolean.false.ts`,
-        `constant.language.boolean.true.ts`
-      ],
-      settings: {
-        foreground: orange[3]
-      }
-    },
     // TypeScript brackets
     {
       scope: [
         `meta.brace.round.ts`,
+        `meta.brace.square.ts`,
+        `punctuation.definition.block.ts`,
         `punctuation.definition.template-expression.begin.ts`,
         `punctuation.definition.template-expression.end.ts`
       ],
@@ -837,8 +808,7 @@ module.exports = {
     {
       scope: `comment.line.double-slash.ts`,
       settings: {
-        fontStyle: `italic`,
-        foreground: grey[4]
+        fontStyle: `italic`
       }
     },
     // TypeScript functions
@@ -866,19 +836,6 @@ module.exports = {
         foreground: grey[2]
       }
     },
-    // TypeScript keywords
-    {
-      scope: [
-        `keyword.control.conditional.ts`,
-        `keyword.control.default.ts`,
-        `keyword.control.flow.ts`,
-        `keyword.control.loop.ts`,
-        `keyword.control.switch.ts`
-      ],
-      settings: {
-        foreground: red[1]
-      }
-    },
     // TypeScript null
     {
       scope: `constant.language.null.ts`,
@@ -887,26 +844,9 @@ module.exports = {
         foreground: grey[3]
       }
     },
-    // TypeScript numbers
-    {
-      scope: `constant.numeric.decimal.ts`,
-      settings: {
-        foreground: orange[3]
-      }
-    },
     // TypeScript object keys
     {
       scope: `meta.object-literal.key.ts`,
-      settings: {
-        foreground: orange[2]
-      }
-    },
-    // TypeScript object properties
-    {
-      scope: [
-        `variable.other.object.property.js`,
-        `variable.other.property.js`
-      ],
       settings: {
         foreground: orange[2]
       }
@@ -955,17 +895,6 @@ module.exports = {
         foreground: beige
       }
     },
-    // TypeScript strings
-    {
-      scope: [
-        `string.template.ts`,
-        `string.quoted.double.ts`,
-        `string.quoted.single.ts`
-      ],
-      settings: {
-        foreground: orange[3]
-      }
-    },
     // TypeScript super
     {
       scope: `variable.language.super.ts`,
@@ -1004,13 +933,13 @@ module.exports = {
         `support.class.console.ts`,
         `variable.other.constant.ts`,
         `variable.other.object.ts`,
+        `variable.other.object.property.ts`,
         `variable.other.readwrite.alias.ts`,
         `variable.other.readwrite.ts`,
         `variable.parameter.ts`
       ],
       settings: {
-        fontStyle: `italic`,
-        foreground: orange[2]
+        fontStyle: `italic`
       }
     },
 
@@ -1110,13 +1039,6 @@ module.exports = {
         foreground: beige
       }
     },
-    // Markdown link description title
-    {
-      scope: `string.other.link.description.title.markdown`,
-      settings: {
-        foreground: orange[3]
-      }
-    },
     // Markdown quotation
     {
       scope: `markup.quote.markdown`,
@@ -1124,7 +1046,6 @@ module.exports = {
         foreground: red[1]
       }
     },
-
     // XML attribute names
     {
       scope: `entity.other.attribute-name.localname.xml`,
@@ -1143,8 +1064,7 @@ module.exports = {
     {
       scope: `comment.block.xml`,
       settings: {
-        fontStyle: `italic`,
-        foreground: grey[4]
+        fontStyle: `italic`
       }
     },
     // XML tags
