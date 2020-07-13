@@ -908,7 +908,7 @@ module.exports = {
 
     // JSON keys, level 0
     {
-      scope: `source.json meta.structure.dictionary string`,
+      scope: `support.type.property-name.json`,
       settings: {
         fontStyle: `italic`,
         foreground: red[3]
@@ -916,7 +916,7 @@ module.exports = {
     },
     // JSON keys, level 1
     {
-      scope: `source.json meta meta.structure.dictionary string`,
+      scope: `meta meta support.type.property-name.json`,
       settings: {
         fontStyle: `italic`,
         foreground: red[2]
@@ -924,7 +924,7 @@ module.exports = {
     },
     // JSON keys, level 2
     {
-      scope: `source.json meta meta meta meta.structure.dictionary string`,
+      scope: `meta meta meta meta support.type.property-name.json`,
       settings: {
         fontStyle: `italic`,
         foreground: red[1]
@@ -932,7 +932,7 @@ module.exports = {
     },
     // JSON keys, level 3
     {
-      scope: `source.json meta meta meta meta meta meta.structure.dictionary string`,
+      scope: `meta meta meta meta meta meta support.type.property-name.json`,
       settings: {
         fontStyle: `italic`,
         foreground: red[3]
@@ -940,7 +940,7 @@ module.exports = {
     },
     // JSON keys, level 4
     {
-      scope: `source.json meta meta meta meta meta meta meta meta.structure.dictionary string`,
+      scope: `meta meta meta meta meta meta meta meta support.type.property-name.json`,
       settings: {
         fontStyle: `italic`,
         foreground: red[2]
@@ -948,7 +948,7 @@ module.exports = {
     },
     // JSON keys, level 5
     {
-      scope: `source.json meta meta meta meta meta meta meta meta meta meta.structure.dictionary string`,
+      scope: `meta meta meta meta meta meta meta meta meta meta support.type.property-name.json`,
       settings: {
         fontStyle: `italic`,
         foreground: red[1]
@@ -956,7 +956,11 @@ module.exports = {
     },
     // JSON values
     {
-      scope: `string.quoted.double.json`,
+      scope: [
+        `constant.language.json`,
+        `constant.numeric.json`,
+        `string.quoted.double.json`
+      ],
       settings: {
         foreground: grey[1]
       }
