@@ -1,9 +1,9 @@
 {
   "name": "a-galaxy-far-far-away-theme",
   "displayName": "A Galaxy Far, Far Away Theme",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "private": true,
-  "description": "A theme for Visual Studio Code from a galaxy far, far away...",
+  "description": "A Visual Studio Code theme from a galaxy far, far away...",
   "categories": [
     "Themes",
     "Other"
@@ -11,9 +11,11 @@
   "keywords": [
     "Dark theme",
     "The Empire",
-    "Galaxy",
+    "The Naboo",
     "Rogue Squadron",
-    "Theme"
+    "Star Wars",
+    "Theme",
+    "VSCode"
   ],
   "homepage": "https://github.com/danmad/a-galaxy-far-far-away-theme#readme",
   "bugs": {
@@ -39,6 +41,11 @@
       {
         "label": "The Empire",
         "path": "./themes/the-empire-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "The Naboo",
+        "path": "./themes/the-naboo-theme.json",
         "uiTheme": "vs-dark"
       },
       {
