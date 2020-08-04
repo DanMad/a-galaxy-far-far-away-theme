@@ -1,4 +1,4 @@
-# A theme for Visual Studio Code from a galaxy far, far away...
+# A Visual Studio Code theme from a galaxy far, far away...
 
 ![Rogue Squadron Theme example](./images/the-empire-theme.png)
 
@@ -10,27 +10,14 @@ To install this theme, follow these steps:
 2. Press `cmd` + `p` if you're running Mac OS, or `ctrl` + `p` if you're running Windows OS to open the _Command Palette_
 3. Paste `ext install a-galaxy-far-far-away-theme` into the _Command Palette_ and press `return`
 4. Click `Install` on the extension, in the _Extensions_ panel
-5. Select the theme you would like to use, from the two that are available:
+5. Select which theme you would like to use from the following:
 
 - _The Empire_
+- _The Naboo_
 - _Rogue Squadron_
 
 Alternatively, you can install this theme from the _Extensions_ panel by searching for
 `A Galaxy Far, Far Away Theme` or from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=DanMad.a-galaxy-far-far-away-theme).
-
-## Language support
-
-This theme currently supports the following languages:
-
-- CSS
-- HTML
-- JavaScript
-- JSON
-- JSX
-- Markdown
-- Sass (SCSS)
-- TypeScript
-- XML
 
 ## Recommended settings
 
