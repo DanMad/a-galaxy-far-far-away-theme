@@ -1,8 +1,8 @@
 # Directories
 /src/
 
-# Gitignore
+# Git
 .gitignore
 
-# VSCode settings
+# Settings
 .vscode/**
