@@ -29,10 +29,9 @@
   "author": "DanMad",
   "publisher": "DanMad",
   "scripts": {
-    "build": "npm run build:the-empire-theme & npm run build:the-naboo-theme & npm run build:rogue-squadron-theme",
+    "build": "npm run build:the-empire-theme & npm run build:rogue-squadron-theme",
     "build:rogue-squadron-theme": "json-stringify src/rogue-squadron-theme.js --out themes/rogue-squadron-theme.json",
     "build:the-empire-theme": "json-stringify src/the-empire-theme.js --out themes/the-empire-theme.json",
-    "build:the-naboo-theme": "json-stringify src/the-naboo-theme.js --out themes/the-naboo-theme.json",
     "package": "npx vsce package",
     "publish": "npx vsce publish",
     "sort": "sort-package-json"
@@ -42,11 +41,6 @@
       {
         "label": "The Empire",
         "path": "./themes/the-empire-theme.json",
-        "uiTheme": "vs-dark"
-      },
-      {
-        "label": "The Naboo",
-        "path": "./themes/the-naboo-theme.json",
         "uiTheme": "vs-dark"
       },
       {
@@ -74,7 +68,7 @@
   },
   "icon": "images/icon.png",
   "galleryBanner": {
-    "color": "#06090e",
+    "color": "#04070b",
     "theme": "dark"
   }
 }
