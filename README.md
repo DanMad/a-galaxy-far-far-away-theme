@@ -13,7 +13,6 @@ To install this theme, follow these steps:
 5. Select which theme you would like to use from the following:
 
 - _The Empire_
-- _The Naboo_
 - _Rogue Squadron_
 
 Alternatively, you can install this theme from the _Extensions_ panel by searching for
