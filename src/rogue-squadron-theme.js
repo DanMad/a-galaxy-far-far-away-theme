@@ -1,436 +1,782 @@
 `use strict`;
 
+// Config
+// =============================================================================
 const name = `Rogue Squadron`;
 const type = `dark`;
 
-const black = {
-  1: `#0d121a`,
-  2: `#06090e`,
-  3: `#010203`
-};
+// Opacity
+// =============================================================================
+const hidden = `00`;
+const subtle = `26`;
+const pronounced = `4d`;
 
-const grey = {
-  1: `#e6e8e9`,
-  2: `#cbced0`,
-  3: `#a5a9ab`,
-  4: `#7b7f81`
-};
+// Palette
+// =============================================================================
+const appleBlossom = `#a34845`;
+const bigStone = `#182336`;
+const black = `#010203`;
+const bunker = `#0a0f17`;
+const ebony = `#04070b`;
+const ecstasy = `#fa7d12`;
+const greyChateau = `#a8acae`;
+const indianKhaki = `#c1bb398`;
+const iron = `#cacdcf`;
+const matrix = `#bc5f5d`;
+const mirage = `#101825`;
+const nepal = `#85adbc`;
+const porcelain = `#e6e8e9`;
+const rollingStone = `#7b7f81`;
+const smaltBlue = `#538397`;
+const transparent = `${black}${hidden}`;
+const treePoppy = `#fc9d1b`;
+const trinidad = `#f4500a`;
 
-const red = {
-  1: `#bd615f`,
-  2: `#a34845`
-};
-
-const orange = {
-  1: `#fc991a`,
-  2: `#fa7611`,
-  3: `#f5560b`
-};
-
-const beige = `#b6ad9d`;
-
-const blue = {
-  1: `#8fb5c3`,
-  2: `#538397`
-};
-
-const transparent = `#0000`;
-
+// Exports
+// =============================================================================
 module.exports = {
-  name,
-  type,
-
   colors: {
-    focusBorder: red[2],
-    foreground: grey[2],
-    "widget.shadow": transparent,
-    "icon.foreground": grey[3],
-
-    "window.activeBorder": black[1],
-    "window.inactiveBorder": black[1],
-
-    "textCodeBlock.background": orange[1],
-    "textLink.activeForeground": orange[1],
-    "textLink.foreground": orange[3],
-    "textPreformat.foreground": beige,
-
-    "button.background": blue[2],
-    "button.foreground": black[3],
-    "button.hoverBackground": blue[1],
-    "checkbox.background": black[3],
-    "checkbox.foreground": grey[2],
-    "checkbox.border": red[2],
-
-    "dropdown.background": black[3],
-    "dropdown.listBackground": black[2],
-    "dropdown.border": red[2],
-    "dropdown.foreground": grey[2],
-
-    "input.background": black[3],
-    "input.border": transparent,
-    "input.foreground": grey[2],
-    "input.placeholderForeground": grey[4],
-    "inputOption.activeBackground": black[1],
-    "inputOption.activeBorder": red[2],
-
-    "scrollbar.shadow": transparent,
-    "scrollbarSlider.activeBackground": "#7b7f814d",
-    "scrollbarSlider.background": "#7b7f8126",
-    "scrollbarSlider.hoverBackground": "#7b7f814d",
-
-    "badge.background": red[2],
-    "badge.foreground": grey[1],
-
-    "progressBar.background": red[2],
-
-    "list.hoverBackground": black[1],
-    "list.hoverForeground": grey[3],
-    "list.activeSelectionBackground": black[3],
-    "list.activeSelectionForeground": grey[2],
-    "list.inactiveSelectionBackground": black[3],
-    "list.inactiveSelectionForeground": grey[2],
-
-    "activityBar.background": black[1],
-    "activityBar.foreground": grey[1],
-    "activityBar.inactiveForeground": grey[3],
-    "activityBar.border": black[2],
-    "activityBarBadge.background": red[2],
-    "activityBarBadge.foreground": grey[1],
+    // Activity bar | DONE
+    // -------------------------------------------------------------------------
+    "activityBar.activeBackground": ebony,
     "activityBar.activeBorder": transparent,
-    "activityBar.activeBackground": black[2],
     "activityBar.activeFocusBorder": transparent,
+    "activityBar.background": bunker,
+    "activityBar.border": transparent,
+    "activityBar.dropBackground": transparent,
+    "activityBar.dropBorder": appleBlossom,
+    "activityBar.foreground": porcelain,
+    "activityBar.inactiveForeground": greyChateau,
+    "activityBarBadge.background": ecstasy,
+    "activityBarBadge.foreground": black,
 
-    "sideBar.background": black[2],
-    "sideBar.foreground": grey[4],
-    "sideBar.border": black[3],
-    "sideBarTitle.foreground": grey[2],
-    "sideBarSectionHeader.background": transparent,
-    "sideBarSectionHeader.foreground": grey[3],
-    "sideBarSectionHeader.border": transparent,
+    // Badge colors | DONE
+    // -------------------------------------------------------------------------
+    "badge.background": ecstasy,
+    "badge.foreground": black,
 
-    "minimap.selectionHighlight": "#7b7f814d",
-    "minimap.background": black[3],
-    "minimapSlider.background": "#7b7f8126",
-    "minimapSlider.hoverBackground": "#7b7f814d",
-    "minimapSlider.activeBackground": "#7b7f814d",
-    "minimapGutter.addedBackground": blue[2],
-    "minimapGutter.modifiedBackground": beige,
-    "minimapGutter.deletedBackground": red[2],
+    // Base colors | DONE
+    // -------------------------------------------------------------------------
+    // descriptionForeground: ``,
+    // errorForeground: ``,
+    focusBorder: appleBlossom,
+    foreground: iron,
+    "icon.foreground": iron,
+    "selection.background": appleBlossom,
+    "widget.shadow": transparent,
 
-    "editorGroup.border": black[3],
-    "editorGroupHeader.tabsBackground": black[1],
-    "editorGroupHeader.tabsBorder": black[3],
-    "editorGroup.emptyBackground": black[2],
+    // Breadcrumbs colors | DONE
+    // -------------------------------------------------------------------------
+    "breadcrumb.activeSelectionForeground": porcelain,
+    "breadcrumb.background": black,
+    "breadcrumb.focusForeground": iron,
+    "breadcrumb.foreground": rollingStone,
+    "breadcrumbPicker.background": bunker,
 
-    "tab.activeBackground": black[3],
-    "tab.unfocusedActiveBackground": black[3],
-    "tab.activeForeground": grey[1],
-    "tab.border": black[1],
-    "tab.activeBorder": black[3],
-    "tab.unfocusedActiveBorder": black[3],
-    "tab.activeBorderTop": black[3],
-    "tab.unfocusedActiveBorderTop": black[3],
-    "tab.inactiveBackground": black[2],
-    "tab.inactiveForeground": grey[3],
-    "tab.unfocusedActiveForeground": grey[2],
-    "tab.unfocusedInactiveForeground": grey[4],
-    "tab.hoverBackground": black[3],
-    "tab.unfocusedHoverBackground": black[3],
-    "tab.hoverBorder": transparent,
-    "tab.unfocusedHoverBorder": transparent,
+    // Button control | DONE
+    // -------------------------------------------------------------------------
+    "button.background": smaltBlue,
+    "button.foreground": black,
+    "button.hoverBackground": nepal,
+    // 'button.secondaryBackground': ``,
+    // 'button.secondaryForeground': ``,
+    // 'button.secondaryHoverBackground': ``,
+    "checkbox.background": black,
+    "checkbox.border": appleBlossom,
+    "checkbox.foreground": greyChateau,
 
-    "editor.background": black[3],
-    "editor.foreground": grey[2],
-    "editorLineNumber.foreground": grey[4],
-    "editorLineNumber.activeForeground": grey[2],
-    "editorCursor.foreground": grey[4],
-    "editor.selectionBackground": black[1],
-    "editor.inactiveSelectionBackground": black[2],
-    "editor.selectionHighlightBackground": black[1],
-    "editor.selectionHighlightBorder": transparent,
-    "editor.wordHighlightBackground": black[1],
-    "editor.wordHighlightStrongBackground": black[1],
-    "editor.findMatchHighlightBackground": transparent,
-    "editor.findMatchHighlightBorder": red[2],
+    // Contrast colors | DONE
+    // -------------------------------------------------------------------------
+    // contrastActiveBorder: ``,
+    // contrastBorder: ``,
 
-    "searchEditor.findMatchBackground": transparent,
-    "searchEditor.findMatchBorder": red[2],
-    "searchEditor.textInputBorder": red[2],
+    // Debug colors | DONE
+    // -------------------------------------------------------------------------
+    // 'debugTokenExpression.boolean': ``,
+    // 'debugTokenExpression.error': ``,
+    // 'debugTokenExpression.name': ``,
+    // 'debugTokenExpression.number': ``,
+    // 'debugTokenExpression.string': ``,
+    // 'debugTokenExpression.value': ``,
+    "debugToolBar.background": mirage,
+    "debugToolBar.border": mirage,
+    // 'debugView.exceptionLabelBackground': ``,
+    // 'debugView.exceptionLabelForeground': ``,
+    // 'debugView.stateLabelBackground': ``,
+    // 'debugView.stateLabelForeground': ``,
+    // 'debugView.valueChangedHighlight': ``,
+    // 'editor.focusedStackFrameHighlightBackground': ``,
+    // 'editor.stackFrameHighlightBackground': ``,
 
-    "editor.hoverHighlightBackground": black[1],
-    "editor.lineHighlightBackground": black[2],
+    // Debug icons colors | DONE
+    // -------------------------------------------------------------------------
+    "debugConsole.errorForeground": appleBlossom,
+    "debugConsole.infoForeground": indianKhaki,
+    "debugConsole.sourceForeground": greyChateau,
+    "debugConsole.warningForeground": appleBlossom,
+    "debugConsoleInputIcon.foreground": indianKhaki,
+    "debugIcon.breakpointCurrentStackframeForeground": indianKhaki,
+    "debugIcon.breakpointDisabledForeground": indianKhaki,
+    "debugIcon.breakpointForeground": indianKhaki,
+    "debugIcon.breakpointStackframeForeground": indianKhaki,
+    "debugIcon.breakpointUnverifiedForeground": indianKhaki,
+    "debugIcon.continueForeground": indianKhaki,
+    "debugIcon.disconnectForeground": indianKhaki,
+    "debugIcon.pauseForeground": indianKhaki,
+    "debugIcon.restartForeground": nepal,
+    "debugIcon.stepBackForeground": indianKhaki,
+    "debugIcon.stepIntoForeground": indianKhaki,
+    "debugIcon.stepOverForeground": indianKhaki,
+    "debugIcon.stepOutForeground": indianKhaki,
+    "debugIcon.startForeground": indianKhaki,
+    "debugIcon.stopForeground": trinidad,
+
+    // Diff editor colors | DONE
+    // -------------------------------------------------------------------------
+    "diffEditor.border": transparent,
+    "diffEditor.diagonalFill": transparent,
+    "diffEditor.insertedTextBackground": `${smaltBlue}${subtle}`,
+    // 'diffEditor.insertedTextBorder': ``,
+    "diffEditor.removedTextBackground": `${appleBlossom}${subtle}`,
+    // 'diffEditor.removedTextBorder': ``,
+
+    // Dropdown control | DONE
+    // -------------------------------------------------------------------------
+    "dropdown.background": black,
+    "dropdown.border": appleBlossom,
+    "dropdown.listBackground": bunker,
+    "dropdown.foreground": greyChateau,
+
+    // Editor colors
+    // -------------------------------------------------------------------------
+    "editor.background": black,
+    "editor.findMatchBackground": mirage,
+    "editor.findMatchBorder": transparent,
+    "editor.findMatchHighlightBackground": bigStone,
+    "editor.findMatchHighlightBorder": transparent,
+    // 'editor.findRangeHighlightBackground': ``,
+    // 'editor.findRangeHighlightBorder': ``,
+    // 'editor.foldBackground': ``,
+    "editor.foreground": iron,
+    "editor.hoverHighlightBackground": mirage,
+    "editor.inactiveSelectionBackground": bunker,
+    "editor.lineHighlightBackground": bunker,
     "editor.lineHighlightBorder": transparent,
-    "editor.rangeHighlightBackground": black[1],
-    "editorWhitespace.foreground": "#7b7f814d",
-    "editorIndentGuide.background": "#7b7f8126",
-    "editorIndentGuide.activeBackground": "#7b7f814d",
+    "editor.rangeHighlightBackground": mirage,
+    // 'editor.rangeHighlightBorder': ``,
+    "editor.selectionBackground": mirage,
+    // 'editor.selectionForeground': ``,
+    "editor.selectionHighlightBackground": bigStone,
+    "editor.selectionHighlightBorder": transparent,
+    // 'editor.symbolHighlightBackground': ``,
+    // 'editor.symbolHighlightBorder': ``,
+    "editor.wordHighlightBackground": mirage,
+    // 'editor.wordHighlightBorder': ``,
+    "editor.wordHighlightStrongBackground": bigStone,
+    // 'editor.wordHighlightStrongBorder': ``,
     "editorBracketMatch.background": transparent,
-    "editorBracketMatch.border": grey[4],
+    "editorBracketMatch.border": rollingStone,
+    // 'editorCursor.background': ``,
+    "editorCursor.foreground": greyChateau,
+    // 'editorCodeLens.foreground': ``,
+    // 'editorError.border': ``,
+    // 'editorError.foreground': ``,
+    "editorGutter.addedBackground": smaltBlue,
+    "editorGutter.background": transparent,
+    // 'editorGutter.commentRangeForeground': ``,
+    "editorGutter.deletedBackground": appleBlossom,
+    // 'editorGutter.foldingControlForeground': ``,
+    "editorGutter.modifiedBackground": indianKhaki,
+    // 'editorHint.border': ``,
+    // 'editorHint.foreground': ``,
+    // 'editorIndentGuide.activeBackground': ``,
+    // 'editorIndentGuide.background': ``,
+    // 'editorInfo.border': ``,
+    // 'editorInfo.foreground': ``,
+    "editorLineNumber.activeForeground": porcelain,
+    "editorLineNumber.foreground": greyChateau,
+    // 'editorLightBulb.foreground': ``,
+    // 'editorLightBulbAutoFix.foreground': ``,
+    // 'editorLink.activeForeground': ``,
+    "editorOverviewRuler.addedForeground": smaltBlue,
     "editorOverviewRuler.background": transparent,
     "editorOverviewRuler.border": transparent,
-    "editorOverviewRuler.selectionHighlightForeground": "#7b7f814d",
-    "editorOverviewRuler.modifiedForeground": beige,
-    "editorOverviewRuler.addedForeground": blue[2],
-    "editorOverviewRuler.deletedForeground": red[2],
-    "editorOverviewRuler.bracketMatchForeground": "#7b7f8126",
+    // 'editorOverviewRuler.bracketMatchForeground': ``,
+    "editorOverviewRuler.deletedForeground": appleBlossom,
+    // 'editorOverviewRuler.errorForeground': ``,
+    // 'editorOverviewRuler.findMatchForeground': ``,
+    // 'editorOverviewRuler.infoForeground': ``,
+    "editorOverviewRuler.modifiedForeground": indianKhaki,
+    // 'editorOverviewRuler.rangeHighlightForeground': ``,
+    // 'editorOverviewRuler.selectionHighlightForeground': ``,
+    // 'editorOverviewRuler.warningForeground': ``,
+    // 'editorOverviewRuler.wordHighlightForeground': ``,
+    // 'editorOverviewRuler.wordHighlightStrongForeground': ``,
+    // 'editorUnnecessaryCode.border': ``,
+    // 'editorUnnecessaryCode.opacity': ``,
+    // 'editorRuler.foreground': ``,
+    // 'editorWarning.border': ``,
+    // 'editorWarning.foreground': ``,
+    // 'editorWhitespace.foreground': ``,
+    // 'problemsErrorIcon.foreground': ``,
+    // 'problemsInfoIcon.foreground': ``,
+    // 'problemsWarningIcon.foreground': ``,
+    // 'searchEditor.findMatchBackground': ``,
+    // 'searchEditor.findMatchBorder': ``,
+    "searchEditor.textInputBorder": appleBlossom,
 
-    "editorGutter.background": transparent,
-    "editorGutter.modifiedBackground": beige,
-    "editorGutter.addedBackground": blue[2],
-    "editorGutter.deletedBackground": red[2],
+    // Editor group and tabs
+    // -------------------------------------------------------------------------
+    "editorGroup.border": black,
+    // 'editorGroup.dropBackground': ``,
+    "editorGroup.emptyBackground": ebony,
+    // 'editorGroup.focusedEmptyBorder': ``,
+    // 'editorGroupHeader.border': ``,
+    // 'editorGroupHeader.noTabsBackground': ``,
+    "editorGroupHeader.tabsBackground": bunker,
+    "editorGroupHeader.tabsBorder": black,
+    // 'editorPane.background': ``,
+    "tab.activeBackground": black,
+    "tab.activeBorder": black,
+    "tab.activeBorderTop": black,
+    "tab.activeForeground": porcelain,
+    // 'tab.activeModifiedBorder': ``,
+    "tab.border": bunker,
+    "tab.hoverBackground": black,
+    "tab.hoverBorder": transparent,
+    // 'tab.hoverForeground': ``,
+    "tab.inactiveBackground": ebony,
+    "tab.inactiveForeground": iron,
+    // 'tab.inactiveModifiedBorder': ``,
+    "tab.unfocusedActiveBackground": black,
+    "tab.unfocusedActiveBorderTop": black,
+    "tab.unfocusedActiveBorder": black,
+    "tab.unfocusedActiveForeground": porcelain,
+    // 'tab.unfocusedActiveModifiedBorder': ``,
+    "tab.unfocusedHoverBackground": black,
+    "tab.unfocusedHoverBorder": transparent,
+    // 'tab.unfocusedHoverForeground': ``,
+    // 'tab.unfocusedInactiveBackground': ``,
+    "tab.unfocusedInactiveForeground": greyChateau,
+    // 'tab.unfocusedInactiveModifiedBorder': ``,
 
-    "editorWidget.foreground": grey[2],
-    "editorWidget.background": black[1],
-    "editorWidget.border": red[2],
+    // Editor widget colors
+    // -------------------------------------------------------------------------
+    // 'debugExceptionWidget.background': ``,
+    // 'debugExceptionWidget.border': ``,
+    // 'editorHoverWidget.background': ``,
+    // 'editorHoverWidget.border': ``,
+    // 'editorHoverWidget.foreground': ``,
+    // 'editorHoverWidget.statusBarBackground': ``,
+    // 'editorMarkerNavigation.background': ``,
+    // 'editorMarkerNavigationError.background': ``,
+    // 'editorMarkerNavigationInfo.background': ``,
+    // 'editorMarkerNavigationWarning.background': ``,
+    // 'editorSuggestWidget.background': ``,
+    // 'editorSuggestWidget.border': ``,
+    // 'editorSuggestWidget.foreground': ``,
+    // 'editorSuggestWidget.highlightForeground': ``,
+    // 'editorSuggestWidget.selectedBackground': ``,
+    "editorWidget.background": bunker,
+    "editorWidget.border": appleBlossom,
+    "editorWidget.foreground": iron,
+    // 'editorWidget.resizeBorder': ``,
 
-    "extensionButton.prominentForeground": black[3],
-    "extensionButton.prominentBackground": orange[3],
-    "extensionButton.prominentHoverBackground": orange[1],
+    // Extension colors | DONE
+    // -------------------------------------------------------------------------
+    "extensionButton.prominentBackground": iron,
+    "extensionButton.prominentForeground": black,
+    "extensionButton.prominentHoverBackground": porcelain,
+    "extensionBadge.remoteBackground": trinidad,
+    "extensionBadge.remoteForeground": black,
 
-    "statusBar.background": blue[2],
-    "statusBar.foreground": black[3],
-    "statusBar.debuggingBackground": beige,
-    "statusBar.debuggingForeground": black[3],
-    "statusBar.noFolderBackground": red[2],
-    "statusBar.noFolderForeground": grey[1],
+    // Git colors | DONE
+    // -------------------------------------------------------------------------
+    "gitDecoration.addedResourceForeground": smaltBlue,
+    "gitDecoration.conflictingResourceForeground": matrix,
+    "gitDecoration.deletedResourceForeground": appleBlossom,
+    "gitDecoration.ignoredResourceForeground": rollingStone,
+    "gitDecoration.modifiedResourceForeground": indianKhaki,
+    "gitDecoration.submoduleResourceForeground": iron,
+    "gitDecoration.untrackedResourceForeground": nepal,
 
-    "titleBar.border": transparent,
+    // Input control | DONE
+    // -------------------------------------------------------------------------
+    "input.background": black,
+    "input.border": appleBlossom,
+    "input.foreground": greyChateau,
+    "input.placeholderForeground": rollingStone,
+    "inputOption.activeBackground": bunker,
+    "inputOption.activeBorder": appleBlossom,
+    "inputOption.activeForeground": iron,
+    // 'inputValidation.errorBackground': ``,
+    // 'inputValidation.errorBorder': ``,
+    // 'inputValidation.errorForeground': ``,
+    // 'inputValidation.infoBackground': ``,
+    // 'inputValidation.infoBorder': ``,
+    // 'inputValidation.infoForeground': ``,
 
-    "welcomePage.background": black[2],
-    "welcomePage.buttonBackground": blue[2],
-    "welcomePage.buttonHoverBackground": blue[1],
-
-    "gitDecoration.addedResourceForeground": blue[2],
-    "gitDecoration.modifiedResourceForeground": beige,
-    "gitDecoration.deletedResourceForeground": red[2],
-    "gitDecoration.untrackedResourceForeground": blue[1],
-    "gitDecoration.ignoredResourceForeground": grey[4],
-
-    "breadcrumb.foreground": grey[4],
-    "breadcrumb.focusForeground": grey[2],
-    "breadcrumb.activeSelectionForeground": grey[1],
-    "breadcrumbPicker.background": black[1],
-
-    "terminal.background": black[3],
+    // Integrated terminal colors | DONE
+    // -------------------------------------------------------------------------
+    "terminal.ansiBlack": smaltBlue,
+    "terminal.ansiBlue": smaltBlue,
+    "terminal.ansiBrightBlack": smaltBlue,
+    "terminal.ansiBrightBlue": smaltBlue,
+    "terminal.ansiBrightCyan": nepal,
+    "terminal.ansiBrightGreen": nepal,
+    "terminal.ansiBrightMagenta": matrix,
+    "terminal.ansiBrightRed": matrix,
+    "terminal.ansiBrightWhite": indianKhaki,
+    "terminal.ansiBrightYellow": indianKhaki,
+    "terminal.ansiCyan": nepal,
+    "terminal.ansiGreen": nepal,
+    "terminal.ansiMagenta": matrix,
+    "terminal.ansiRed": matrix,
+    "terminal.ansiWhite": indianKhaki,
+    "terminal.ansiYellow": indianKhaki,
+    "terminal.background": black,
     "terminal.border": transparent,
-    "terminal.selectionBackground": black[1],
-    "terminalCursor.foreground": grey[4]
-  },
+    "terminal.foreground": greyChateau,
+    "terminal.selectionBackground": `${rollingStone}${subtle}`,
+    "terminalCursor.background": transparent,
+    "terminalCursor.foreground": greyChateau,
 
+    // Lists and trees | DONE
+    // -------------------------------------------------------------------------
+    // 'list.activeSelectionBackground': black,
+    // 'list.activeSelectionForeground': porcelain,
+    // 'list.deemphasizedForeground': ``,
+    // 'list.dropBackground': ``,
+    // 'list.errorForeground': ``,
+    // 'list.filterMatchBackground': ``,
+    // 'list.filterMatchBorder': ``,
+    // 'list.focusBackground': ``,
+    // 'list.focusForeground': ``,
+    // 'list.highlightForeground': ``,
+    // 'list.hoverBackground': bunker,
+    // 'list.hoverForeground': iron,
+    // 'list.inactiveFocusBackground': ``,
+    // 'list.inactiveSelectionBackground': black,
+    // 'list.inactiveSelectionForeground': porcelain,
+    // 'list.invalidItemForeground': ``,
+    // 'list.warningForeground': ``,
+    // 'listFilterWidget.background': ``,
+    // 'listFilterWidget.noMatchesOutline': ``,
+    // 'listFilterWidget.outline': ``,
+    "tree.indentGuidesStroke": rollingStone,
+
+    // Menu bar colors
+    // -------------------------------------------------------------------------
+    // 'menu.background': ``,
+    // 'menu.border': ``,
+    // 'menu.foreground': ``,
+    // 'menu.selectionBackground': ``,
+    // 'menu.selectionBorder': ``,
+    // 'menu.selectionForeground': ``,
+    // 'menu.separatorBackground': ``,
+    // 'menubar.selectionBackground': ``,
+    // 'menubar.selectionBorder': ``,
+    // 'menubar.selectionForeground': ``,
+
+    // Merge conflicts colors | DONE
+    // -------------------------------------------------------------------------
+    "editorOverviewRuler.commonContentForeground": iron,
+    "editorOverviewRuler.currentContentForeground": iron,
+    "editorOverviewRuler.incomingContentForeground": iron,
+    "merge.border": transparent,
+    "merge.commonContentBackground": `${indianKhaki}${subtle}`,
+    "merge.commonHeaderBackground": `${indianKhaki}${pronounced}`,
+    "merge.currentContentBackground": `${trinidad}${subtle}`,
+    "merge.currentHeaderBackground": `${trinidad}${pronounced}`,
+    "merge.incomingContentBackground": `${smaltBlue}${subtle}`,
+    "merge.incomingHeaderBackground": `${smaltBlue}${pronounced}`,
+
+    // Minimap
+    // -------------------------------------------------------------------------
+    // 'minimap.background': ``,
+    // 'minimap.errorHighlight': ``,
+    // 'minimap.findMatchHighlight': ``,
+    // 'minimap.selectionHighlight': ``,
+    // 'minimap.warningHighlight': ``,
+    // 'minimapGutter.addedBackground': ``,
+    // 'minimapGutter.deletedBackground': ``,
+    // 'minimapGutter.modifiedBackground': ``,
+    // 'minimapSlider.activeBackground': ``,
+    // 'minimapSlider.background': ``,
+    // 'minimapSlider.hoverBackground': ``,
+
+    // Notebook colors
+    // -------------------------------------------------------------------------
+    // 'notebook.cellBorderColor': ``,
+    // 'notebook.cellHoverBackground': ``,
+    // 'notebook.cellInsertionIndicator': ``,
+    // 'notebook.cellStatusBarItemHoverBackground': ``,
+    // 'notebook.cellToolbarSeperator': ``,
+    // 'notebook.focusedCellBackground': ``,
+    // 'notebook.focusedCellBorder': ``,
+    // 'notebook.focusedCellShadow': ``,
+    // 'notebook.focusedEditorBorder': ``,
+    // 'notebook.outputContainerBackgroundColor': ``,
+    // 'notebookScrollbarSlider.activeBackground': ``,
+    // 'notebookScrollbarSlider.background': ``,
+    // 'notebookScrollbarSlider.hoverBackground': ``,
+    // 'notebookStatusErrorIcon.foreground': ``,
+    // 'notebookStatusRunningIcon.foreground': ``,
+    // 'notebookStatusSuccessIcon.foreground': ``,
+
+    // Notification colors | DONE
+    // -------------------------------------------------------------------------
+    "notificationCenter.border": transparent,
+    "notificationCenterHeader.background": bunker,
+    "notificationCenterHeader.foreground": porcelain,
+    // 'notificationLink.foreground': ``,
+    "notifications.background": bunker,
+    "notifications.border": transparent,
+    "notifications.foreground": greyChateau,
+    "notificationsErrorIcon.foreground": appleBlossom,
+    "notificationsInfoIcon.foreground": indianKhaki,
+    "notificationsWarningIcon.foreground": appleBlossom,
+    "notificationToast.border": transparent,
+
+    // Panel colors | DONE
+    // -------------------------------------------------------------------------
+    "panel.background": black,
+    "panel.border": bunker,
+    "panel.dropBackground": transparent,
+    "panel.dropBorder": appleBlossom,
+    // 'panelInput.border': ``,
+    // 'panelSection.border': ``,
+    // 'panelSection.dropBackground': ``,
+    // 'panelSectionHeader.background': ``,
+    // 'panelSectionHeader.border': ``,
+    // 'panelSectionHeader.foreground': ``,
+    "panelTitle.activeBorder": transparent,
+    "panelTitle.activeForeground": porcelain,
+    "panelTitle.inactiveForeground": greyChateau,
+
+    // Peek view colors | DONE
+    // -------------------------------------------------------------------------
+    "peekView.border": bunker,
+    // 'peekViewEditor.background': ``,
+    // 'peekViewEditor.matchHighlightBackground': ``,
+    // 'peekViewEditor.matchHighlightBorder': ``,
+    // 'peekViewEditorGutter.background': ``,
+    // 'peekViewResult.background': ``,
+    // 'peekViewResult.fileForeground': ``,
+    // 'peekViewResult.lineForeground': ``,
+    // 'peekViewResult.matchHighlightBackground': ``,
+    // 'peekViewResult.selectionBackground': ``,
+    // 'peekViewResult.selectionForeground': ``,
+    "peekViewTitle.background": bunker,
+    "peekViewTitleDescription.foreground": iron,
+    "peekViewTitleLabel.foreground": porcelain,
+
+    // Preview colors | DONE
+    // -------------------------------------------------------------------------
+    "imagePreview.border": appleBlossom,
+
+    // Progress bar | DONE
+    // -------------------------------------------------------------------------
+    "progressBar.background": appleBlossom,
+
+    // Quick picker colors | DONE
+    // -------------------------------------------------------------------------
+    "pickerGroup.border": appleBlossom,
+    "pickerGroup.foreground": greyChateau,
+    "quickInput.background": ebony,
+    "quickInput.foreground": greyChateau,
+    "quickInputTitle.background": iron,
+
+    // Scrollbar control | DONE
+    // -------------------------------------------------------------------------
+    "scrollbar.shadow": transparent,
+    "scrollbarSlider.activeBackground": `${rollingStone}${pronounced}`,
+    "scrollbarSlider.background": `${rollingStone}${subtle}`,
+    "scrollbarSlider.hoverBackground": `${rollingStone}${pronounced}`,
+
+    // Settings editor colors | DONE
+    // -------------------------------------------------------------------------
+    "settings.checkboxBackground": black,
+    "settings.checkboxBorder": appleBlossom,
+    "settings.checkboxForeground": greyChateau,
+    "settings.dropdownBackground": black,
+    "settings.dropdownBorder": appleBlossom,
+    "settings.dropdownForeground": greyChateau,
+    "settings.dropdownListBorder": transparent,
+    "settings.headerForeground": porcelain,
+    "settings.modifiedItemIndicator": indianKhaki,
+    "settings.numberInputBackground": black,
+    "settings.numberInputBorder": appleBlossom,
+    "settings.numberInputForeground": greyChateau,
+    "settings.textInputBackground": black,
+    "settings.textInputBorder": appleBlossom,
+    "settings.textInputForeground": greyChateau,
+
+    // Side bar | DONE
+    // -------------------------------------------------------------------------
+    "sideBar.background": ebony,
+    "sideBar.border": transparent,
+    "sideBar.dropBackground": transparent,
+    "sideBar.foreground": greyChateau,
+    "sideBarSectionHeader.background": transparent,
+    "sideBarSectionHeader.border": transparent,
+    "sideBarSectionHeader.foreground": iron,
+    "sideBarTitle.foreground": porcelain,
+
+    // Snippets colors | DONE
+    // -------------------------------------------------------------------------
+    // 'editor.snippetFinalTabstopHighlightBackground': ``,
+    "editor.snippetFinalTabstopHighlightBorder": transparent,
+    // 'editor.snippetTabstopHighlightBackground': ``,
+    "editor.snippetTabstopHighlightBorder": transparent,
+
+    // Source control colors | DONE
+    // -------------------------------------------------------------------------
+    "scm.providerBorder": transparent,
+
+    // Status bar colors | DONE
+    // -------------------------------------------------------------------------
+    "statusBar.background": smaltBlue,
+    "statusBar.border": transparent,
+    "statusBar.foreground": black,
+    "statusBar.debuggingBackground": indianKhaki,
+    "statusBar.debuggingBorder": transparent,
+    "statusBar.debuggingForeground": black,
+    "statusBar.noFolderBackground": appleBlossom,
+    "statusBar.noFolderBorder": transparent,
+    "statusBar.noFolderForeground": porcelain,
+    "statusBarItem.activeBackground": nepal,
+    "statusBarItem.hoverBackground": nepal,
+    // 'statusBarItem.prominentBackground': ``,
+    // 'statusBarItem.prominentForeground': ``,
+    // 'statusBarItem.prominentHoverBackground': ``,
+    // 'statusBarItem.remoteBackground': ``,
+    // 'statusBarItem.remoteForeground': ``,
+
+    // Symbol icons colors | DONE
+    // -------------------------------------------------------------------------
+    // 'symbolIcon.arrayForeground': ``,
+    // 'symbolIcon.booleanForeground': ``,
+    // 'symbolIcon.classForeground': ``,
+    // 'symbolIcon.colorForeground': ``,
+    // 'symbolIcon.constantForeground': ``,
+    // 'symbolIcon.constructorForeground': ``,
+    // 'symbolIcon.enumeratorForeground': ``,
+    // 'symbolIcon.enumeratorMemberForeground': ``,
+    // 'symbolIcon.eventForeground': ``,
+    // 'symbolIcon.fieldForeground': ``,
+    // 'symbolIcon.fileForeground': ``,
+    // 'symbolIcon.folderForeground': ``,
+    // 'symbolIcon.functionForeground': ``,
+    // 'symbolIcon.interfaceForeground': ``,
+    // 'symbolIcon.keyForeground': ``,
+    // 'symbolIcon.keywordForeground': ``,
+    // 'symbolIcon.methodForeground': ``,
+    // 'symbolIcon.moduleForeground': ``,
+    // 'symbolIcon.namespaceForeground': ``,
+    // 'symbolIcon.nullForeground': ``,
+    // 'symbolIcon.numberForeground': ``,
+    // 'symbolIcon.objectForeground': ``,
+    // 'symbolIcon.operatorForeground': ``,
+    // 'symbolIcon.packageForeground': ``,
+    // 'symbolIcon.propertyForeground': ``,
+    // 'symbolIcon.referenceForeground': ``,
+    // 'symbolIcon.snippetForeground': ``,
+    // 'symbolIcon.stringForeground': ``,
+    // 'symbolIcon.structForeground': ``,
+    // 'symbolIcon.textForeground': ``,
+    // 'symbolIcon.typeParameterForeground': ``,
+    // 'symbolIcon.unitForeground': ``,
+    // 'symbolIcon.variableForeground': ``,
+
+    // Text colors | DONE
+    // -------------------------------------------------------------------------
+    "textBlockQuote.background": transparent,
+    "textBlockQuote.border": indianKhaki,
+    "textCodeBlock.background": black,
+    "textLink.activeForeground": nepal,
+    "textLink.foreground": smaltBlue,
+    "textPreformat.foreground": indianKhaki,
+    "textSeparator.foreground": iron,
+
+    // Title bar colors | DONE
+    // -------------------------------------------------------------------------
+    "titleBar.activeBackground": bunker,
+    "titleBar.activeForeground": porcelain,
+    "titleBar.border": transparent,
+    "titleBar.inactiveBackground": bunker,
+    "titleBar.inactiveForeground": porcelain,
+
+    // Welcome page colors | DONE
+    // -------------------------------------------------------------------------
+    "walkThrough.embeddedEditorBackground": ebony,
+    "welcomePage.background": ebony,
+    "welcomePage.buttonBackground": smaltBlue,
+    "welcomePage.buttonHoverBackground": nepal,
+
+    // Window border | DONE
+    // -------------------------------------------------------------------------
+    "window.activeBorder": bunker,
+    "window.inactiveBorder": black
+  },
+  name,
   tokenColors: [
-    // Global
+    // Base tokens
+    // -------------------------------------------------------------------------
     {
+      name: `Base comments`,
       scope: `comment`,
       settings: {
-        foreground: grey[4]
+        foreground: rollingStone
       }
     },
     {
+      name: `Base constants`,
       scope: `constant`,
       settings: {
-        foreground: orange[3]
+        foreground: matrix
       }
     },
     {
+      name: `Base entities`,
       scope: `constant.character.entity`,
       settings: {
-        foreground: red[1]
+        fontStyle: `italic`,
+        foreground: trinidad
       }
     },
     {
+      name: `Base keywords`,
       scope: `keyword`,
       settings: {
-        foreground: red[1]
+        foreground: indianKhaki
       }
     },
     {
+      name: `Base storage`,
       scope: `storage`,
       settings: {
-        foreground: beige
+        foreground: indianKhaki
       }
     },
     {
-      scope: `storage.type`,
-      settings: {
-        foreground: beige // ??
-      }
-    },
-    {
+      name: `Base strings`,
       scope: `string`,
       settings: {
-        foreground: orange[3]
+        foreground: matrix
       }
     },
     {
+      name: `Base support`,
       scope: `support`,
       settings: {
-        foreground: beige
+        foreground: treePoppy
       }
     },
     {
+      name: `Base variables`,
       scope: `variable`,
       settings: {
-        foreground: orange[2]
-      }
-    },
-
-    // HTML attribute names
-    {
-      scope: `entity.other.attribute-name.html`,
-      settings: {
-        fontStyle: `normal`,
-        foreground: grey[1]
-      }
-    },
-    // HTML attribute (class)
-    {
-      scope: `meta.attribute.class.html`,
-      settings: {
-        fontStyle: `bold`
-      }
-    },
-    // HTML attribute values
-    {
-      scope: [`string.quoted.double.html`, `string.quoted.single.html`],
-      settings: {
-        foreground: orange[2]
-      }
-    },
-    // HTML comments
-    {
-      scope: `comment.block.html`,
-      settings: {
         fontStyle: `italic`,
-        foreground: grey[4]
-      }
-    },
-    // HTML tags
-    {
-      scope: `entity.name.tag.html`,
-      settings: {
-        foreground: orange[1]
+        foreground: trinidad
       }
     },
 
-    // CSS attribute names
+    // CSS tokens
+    // -------------------------------------------------------------------------
     {
+      name: `CSS attributes`,
       scope: `entity.other.attribute-name.css`,
       settings: {
-        foreground: grey[1]
+        foreground: porcelain
       }
     },
-    // CSS classes
     {
+      name: `CSS classes`,
       scope: `entity.other.attribute-name.class.css`,
       settings: {
-        fontStyle: `bold`,
-        foreground: orange[2]
+        foreground: ecstasy
       }
     },
-    // CSS comments
     {
-      scope: `comment.block.css`,
+      name: `CSS entities`,
+      scope: `punctuation.definition.entity.css`,
       settings: {
-        fontStyle: `italic`,
-        foreground: grey[4]
+        fontStyle: `normal`,
+        foreground: iron
       }
     },
-    // CSS functions
     {
-      scope: [
-        `support.function.calc.css`,
-        `support.function.misc.css`,
-        `support.function.timing-function.css`,
-        `support.function.transform.css`
-      ],
-      settings: {
-        foreground: beige
-      }
-    },
-    // CSS hex values
-    {
+      name: `CSS hexadecimals`,
       scope: [
         `constant.other.color.rgb-value.hex.css`,
         `punctuation.definition.constant.css`
       ],
       settings: {
-        foreground: red[1]
+        foreground: treePoppy
       }
     },
-    // CSS IDs
     {
+      name: `CSS ids`,
       scope: `entity.other.attribute-name.id.css`,
       settings: {
-        foreground: orange[2]
+        foreground: ecstasy
       }
     },
-    // CSS important
     {
+      name: `CSS important`,
       scope: `keyword.other.important.css`,
       settings: {
-        fontStyle: `italic`,
-        foreground: blue[2]
+        fontStyle: `bold`
       }
     },
-    // CSS operators
     {
+      name: `CSS operators`,
       scope: [
-        `entity.other.keyframe-offset.css`,
+        `keyword.operator.arithmetic.css`,
         `keyword.operator.combinator.css`,
-        `keyword.operator.logical.all.media.css`,
-        `keyword.operator.logical.and.media.css`,
-        `keyword.operator.logical.only.media.css`,
         `keyword.operator.pattern.css`
       ],
       settings: {
-        foreground: grey[2]
+        foreground: iron
       }
     },
-    // CSS property names
     {
+      name: `CSS properties`,
       scope: `support.type.property-name.css`,
       settings: {
-        foreground: grey[2]
+        foreground: iron
       }
     },
-    // CSS property names (vendored)
     {
-      scope: `support.type.vendored.property-name.css`,
+      name: `CSS property values`,
+      scope: [
+        `support.constant.color.current.css`,
+        `support.constant.property-value.css`
+      ],
       settings: {
-        foreground: grey[3]
+        foreground: indianKhaki
       }
     },
-    // CSS pseudo-classses
     {
-      scope: `entity.other.attribute-name.pseudo-class.css`,
+      name: `CSS pseudo`,
+      scope: [
+        `entity.other.attribute-name.pseudo-class.css`,
+        `entity.other.attribute-name.pseudo-element.css`
+      ],
       settings: {
-        foreground: grey[1]
+        foreground: porcelain
       }
     },
-    // CSS pseudo-elements
     {
-      scope: `entity.other.attribute-name.pseudo-element.css`,
-      settings: {
-        foreground: grey[1]
-      }
-    },
-    // CSS punctuation
-    {
-      scope: `punctuation.definition.entity.css`,
-      settings: {
-        fontStyle: `normal`,
-        foreground: grey[2]
-      }
-    },
-    // CSS tags
-    {
+      name: `CSS tags`,
       scope: `entity.name.tag.css`,
       settings: {
-        foreground: orange[1]
+        foreground: smaltBlue
       }
     },
-    // CSS units
     {
+      name: `CSS units`,
       scope: [
         `entity.other.keyframe-offset.percentage.css`,
         `keyword.other.unit.%.css`,
@@ -446,6 +792,7 @@ module.exports = {
         `keyword.other.unit.percentage.css`,
         `keyword.other.unit.pt.css`,
         `keyword.other.unit.px.css`,
+        `keyword.other.unit.q.css`,
         `keyword.other.unit.rem.css`,
         `keyword.other.unit.s.css`,
         `keyword.other.unit.vmax.css`,
@@ -454,194 +801,101 @@ module.exports = {
         `keyword.other.unit.vw.css`
       ],
       settings: {
-        foreground: orange[3]
+        foreground: matrix
       }
     },
-    // CSS variables
     {
-      scope: [`variable.css`, `variable.argument.css`],
+      name: `CSS vendor-prefixed properties`,
+      scope: `support.type.vendored.property-name.css`,
       settings: {
-        fontStyle: `italic`
+        foreground: greyChateau
       }
     },
 
-    // SCSS attribute names
+    // HTML tokens
+    // -------------------------------------------------------------------------
     {
-      scope: `entity.other.attribute-name.attribute.scss`,
+      name: `HTML attributes`,
+      scope: `entity.other.attribute-name.html`,
       settings: {
-        foreground: grey[1]
+        foreground: porcelain
       }
     },
-    // SCSS attribute values
     {
-      scope: `meta.attribute-selector.scss`,
+      name: `HTML tags`,
+      scope: `entity.name.tag.html`,
       settings: {
-        foreground: orange[3]
-      }
-    },
-    // SCSS brackets
-    {
-      scope: [
-        `punctuation.definition.attribute-selector.begin.bracket.square.scss`,
-        `punctuation.definition.attribute-selector.end.bracket.square.scss`,
-        `punctuation.definition.interpolation.begin.bracket.curly.scss`,
-        `punctuation.definition.interpolation.end.bracket.curly.scss`,
-        `punctuation.section.function.scss`
-      ],
-      settings: {
-        fontStyle: `regular`,
-        foreground: grey[2]
-      }
-    },
-    // SCSS comments (block)
-    {
-      scope: `comment.block.scss`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: grey[3]
-      }
-    },
-    // SCSS comments (line)
-    {
-      scope: `comment.line.scss`,
-      settings: {
-        fontStyle: `italic`
-      }
-    },
-    // SCSS default and important
-    {
-      scope: [`keyword.other.default.scss`, `keyword.other.important.scss`],
-      settings: {
-        fontStyle: `italic`,
-        foreground: blue[2]
-      }
-    },
-    // SCSS functions
-    {
-      scope: [`entity.name.function.scss`, `support.function.misc.scss`],
-      settings: {
-        foreground: beige
-      }
-    },
-    // SCSS operators
-    {
-      scope: [`keyword.control.operator.css.scss`, `keyword.operator.scss`],
-      settings: {
-        foreground: grey[2]
-      }
-    },
-    // SCSS punctuation
-    {
-      scope: `punctuation.separator.delimiter.scss`,
-      settings: {
-        foreground: grey[2]
-      }
-    },
-    // SCSS tags
-    {
-      scope: `meta.property-name.scss`,
-      settings: {
-        foreground: orange[1]
-      }
-    },
-    // SCSS variables
-    {
-      scope: `variable.scss`,
-      settings: {
-        fontStyle: `italic`
+        foreground: ecstasy
       }
     },
 
-    // JavaScript brackets
+    // JavaScript tokens
+    // -------------------------------------------------------------------------
     {
+      name: `JavaScript block comments`,
+      scope: [`comment.block.documentation.js`, `comment.block.js`],
+      settings: {
+        foreground: greyChateau
+      }
+    },
+    {
+      name: `JavaScript brackets`,
       scope: [
         `meta.brace.round.js`,
         `meta.brace.square.js`,
+        `punctuation.accessor.js`,
         `punctuation.definition.block.js`,
+        `punctuation.definition.bracket.curly.begin.jsdoc`,
+        `punctuation.definition.bracket.curly.end.jsdoc`,
         `punctuation.definition.template-expression.begin.js`,
-        `punctuation.definition.template-expression.end.js`
+        `punctuation.definition.template-expression.end.js`,
+        `punctuation.separator.key-value.js`
       ],
       settings: {
-        foreground: grey[2]
+        foreground: iron
       }
     },
-    // JavaScript class
     {
+      name: `JavaScript classes`,
       scope: [
         `entity.name.type.class.js`,
         `entity.name.type.js`,
         `support.class.builtin.js`
       ],
       settings: {
-        foreground: blue[2]
+        foreground: smaltBlue
       }
     },
-    // JavaScript class (inherited)
     {
-      scope: `entity.other.inherited-class.js`,
-      settings: {
-        foreground: blue[1]
-      }
-    },
-    // JavaScript comments (block)
-    {
-      scope: `comment.block.js`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: grey[3]
-      }
-    },
-    // JavaScript comments (line)
-    {
-      scope: `comment.line.double-slash.js`,
-      settings: {
-        fontStyle: `italic`
-      }
-    },
-    // JavaScript functions
-    {
+      name: `JavaScript functions`,
       scope: [
         `entity.name.function.js`,
         `support.function.console.js`,
-        `support.function.js`
+        "support.function.js"
       ],
       settings: {
-        foreground: orange[1]
+        foreground: treePoppy
       }
     },
-    // JavaScript key-value separators
     {
-      scope: `punctuation.separator.key-value.js`,
+      name: `JavaScript inherited classes`,
+      scope: `entity.other.inherited-class.js`,
       settings: {
-        foreground: grey[2]
+        foreground: nepal
       }
     },
-    // JavaScript null
     {
+      name: `JavaScript null`,
       scope: `constant.language.null.js`,
       settings: {
-        fontStyle: `bold`,
-        foreground: grey[3]
+        foreground: greyChateau
       }
     },
-    // JavaScript object keys
     {
-      scope: `meta.object-literal.key.js`,
-      settings: {
-        foreground: orange[2]
-      }
-    },
-    // JavaScript object property accessors
-    {
-      scope: `punctuation.accessor.js`,
-      settings: {
-        foreground: grey[2]
-      }
-    },
-    // JavaScript operators
-    {
+      name: `JavaScript operators`,
       scope: [
         `keyword.operator.arithmetic.js`,
+        `keyword.operator.assignment.compound.bitwise.js`,
         `keyword.operator.assignment.compound.js`,
         `keyword.operator.assignment.js`,
         `keyword.operator.comparison.js`,
@@ -652,216 +906,508 @@ module.exports = {
         `keyword.operator.ternary.js`
       ],
       settings: {
-        foreground: grey[2]
+        foreground: iron
       }
     },
-    // JavaScript storage
     {
-      scope: [
-        `keyword.control.export.js`,
-        `keyword.control.from.js`,
-        `keyword.control.import.js`,
-        `keyword.operator.new.js`,
-        `storage.modifier.js`,
-        `storage.type.class.js`,
-        `storage.type.function.arrow.js`,
-        `storage.type.function.js`,
-        `storage.type.js`,
-        `storage.type.property.js`
-      ],
+      name: `JavaScript properties`,
+      scope: [`meta.object-literal.key.js`, `variable.other.property.js`],
       settings: {
-        foreground: beige
+        fontStyle: `normal`,
+        foreground: ecstasy
       }
     },
-    // JavaScript super
     {
+      name: `JavaScript regular expressions`,
+      scope: `string.regexp.js`,
+      settings: {
+        foreground: nepal
+      }
+    },
+    {
+      name: `JavaScript super`,
       scope: `variable.language.super.js`,
       settings: {
         fontStyle: `normal`,
-        foreground: grey[1]
+        foreground: porcelain
       }
     },
-    // JavaScript this
     {
+      name: `JavaScript this`,
       scope: `variable.language.this.js`,
       settings: {
-        fontStyle: `bold`,
-        foreground: grey[2]
+        foreground: porcelain
       }
     },
-    // JavaScript undefined
     {
+      name: `JavaScript types`,
+      scope: `entity.name.type.instance.jsdoc`,
+      settings: {
+        foreground: nepal
+      }
+    },
+    {
+      name: `JavaScript undefined`,
       scope: `constant.language.undefined.js`,
       settings: {
-        fontStyle: `bold`,
-        foreground: grey[3]
-      }
-    },
-    // JavaScript variables
-    {
-      scope: [
-        `entity.name.type.module.js`,
-        `support.class.console.js`,
-        `variable.other.constant.js`,
-        `variable.other.object.js`,
-        `variable.other.object.property.js`,
-        `variable.other.readwrite.alias.js`,
-        `variable.other.readwrite.js`,
-        `variable.parameter.js`
-      ],
-      settings: {
-        fontStyle: `italic`
+        foreground: greyChateau
       }
     },
 
-    // JSX attribute names
+    // JSON tokens
+    // -------------------------------------------------------------------------
     {
+      name: `JSON properties`,
+      scope: `support.type.property-name.json`,
+      settings: {
+        foreground: iron
+      }
+    },
+
+    // JSX tokens
+    // -------------------------------------------------------------------------
+    {
+      name: `JSX attributes`,
       scope: `entity.other.attribute-name.js.jsx`,
       settings: {
-        foreground: grey[1]
+        foreground: porcelain
       }
     },
-    // JSX attribute values
     {
-      scope: `string.quoted.double.js.jsx`,
+      name: `JSX component tags`,
+      scope: `support.class.component.js.jsx`,
       settings: {
-        foreground: orange[2]
+        fontStyle: `bold`,
+        foreground: ecstasy
       }
     },
-    // JSX comments (block)
     {
-      scope: `comment.block.js.jsx`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: grey[3]
-      }
-    },
-    // JSX comments (line)
-    {
-      scope: `comment.line.double-slash.js.jsx`,
-      settings: {
-        fontStyle: `italic`
-      }
-    },
-    // JSX keywords
-    {
-      scope: [`keyword.control.export.js.jsx`, `keyword.control.import.js.jsx`],
-      settings: {
-        foreground: beige
-      }
-    },
-    // JSX tags
-    {
+      name: `JSX tags`,
       scope: `entity.name.tag.js.jsx`,
       settings: {
-        foreground: orange[1]
+        foreground: ecstasy
       }
     },
-    // JSX tags (compontents)
+
+    // Markdown tokens
+    // -------------------------------------------------------------------------
     {
-      scope: `support.class.component.js.jsx`,
+      name: `Markdown backtick strings`,
+      scope: `markup.inline.raw.string.markdown`,
+      settings: {
+        foreground: trinidad
+      }
+    },
+    {
+      name: `Markdown bold`,
+      scope: `markup.bold.markdown`,
       settings: {
         fontStyle: `bold`
       }
     },
-
-    // TypeScript brackets
     {
+      name: `Markdown definitions`,
       scope: [
+        `punctuation.definition.bold.markdown`,
+        `punctuation.definition.italic.markdown`
+      ],
+      settings: {
+        fontStyle: `regular`
+      }
+    },
+    {
+      name: `Markdown headings`,
+      scope: [
+        `heading.1.markdown`,
+        `heading.2.markdown`,
+        `heading.3.markdown`,
+        `heading.4.markdown`,
+        `heading.5.markdown`,
+        `heading.6.markdown`
+      ],
+      settings: {
+        foreground: indianKhaki
+      }
+    },
+    {
+      name: `Markdown italics`,
+      scope: `markup.italic.markdown`,
+      settings: {
+        fontStyle: `italic`
+      }
+    },
+    {
+      name: `Markdown link titles`,
+      scope: [
+        `string.other.link.description.markdown`,
+        `string.other.link.title.markdown`
+      ],
+      settings: {
+        foreground: ecstasy
+      }
+    },
+    {
+      name: `Markdown links`,
+      scope: `markup.underline.link.markdown`,
+      settings: {
+        foreground: porcelain
+      }
+    },
+
+    // Python tokens
+    // -------------------------------------------------------------------------
+    {
+      name: `Python attributes`,
+      scope: [`meta.attribute.python`, `meta.indexed-name.python`],
+      settings: {
+        fontStyle: `regular`,
+        foreground: ecstasy
+      }
+    },
+    {
+      name: `Python brackets`,
+      scope: [
+        `constant.character.format.placeholder.other.python`,
+        `constant.other.ellipsis.python`,
+        `punctuation.definition.arguments.begin.python`,
+        `punctuation.definition.arguments.end.python`,
+        `punctuation.definition.dict.begin.python`,
+        `punctuation.definition.dict.end.python`,
+        `punctuation.definition.inheritance.begin.python`,
+        `punctuation.definition.inheritance.end.python`,
+        `punctuation.definition.list.begin.python`,
+        `punctuation.definition.list.end.python`,
+        `punctuation.definition.parameters.begin.python`,
+        `punctuation.definition.parameters.end.python`,
+        `punctuation.parenthesis.begin.python`,
+        `punctuation.parenthesis.end.python`,
+        `punctuation.section.class.begin.python`,
+        `punctuation.section.function.begin.python`,
+        `punctuation.separator.annotation.python`,
+        `punctuation.separator.annotation.result.python`,
+        `punctuation.separator.arguments.python`,
+        `punctuation.separator.colon.python`,
+        `punctuation.separator.element.python`,
+        `punctuation.separator.inheritance.python`,
+        `punctuation.separator.slice.python`,
+        `punctuation.separator.parameters.python`,
+        `punctuation.separator.period.python`
+      ],
+      settings: {
+        fontStyle: `regular`,
+        foreground: iron
+      }
+    },
+    {
+      name: `Python classes`,
+      scope: `entity.name.type.class.python`,
+      settings: {
+        fontStyle: `regular`,
+        foreground: smaltBlue
+      }
+    },
+    {
+      name: `Python comments`,
+      scope: `comment.line.number-sign.python`,
+      settings: {
+        fontStyle: `regular`
+      }
+    },
+    {
+      name: `Python constants`,
+      scope: [
+        `constant.language.python`,
+        `constant.numeric.dec.python`,
+        `constant.numeric.float.python`
+      ],
+      settings: {
+        fontStyle: `regular`
+      }
+    },
+    {
+      name: `Python doc strings`,
+      scope: `string.quoted.docstring.multi.python`,
+      settings: {
+        fontStyle: `regular`,
+        foreground: greyChateau
+      }
+    },
+    {
+      name: `Python escaped characters`,
+      scope: `constant.character.escape.python`,
+      settings: {
+        fontStyle: `regular`,
+        foreground: trinidad
+      }
+    },
+    {
+      name: `Python foreground`,
+      scope: `source.python`,
+      settings: {
+        fontStyle: `italic`,
+        foreground: trinidad
+      }
+    },
+    {
+      name: `Python functions`,
+      scope: [
+        `entity.name.function.python`,
+        `meta.function-call.generic.python`,
+        `support.function.builtin.python`,
+        `support.function.magic.python`
+      ],
+      settings: {
+        fontStyle: `regular`,
+        foreground: treePoppy
+      }
+    },
+    {
+      name: `Python inherited classes`,
+      scope: `entity.other.inherited-class.python`,
+      settings: {
+        fontStyle: `regular`,
+        foreground: nepal
+      }
+    },
+    {
+      name: `Python keywords`,
+      scope: [
+        `keyword.control.flow.python`,
+        `keyword.control.import.python`,
+        `keyword.operator.logical.python` // Should this be scoped to Python operators?
+      ],
+      settings: {
+        fontStyle: `regular`
+      }
+    },
+    {
+      name: `Python operators`,
+      scope: [
+        `keyword.operator.arithmetic.python`,
+        `keyword.operator.assignment.python`,
+        `keyword.operator.bitwise.python`,
+        `keyword.operator.comparison.python`,
+        `keyword.operator.python`,
+        `keyword.operator.unpacking.arguments.python`,
+        `keyword.operator.unpacking.parameter.python`
+      ],
+      settings: {
+        fontStyle: `regular`,
+        foreground: iron
+      }
+    },
+    {
+      name: `Python storage`,
+      scope: [`storage.type.class.python`, `storage.type.function.python`],
+      settings: {
+        fontStyle: `regular`
+      }
+    },
+    {
+      name: `Python strings`,
+      scope: [
+        `string.quoted.docstring.single.python`,
+        `string.quoted.single.python`
+      ],
+      settings: {
+        fontStyle: `regular`
+      }
+    },
+    {
+      name: `Python types`,
+      scope: [`support.type.exception.python`, `support.type.python`],
+      settings: {
+        fontStyle: `regular`,
+        foreground: treePoppy
+      }
+    },
+    {
+      name: `Python variables`,
+      scope: `constant.other.caps.python`,
+      settings: {
+        foreground: trinidad
+      }
+    },
+
+    // Regular expression tokens
+    // -------------------------------------------------------------------------
+    {
+      name: `Regular expression brackets`,
+      scope: [
+        `constant.character.escape.backslash.regexp`,
+        `keyword.operator.or.regexp`,
+        `punctuation.definition.character-class.regexp`,
+        `punctuation.definition.group.regexp`,
+        `punctuation.definition.string.begin.js`,
+        `punctuation.definition.string.end.js`
+      ],
+      settings: {
+        foreground: smaltBlue
+      }
+    },
+    {
+      name: `Regular expression constants`,
+      scope: [
+        `constant.other.character-class.range.regexp`,
+        `constant.other.character-class.regexp`,
+        `constant.other.character-class.set.regexp`
+      ],
+      settings: {
+        foreground: nepal
+      }
+    },
+    {
+      name: `Regular expression keywords`,
+      scope: [
+        `keyword.control.anchor.regexp`,
+        `keyword.operator.negation.regexp`,
+        `keyword.operator.quantifier.regexp`
+      ],
+      settings: {
+        foreground: nepal
+      }
+    },
+
+    // SCSS tokens
+    // -------------------------------------------------------------------------
+    {
+      name: `SCSS attributes`,
+      scope: `entity.other.attribute-name.attribute.scss`,
+      settings: {
+        foreground: porcelain
+      }
+    },
+    {
+      name: `SCSS block comments`,
+      scope: `comment.block.scss`,
+      settings: {
+        foreground: greyChateau
+      }
+    },
+    {
+      name: `SCSS brackets`,
+      scope: [
+        `punctuation.definition.attribute-selector.begin.bracket.square.scss`,
+        `punctuation.definition.attribute-selector.end.bracket.square.scss`,
+        `punctuation.definition.interpolation.begin.bracket.curly.scss`,
+        `punctuation.definition.interpolation.end.bracket.curly.scss`,
+        `punctuation.section.function.scss`,
+        `punctuation.separator.delimiter.scss`
+      ],
+      settings: {
+        fontStyle: `regular`,
+        foreground: iron
+      }
+    },
+
+    {
+      name: `SCSS functions`,
+      scope: `entity.name.function.scss`,
+      settings: {
+        foreground: treePoppy
+      }
+    },
+    {
+      name: `SCSS important`,
+      scope: `keyword.other.important.scss`,
+      settings: {
+        fontStyle: `bold`
+      }
+    },
+    {
+      name: `SCSS operators`,
+      scope: `keyword.operator.scss`,
+      settings: {
+        foreground: iron
+      }
+    },
+    {
+      name: `SCSS strings`,
+      scope: `meta.attribute-selector.scss`,
+      settings: {
+        foreground: matrix
+      }
+    },
+
+    // TypeScript tokens
+    // -------------------------------------------------------------------------
+    {
+      name: `TypeScript alias types`,
+      scope: `entity.name.type.alias.ts`,
+      settings: {
+        foreground: nepal
+      }
+    },
+    {
+      name: `TypeScript block comments`,
+      scope: [`comment.block.documentation.ts`, `comment.block.ts`],
+      settings: {
+        foreground: greyChateau
+      }
+    },
+    {
+      name: `TypeScript brackets`,
+      scope: [
+        `keyword.operator.type.annotation.ts`,
         `meta.brace.round.ts`,
         `meta.brace.square.ts`,
+        `punctuation.accessor.ts`,
         `punctuation.definition.block.ts`,
         `punctuation.definition.template-expression.begin.ts`,
         `punctuation.definition.template-expression.end.ts`
       ],
       settings: {
-        foreground: grey[2]
+        foreground: iron
       }
     },
-    // TypeScript class
     {
+      name: `TypeScript classes`,
       scope: [
         `entity.name.type.class.ts`,
         `entity.name.type.ts`,
         `support.class.builtin.ts`
       ],
       settings: {
-        foreground: blue[2]
+        foreground: smaltBlue
       }
     },
-    // TypeScript class (inherited)
     {
-      scope: `entity.other.inherited-class.ts`,
-      settings: {
-        foreground: blue[1]
-      }
-    },
-    // TypeScript comments (block)
-    {
-      scope: `comment.block.ts`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: grey[3]
-      }
-    },
-    // TypeScript comments (line)
-    {
-      scope: `comment.line.double-slash.ts`,
-      settings: {
-        fontStyle: `italic`
-      }
-    },
-    // TypeScript functions
-    {
+      name: `TypeScript functions`,
       scope: [
         `entity.name.function.ts`,
         `support.function.console.ts`,
-        `support.function.ts`
+        "support.function.ts"
       ],
       settings: {
-        foreground: orange[1]
+        foreground: treePoppy
       }
     },
-    // TypeScript interface
     {
+      name: `TypeScript inherited classes`,
+      scope: `entity.other.inherited-class.ts`,
+      settings: {
+        foreground: nepal
+      }
+    },
+    {
+      name: `TypeScript interface types`,
       scope: `entity.name.type.interface.ts`,
       settings: {
-        foreground: blue[1]
+        foreground: smaltBlue
       }
     },
-    // TypeScript key-value separators
     {
-      scope: `punctuation.separator.key-value.ts`,
-      settings: {
-        foreground: grey[2]
-      }
-    },
-    // TypeScript null
-    {
+      name: `TypeScript null`,
       scope: `constant.language.null.ts`,
       settings: {
-        fontStyle: `bold`,
-        foreground: grey[3]
+        foreground: greyChateau
       }
     },
-    // TypeScript object keys
     {
-      scope: `meta.object-literal.key.ts`,
-      settings: {
-        foreground: orange[2]
-      }
-    },
-    // TypeScript object property accessors
-    {
-      scope: `punctuation.accessor.ts`,
-      settings: {
-        foreground: grey[2]
-      }
-    },
-    // TypeScript operators
-    {
+      name: `TypeScript operators`,
       scope: [
         `keyword.operator.arithmetic.ts`,
+        `keyword.operator.assignment.compound.bitwise.ts`,
         `keyword.operator.assignment.compound.ts`,
         `keyword.operator.assignment.ts`,
         `keyword.operator.comparison.ts`,
@@ -872,211 +1418,70 @@ module.exports = {
         `keyword.operator.ternary.ts`
       ],
       settings: {
-        foreground: grey[2]
+        foreground: iron
       }
     },
-    // TypeScript storage
     {
-      scope: [
-        `keyword.control.export.ts`,
-        `keyword.control.from.ts`,
-        `keyword.control.import.ts`,
-        `keyword.operator.new.ts`,
-        `storage.modifier.ts`,
-        `storage.type.class.ts`,
-        `storage.type.function.arrow.ts`,
-        `storage.type.function.ts`,
-        `storage.type.interface.ts`,
-        `storage.type.ts`,
-        `storage.type.type.ts`,
-        `storage.type.property.ts`
-      ],
+      name: `TypeScript primitive types`,
+      scope: `support.type.primitive.ts`,
       settings: {
-        foreground: beige
+        foreground: nepal
       }
     },
-    // TypeScript super
     {
+      name: `TypeScript properties`,
+      scope: [`variable.object.property.ts`, `variable.other.property.ts`],
+      settings: {
+        fontStyle: `normal`,
+        foreground: ecstasy
+      }
+    },
+    {
+      name: `TypeScript regular expressions`,
+      scope: `string.regexp.ts`,
+      settings: {
+        foreground: nepal
+      }
+    },
+    {
+      name: `TypeScript super`,
       scope: `variable.language.super.ts`,
       settings: {
         fontStyle: `normal`,
-        foreground: grey[1]
+        foreground: porcelain
       }
     },
-    // TypeScript this
     {
+      name: `TypeScript this`,
       scope: `variable.language.this.ts`,
       settings: {
-        fontStyle: `bold`,
-        foreground: grey[2]
+        foreground: porcelain
       }
     },
-    // TypeScript types
     {
-      scope: [`entity.name.type.alias.ts`, `support.type.primitive.ts`],
-      settings: {
-        foreground: red[1]
-      }
-    },
-    // TypeScript undefined
-    {
+      name: `TypeScript undefined`,
       scope: `constant.language.undefined.ts`,
       settings: {
-        fontStyle: `bold`,
-        foreground: grey[3]
-      }
-    },
-    // TypeScript variables
-    {
-      scope: [
-        `entity.name.type.module.ts`,
-        `support.class.console.ts`,
-        `variable.other.constant.ts`,
-        `variable.other.object.ts`,
-        `variable.other.object.property.ts`,
-        `variable.other.readwrite.alias.ts`,
-        `variable.other.readwrite.ts`,
-        `variable.parameter.ts`
-      ],
-      settings: {
-        fontStyle: `italic`
+        foreground: greyChateau
       }
     },
 
-    // JSON keys, level 0
+    // XML tokens
+    // -------------------------------------------------------------------------
     {
-      scope: `support.type.property-name.json`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: orange[1]
-      }
-    },
-    // JSON keys, level 1
-    {
-      scope: `meta meta support.type.property-name.json`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: orange[2]
-      }
-    },
-    // JSON keys, level 2
-    {
-      scope: `meta meta meta meta support.type.property-name.json`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: orange[3]
-      }
-    },
-    // JSON keys, level 3
-    {
-      scope: `meta meta meta meta meta meta support.type.property-name.json`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: orange[1]
-      }
-    },
-    // JSON keys, level 4
-    {
-      scope: `meta meta meta meta meta meta meta meta support.type.property-name.json`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: orange[2]
-      }
-    },
-    // JSON keys, level 5
-    {
-      scope: `meta meta meta meta meta meta meta meta meta meta support.type.property-name.json`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: orange[3]
-      }
-    },
-    // JSON values
-    {
-      scope: [
-        `constant.language.json`,
-        `constant.numeric.json`,
-        `string.quoted.double.json`
-      ],
-      settings: {
-        foreground: beige
-      }
-    },
-
-    // Markdown bold
-    {
-      scope: `markup.bold.markdown`,
-      settings: {
-        fontStyle: `bold`,
-        foreground: orange[2]
-      }
-    },
-    // Markdown headings
-    {
-      scope: [
-        `heading.1.markdown`,
-        `heading.2.markdown`,
-        `heading.3.markdown`,
-        `heading.4.markdown`,
-        `heading.5.markdown`,
-        `heading.6.markdown`
-      ],
-      settings: {
-        foreground: orange[1]
-      }
-    },
-    // Markdown italics
-    {
-      scope: `markup.italic.markdown`,
-      settings: {
-        fontStyle: `italic`,
-        foreground: orange[2]
-      }
-    },
-    // Markdown link description
-    {
-      scope: [
-        `constant.other.reference.link.markdown`,
-        `string.other.link.description.markdown`
-      ],
-      settings: {
-        foreground: beige
-      }
-    },
-    // Markdown quotation
-    {
-      scope: `markup.quote.markdown`,
-      settings: {
-        foreground: red[1]
-      }
-    },
-    // XML attribute names
-    {
+      name: `XML attributes`,
       scope: `entity.other.attribute-name.localname.xml`,
       settings: {
-        foreground: grey[1]
+        foreground: porcelain
       }
     },
-    // XML attribute values
     {
-      scope: [`string.quoted.double.xml`, `string.quoted.single.xml`],
-      settings: {
-        foreground: orange[2]
-      }
-    },
-    // XML comments
-    {
-      scope: `comment.block.xml`,
-      settings: {
-        fontStyle: `italic`
-      }
-    },
-    // XML tags
-    {
+      name: `XML tags`,
       scope: `entity.name.tag.localname.xml`,
       settings: {
-        foreground: orange[1]
+        foreground: ecstasy
       }
     }
-  ]
+  ],
+  type
 };
