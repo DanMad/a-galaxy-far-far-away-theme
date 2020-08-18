@@ -1,14 +1,17 @@
-# Dependencies
-/node_modules/
+# Artwork
+*.sketch
 
-# Git
+# Dependencies
+node_modules
+
+# Ignore files
 .gitignore
 
-# OS
+# MacOS
 .DS_Store
 
 # Settings
-/.vscode/
+.vscode
 
 # Source
-/src/
+src

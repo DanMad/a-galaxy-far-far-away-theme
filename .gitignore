@@ -1,7 +1,10 @@
-# Dependencies
-/node_modules/
+# Artwork
+*.sketch
 
-# OS
+# Dependencies
+node_modules
+
+# MacOS
 .DS_Store
 
 # Packages
