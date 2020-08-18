@@ -34,7 +34,7 @@
     "build:the-empire-theme": "json-stringify src/the-empire-theme.js --out themes/the-empire-theme.json",
     "package": "npx vsce package",
     "publish": "npx vsce publish",
-    "sort": "sort-package-json"
+    "sort-package": "sort-package-json"
   },
   "contributes": {
     "themes": [
@@ -61,7 +61,7 @@
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "sort-package-json": "^1.44.0",
-    "vsce": "^1.74.0"
+    "vsce": "^1.78.0"
   },
   "engines": {
     "vscode": "^1.42.0"
