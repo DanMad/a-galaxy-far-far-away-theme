@@ -8,35 +8,34 @@ const type = `dark`;
 // Opacity
 // =============================================================================
 const hidden = `00`;
-const subtle = `26`;
-const pronounced = `4d`;
+const subtle = `1a`;
+const pronounced = `33`;
+const striking = `4d`;
 
 // Palette
 // =============================================================================
-const bigStone = `#182336`;
-const bitter = `#797d72`;
-const bittersweet = `#ff6e6e`;
+const bitterSweet = `#ff6e6e`;
 const black = `#010203`;
+const bud = `#9fa599`;
 const bunker = `#0a0f17`;
+const camouflageGreen = `#777d72`;
 const catskillWhite = `#fbfcfd`;
-const delta = `#a2a499`;
+const coralRed = `#fa3f3f`;
 const ebony = `#04070b`;
+const greenSpring = `#bec4b7`;
 const heather = `#becbd8`;
 const lynch = `#687f9c`;
 const milanoRed = `#af0505`;
-const mirage = `#101825`;
 const mystic = `#dee6ec`;
 const nepal = `#98abc1`;
 const red = `#f50a0a`;
-const sunsetOrange = `#fc4d4d`;
-const transparent = `${black}${hidden}`;
-const tide = `#bab9ae`;
+const transparent = black + hidden;
 
 // Exports
 // =============================================================================
 module.exports = {
   colors: {
-    // Activity bar | DONE
+    // Activity bar
     // -------------------------------------------------------------------------
     "activityBar.activeBackground": ebony,
     "activityBar.activeBorder": transparent,
@@ -47,25 +46,25 @@ module.exports = {
     "activityBar.dropBorder": milanoRed,
     "activityBar.foreground": mystic,
     "activityBar.inactiveForeground": nepal,
-    "activityBarBadge.background": sunsetOrange,
+    "activityBarBadge.background": coralRed,
     "activityBarBadge.foreground": black,
 
-    // Badge colors | DONE
+    // Badge colors
     // -------------------------------------------------------------------------
-    "badge.background": sunsetOrange,
+    "badge.background": coralRed,
     "badge.foreground": black,
 
-    // Base colors | DONE
+    // Base colors
     // -------------------------------------------------------------------------
-    // descriptionForeground: ``,
-    // errorForeground: ``,
-    focusBorder: milanoRed,
+    descriptionForeground: heather,
+    errorForeground: milanoRed,
+    focusBorder: transparent,
     foreground: heather,
-    "icon.foreground": heather,
+    "icon.foreground": nepal,
     "selection.background": milanoRed,
     "widget.shadow": transparent,
 
-    // Breadcrumbs colors | DONE
+    // Breadcrumbs colors
     // -------------------------------------------------------------------------
     "breadcrumb.activeSelectionForeground": mystic,
     "breadcrumb.background": black,
@@ -73,74 +72,66 @@ module.exports = {
     "breadcrumb.foreground": lynch,
     "breadcrumbPicker.background": bunker,
 
-    // Button control | DONE
+    // Button control
     // -------------------------------------------------------------------------
-    "button.background": bitter,
+    "button.background": camouflageGreen,
     "button.foreground": black,
-    "button.hoverBackground": tide,
-    // 'button.secondaryBackground': ``,
-    // 'button.secondaryForeground': ``,
-    // 'button.secondaryHoverBackground': ``,
+    "button.hoverBackground": greenSpring,
     "checkbox.background": black,
     "checkbox.border": milanoRed,
     "checkbox.foreground": nepal,
 
-    // Contrast colors | DONE
+    // Debug colors
     // -------------------------------------------------------------------------
-    // contrastActiveBorder: ``,
-    // contrastBorder: ``,
+    "debugTokenExpression.boolean": bud,
+    "debugTokenExpression.error": milanoRed,
+    "debugTokenExpression.name": red,
+    "debugTokenExpression.number": bud,
+    "debugTokenExpression.string": bud,
+    "debugTokenExpression.value": bud,
+    "debugToolBar.background": bunker,
+    "debugToolBar.border": bunker,
+    "debugView.exceptionLabelBackground": red,
+    "debugView.exceptionLabelForeground": black,
+    "debugView.stateLabelBackground": coralRed,
+    "debugView.stateLabelForeground": black,
+    "debugView.valueChangedHighlight": catskillWhite,
+    "editor.focusedStackFrameHighlightBackground": bunker,
+    "editor.stackFrameHighlightBackground": ebony,
 
-    // Debug colors | DONE
-    // -------------------------------------------------------------------------
-    // 'debugTokenExpression.boolean': ``,
-    // 'debugTokenExpression.error': ``,
-    // 'debugTokenExpression.name': ``,
-    // 'debugTokenExpression.number': ``,
-    // 'debugTokenExpression.string': ``,
-    // 'debugTokenExpression.value': ``,
-    "debugToolBar.background": mirage,
-    "debugToolBar.border": mirage,
-    // 'debugView.exceptionLabelBackground': ``,
-    // 'debugView.exceptionLabelForeground': ``,
-    // 'debugView.stateLabelBackground': ``,
-    // 'debugView.stateLabelForeground': ``,
-    // 'debugView.valueChangedHighlight': ``,
-    // 'editor.focusedStackFrameHighlightBackground': ``,
-    // 'editor.stackFrameHighlightBackground': ``,
-
-    // Debug icons colors | DONE
+    // Debug icons colors
     // -------------------------------------------------------------------------
     "debugConsole.errorForeground": milanoRed,
     "debugConsole.infoForeground": catskillWhite,
     "debugConsole.sourceForeground": nepal,
-    "debugConsole.warningForeground": milanoRed,
-    "debugConsoleInputIcon.foreground": catskillWhite,
-    "debugIcon.breakpointCurrentStackframeForeground": catskillWhite,
-    "debugIcon.breakpointDisabledForeground": catskillWhite,
-    "debugIcon.breakpointForeground": catskillWhite,
-    "debugIcon.breakpointStackframeForeground": catskillWhite,
-    "debugIcon.breakpointUnverifiedForeground": catskillWhite,
-    "debugIcon.continueForeground": catskillWhite,
-    "debugIcon.disconnectForeground": catskillWhite,
+    "debugConsole.warningForeground": bitterSweet,
+    "debugConsoleInputIcon.foreground": nepal,
+    "debugIcon.breakpointCurrentStackframeForeground": nepal,
+    "debugIcon.breakpointDisabledForeground": nepal,
+    "debugIcon.breakpointForeground": nepal,
+    "debugIcon.breakpointStackframeForeground": nepal,
+    "debugIcon.breakpointUnverifiedForeground": nepal,
+    "debugIcon.continueForeground": nepal,
+    "debugIcon.disconnectForeground": nepal,
     "debugIcon.pauseForeground": catskillWhite,
-    "debugIcon.restartForeground": tide,
-    "debugIcon.stepBackForeground": catskillWhite,
-    "debugIcon.stepIntoForeground": catskillWhite,
-    "debugIcon.stepOverForeground": catskillWhite,
-    "debugIcon.stepOutForeground": catskillWhite,
-    "debugIcon.startForeground": catskillWhite,
-    "debugIcon.stopForeground": red,
+    "debugIcon.restartForeground": camouflageGreen,
+    "debugIcon.stepBackForeground": nepal,
+    "debugIcon.stepIntoForeground": nepal,
+    "debugIcon.stepOverForeground": nepal,
+    "debugIcon.stepOutForeground": nepal,
+    "debugIcon.startForeground": nepal,
+    "debugIcon.stopForeground": milanoRed,
 
-    // Diff editor colors | DONE
+    // Diff editor colors
     // -------------------------------------------------------------------------
     "diffEditor.border": transparent,
-    "diffEditor.diagonalFill": transparent,
-    "diffEditor.insertedTextBackground": `${bitter}${subtle}`,
-    // 'diffEditor.insertedTextBorder': ``,
-    "diffEditor.removedTextBackground": `${milanoRed}${subtle}`,
-    // 'diffEditor.removedTextBorder': ``,
+    "diffEditor.diagonalFill": lynch + striking,
+    "diffEditor.insertedTextBackground": camouflageGreen + pronounced,
+    "diffEditor.insertedTextBorder": transparent,
+    "diffEditor.removedTextBackground": milanoRed + pronounced,
+    "diffEditor.removedTextBorder": transparent,
 
-    // Dropdown control | DONE
+    // Dropdown control
     // -------------------------------------------------------------------------
     "dropdown.background": black,
     "dropdown.border": milanoRed,
@@ -150,351 +141,310 @@ module.exports = {
     // Editor colors
     // -------------------------------------------------------------------------
     "editor.background": black,
-    "editor.findMatchBackground": mirage,
+    "editor.findMatchBackground": lynch + pronounced,
     "editor.findMatchBorder": transparent,
-    "editor.findMatchHighlightBackground": bigStone,
+    "editor.findMatchHighlightBackground": lynch + pronounced,
     "editor.findMatchHighlightBorder": transparent,
-    // 'editor.findRangeHighlightBackground': ``,
-    // 'editor.findRangeHighlightBorder': ``,
-    // 'editor.foldBackground': ``,
+    "editor.findRangeHighlightBackground": lynch + pronounced,
+    "editor.findRangeHighlightBorder": transparent,
+    "editor.foldBackground": transparent,
     "editor.foreground": heather,
-    "editor.hoverHighlightBackground": mirage,
-    "editor.inactiveSelectionBackground": bunker,
+    "editor.hoverHighlightBackground": lynch + pronounced,
+    "editor.inactiveSelectionBackground": transparent,
     "editor.lineHighlightBackground": bunker,
     "editor.lineHighlightBorder": transparent,
-    "editor.rangeHighlightBackground": mirage,
-    // 'editor.rangeHighlightBorder': ``,
-    "editor.selectionBackground": mirage,
-    // 'editor.selectionForeground': ``,
-    "editor.selectionHighlightBackground": bigStone,
+    "editor.rangeHighlightBackground": lynch + subtle,
+    "editor.rangeHighlightBorder": transparent,
+    "editor.selectionBackground": lynch + striking,
+    "editor.selectionHighlightBackground": lynch + pronounced,
     "editor.selectionHighlightBorder": transparent,
-    // 'editor.symbolHighlightBackground': ``,
-    // 'editor.symbolHighlightBorder': ``,
-    "editor.wordHighlightBackground": mirage,
-    // 'editor.wordHighlightBorder': ``,
-    "editor.wordHighlightStrongBackground": bigStone,
-    // 'editor.wordHighlightStrongBorder': ``,
-    "editorBracketMatch.background": transparent,
-    "editorBracketMatch.border": lynch,
-    // 'editorCursor.background': ``,
+    "editor.symbolHighlightBackground": lynch + pronounced,
+    "editor.symbolHighlightBorder": transparent,
+    "editor.wordHighlightBackground": lynch + pronounced,
+    "editor.wordHighlightBorder": transparent,
+    "editor.wordHighlightStrongBackground": lynch + pronounced,
+    "editor.wordHighlightStrongBorder": transparent,
+    "editorBracketMatch.background": lynch + pronounced,
+    "editorBracketMatch.border": transparent,
+    "editorCursor.background": transparent,
     "editorCursor.foreground": nepal,
-    // 'editorCodeLens.foreground': ``,
-    // 'editorError.border': ``,
-    // 'editorError.foreground': ``,
-    "editorGutter.addedBackground": bitter,
+    "editorCodeLens.foreground": lynch,
+    "editorError.border": transparent,
+    "editorError.foreground": milanoRed,
+    "editorGutter.addedBackground": camouflageGreen,
     "editorGutter.background": transparent,
-    // 'editorGutter.commentRangeForeground': ``,
+    "editorGutter.commentRangeForeground": transparent,
     "editorGutter.deletedBackground": milanoRed,
-    // 'editorGutter.foldingControlForeground': ``,
+    "editorGutter.foldingControlForeground": nepal,
     "editorGutter.modifiedBackground": catskillWhite,
-    // 'editorHint.border': ``,
-    // 'editorHint.foreground': ``,
-    // 'editorIndentGuide.activeBackground': ``,
-    // 'editorIndentGuide.background': ``,
-    // 'editorInfo.border': ``,
-    // 'editorInfo.foreground': ``,
-    "editorLineNumber.activeForeground": mystic,
-    "editorLineNumber.foreground": nepal,
-    // 'editorLightBulb.foreground': ``,
-    // 'editorLightBulbAutoFix.foreground': ``,
-    // 'editorLink.activeForeground': ``,
-    "editorOverviewRuler.addedForeground": bitter,
+    "editorHint.border": transparent,
+    "editorHint.foreground": greenSpring,
+    "editorInfo.border": transparent,
+    "editorInfo.foreground": catskillWhite,
+    "editorLineNumber.activeForeground": nepal,
+    "editorLineNumber.foreground": lynch,
+    "editorLightBulb.foreground": coralRed,
+    "editorLightBulbAutoFix.foreground": coralRed,
+    "editorLink.activeForeground": greenSpring,
+    "editorOverviewRuler.addedForeground": camouflageGreen,
     "editorOverviewRuler.background": transparent,
     "editorOverviewRuler.border": transparent,
-    // 'editorOverviewRuler.bracketMatchForeground': ``,
+    "editorOverviewRuler.bracketMatchForeground": lynch + pronounced,
     "editorOverviewRuler.deletedForeground": milanoRed,
-    // 'editorOverviewRuler.errorForeground': ``,
-    // 'editorOverviewRuler.findMatchForeground': ``,
-    // 'editorOverviewRuler.infoForeground': ``,
+    "editorOverviewRuler.errorForeground": milanoRed,
+    "editorOverviewRuler.findMatchForeground": lynch + pronounced,
+    "editorOverviewRuler.infoForeground": catskillWhite,
     "editorOverviewRuler.modifiedForeground": catskillWhite,
-    // 'editorOverviewRuler.rangeHighlightForeground': ``,
-    // 'editorOverviewRuler.selectionHighlightForeground': ``,
-    // 'editorOverviewRuler.warningForeground': ``,
-    // 'editorOverviewRuler.wordHighlightForeground': ``,
-    // 'editorOverviewRuler.wordHighlightStrongForeground': ``,
-    // 'editorUnnecessaryCode.border': ``,
-    // 'editorUnnecessaryCode.opacity': ``,
-    // 'editorRuler.foreground': ``,
-    // 'editorWarning.border': ``,
-    // 'editorWarning.foreground': ``,
-    // 'editorWhitespace.foreground': ``,
-    // 'problemsErrorIcon.foreground': ``,
-    // 'problemsInfoIcon.foreground': ``,
-    // 'problemsWarningIcon.foreground': ``,
-    // 'searchEditor.findMatchBackground': ``,
-    // 'searchEditor.findMatchBorder': ``,
+    "editorOverviewRuler.rangeHighlightForeground": lynch + pronounced,
+    "editorOverviewRuler.selectionHighlightForeground": lynch + striking,
+    "editorOverviewRuler.warningForeground": bitterSweet,
+    "editorOverviewRuler.wordHighlightForeground": lynch + pronounced,
+    "editorOverviewRuler.wordHighlightStrongForeground": lynch + pronounced,
+    "editorUnnecessaryCode.border": transparent,
+    "editorUnnecessaryCode.opacity": catskillWhite + striking,
+    "editorRuler.foreground": heather,
+    "editorWarning.border": transparent,
+    "editorWarning.foreground": bitterSweet,
+    "editorWhitespace.foreground": lynch + striking,
+    "problemsErrorIcon.foreground": milanoRed,
+    "problemsInfoIcon.foreground": catskillWhite,
+    "problemsWarningIcon.foreground": bitterSweet,
+    "searchEditor.findMatchBackground": lynch + pronounced,
+    "searchEditor.findMatchBorder": transparent,
     "searchEditor.textInputBorder": milanoRed,
 
     // Editor group and tabs
     // -------------------------------------------------------------------------
-    "editorGroup.border": black,
-    // 'editorGroup.dropBackground': ``,
+    "editorGroup.border": bunker,
+    "editorGroup.dropBackground": milanoRed,
     "editorGroup.emptyBackground": ebony,
-    // 'editorGroup.focusedEmptyBorder': ``,
-    // 'editorGroupHeader.border': ``,
-    // 'editorGroupHeader.noTabsBackground': ``,
+    "editorGroup.focusedEmptyBorder": milanoRed,
+    "editorGroupHeader.border": transparent,
     "editorGroupHeader.tabsBackground": bunker,
     "editorGroupHeader.tabsBorder": black,
-    // 'editorPane.background': ``,
     "tab.activeBackground": black,
     "tab.activeBorder": black,
     "tab.activeBorderTop": black,
-    "tab.activeForeground": catskillWhite,
-    // 'tab.activeModifiedBorder': ``,
+    "tab.activeForeground": mystic,
+    "tab.activeModifiedBorder": bunker,
     "tab.border": bunker,
     "tab.hoverBackground": black,
-    "tab.hoverBorder": transparent,
-    // 'tab.hoverForeground': ``,
+    "tab.hoverBorder": bunker,
+    "tab.hoverForeground": mystic,
     "tab.inactiveBackground": ebony,
-    "tab.inactiveForeground": heather,
-    // 'tab.inactiveModifiedBorder': ``,
+    "tab.inactiveForeground": nepal,
+    "tab.inactiveModifiedBorder": bunker,
     "tab.unfocusedActiveBackground": black,
     "tab.unfocusedActiveBorderTop": black,
     "tab.unfocusedActiveBorder": black,
     "tab.unfocusedActiveForeground": mystic,
-    // 'tab.unfocusedActiveModifiedBorder': ``,
+    "tab.unfocusedActiveModifiedBorder": bunker,
     "tab.unfocusedHoverBackground": black,
-    "tab.unfocusedHoverBorder": transparent,
-    // 'tab.unfocusedHoverForeground': ``,
-    // 'tab.unfocusedInactiveBackground': ``,
+    "tab.unfocusedHoverBorder": bunker,
+    "tab.unfocusedHoverForeground": mystic,
+    "tab.unfocusedInactiveBackground": ebony,
     "tab.unfocusedInactiveForeground": nepal,
-    // 'tab.unfocusedInactiveModifiedBorder': ``,
+    "tab.unfocusedInactiveModifiedBorder": bunker,
 
     // Editor widget colors
     // -------------------------------------------------------------------------
-    // 'debugExceptionWidget.background': ``,
-    // 'debugExceptionWidget.border': ``,
-    // 'editorHoverWidget.background': ``,
-    // 'editorHoverWidget.border': ``,
-    // 'editorHoverWidget.foreground': ``,
-    // 'editorHoverWidget.statusBarBackground': ``,
-    // 'editorMarkerNavigation.background': ``,
-    // 'editorMarkerNavigationError.background': ``,
-    // 'editorMarkerNavigationInfo.background': ``,
-    // 'editorMarkerNavigationWarning.background': ``,
-    // 'editorSuggestWidget.background': ``,
-    // 'editorSuggestWidget.border': ``,
-    // 'editorSuggestWidget.foreground': ``,
-    // 'editorSuggestWidget.highlightForeground': ``,
-    // 'editorSuggestWidget.selectedBackground': ``,
+    "debugExceptionWidget.background": bunker,
+    "debugExceptionWidget.border": milanoRed,
+    "editorHoverWidget.background": bunker,
+    "editorHoverWidget.border": milanoRed,
+    "editorHoverWidget.foreground": nepal,
+    "editorHoverWidget.statusBarBackground": bunker,
+    "editorMarkerNavigation.background": heather,
+    "editorMarkerNavigationError.background": milanoRed,
+    "editorMarkerNavigationInfo.background": catskillWhite,
+    "editorMarkerNavigationWarning.background": bitterSweet,
+    "editorSuggestWidget.background": bunker,
+    "editorSuggestWidget.border": milanoRed,
+    "editorSuggestWidget.foreground": nepal,
+    "editorSuggestWidget.highlightForeground": mystic,
+    "editorSuggestWidget.selectedBackground": black,
     "editorWidget.background": bunker,
     "editorWidget.border": milanoRed,
-    "editorWidget.foreground": heather,
-    // 'editorWidget.resizeBorder': ``,
+    "editorWidget.foreground": nepal,
+    "editorWidget.resizeBorder": milanoRed,
 
-    // Extension colors | DONE
+    // Extension colors
     // -------------------------------------------------------------------------
-    "extensionButton.prominentBackground": heather,
+    "extensionButton.prominentBackground": red,
     "extensionButton.prominentForeground": black,
-    "extensionButton.prominentHoverBackground": mystic,
-    "extensionBadge.remoteBackground": red,
+    "extensionButton.prominentHoverBackground": bitterSweet,
+    "extensionBadge.remoteBackground": coralRed,
     "extensionBadge.remoteForeground": black,
 
-    // Git colors | DONE
+    // Git colors
     // -------------------------------------------------------------------------
-    "gitDecoration.addedResourceForeground": bitter,
+    "gitDecoration.addedResourceForeground": camouflageGreen,
     "gitDecoration.conflictingResourceForeground": red,
     "gitDecoration.deletedResourceForeground": milanoRed,
     "gitDecoration.ignoredResourceForeground": lynch,
     "gitDecoration.modifiedResourceForeground": catskillWhite,
-    "gitDecoration.submoduleResourceForeground": heather,
-    "gitDecoration.untrackedResourceForeground": tide,
+    "gitDecoration.submoduleResourceForeground": nepal,
+    "gitDecoration.untrackedResourceForeground": heather,
 
-    // Input control | DONE
+    // Input control
     // -------------------------------------------------------------------------
     "input.background": black,
     "input.border": milanoRed,
     "input.foreground": nepal,
     "input.placeholderForeground": lynch,
     "inputOption.activeBackground": bunker,
-    "inputOption.activeBorder": milanoRed,
-    "inputOption.activeForeground": heather,
-    // 'inputValidation.errorBackground': ``,
-    // 'inputValidation.errorBorder': ``,
-    // 'inputValidation.errorForeground': ``,
-    // 'inputValidation.infoBackground': ``,
-    // 'inputValidation.infoBorder': ``,
-    // 'inputValidation.infoForeground': ``,
+    "inputOption.activeBorder": transparent,
+    "inputOption.activeForeground": mystic,
+    "inputValidation.errorBackground": black,
+    "inputValidation.errorBorder": milanoRed,
+    "inputValidation.errorForeground": milanoRed,
+    "inputValidation.infoBackground": black,
+    "inputValidation.infoBorder": milanoRed,
+    "inputValidation.infoForeground": nepal,
 
-    // Integrated terminal colors | DONE
+    // Integrated terminal colors
     // -------------------------------------------------------------------------
-    "terminal.ansiBlack": bitter,
-    "terminal.ansiBlue": bitter,
-    "terminal.ansiBrightBlack": bitter,
-    "terminal.ansiBrightBlue": bitter,
-    "terminal.ansiBrightCyan": tide,
-    "terminal.ansiBrightGreen": tide,
-    "terminal.ansiBrightMagenta": sunsetOrange,
-    "terminal.ansiBrightRed": sunsetOrange,
+    "terminal.ansiBlack": camouflageGreen,
+    "terminal.ansiBlue": camouflageGreen,
+    "terminal.ansiBrightBlack": camouflageGreen,
+    "terminal.ansiBrightBlue": camouflageGreen,
+    "terminal.ansiBrightCyan": greenSpring,
+    "terminal.ansiBrightGreen": greenSpring,
+    "terminal.ansiBrightMagenta": red,
+    "terminal.ansiBrightRed": red,
     "terminal.ansiBrightWhite": catskillWhite,
     "terminal.ansiBrightYellow": catskillWhite,
-    "terminal.ansiCyan": tide,
-    "terminal.ansiGreen": tide,
-    "terminal.ansiMagenta": sunsetOrange,
-    "terminal.ansiRed": sunsetOrange,
+    "terminal.ansiCyan": greenSpring,
+    "terminal.ansiGreen": greenSpring,
+    "terminal.ansiMagenta": red,
+    "terminal.ansiRed": red,
     "terminal.ansiWhite": catskillWhite,
     "terminal.ansiYellow": catskillWhite,
-    "terminal.background": black,
+    "terminal.background": ebony,
     "terminal.border": transparent,
     "terminal.foreground": nepal,
-    "terminal.selectionBackground": `${lynch}${subtle}`,
+    "terminal.selectionBackground": lynch + striking,
     "terminalCursor.background": transparent,
     "terminalCursor.foreground": nepal,
 
-    // Lists and trees | DONE
+    // Lists and trees
     // -------------------------------------------------------------------------
-    // 'list.activeSelectionBackground': black,
-    // 'list.activeSelectionForeground': mystic,
-    // 'list.deemphasizedForeground': ``,
-    // 'list.dropBackground': ``,
-    // 'list.errorForeground': ``,
-    // 'list.filterMatchBackground': ``,
-    // 'list.filterMatchBorder': ``,
-    // 'list.focusBackground': ``,
-    // 'list.focusForeground': ``,
-    // 'list.highlightForeground': ``,
-    // 'list.hoverBackground': bunker,
-    // 'list.hoverForeground': heather,
-    // 'list.inactiveFocusBackground': ``,
-    // 'list.inactiveSelectionBackground': black,
-    // 'list.inactiveSelectionForeground': mystic,
-    // 'list.invalidItemForeground': ``,
-    // 'list.warningForeground': ``,
-    // 'listFilterWidget.background': ``,
-    // 'listFilterWidget.noMatchesOutline': ``,
-    // 'listFilterWidget.outline': ``,
+    "list.activeSelectionBackground": black,
+    "list.activeSelectionForeground": mystic,
+    "list.deemphasizedForeground": lynch,
+    "list.dropBackground": milanoRed,
+    "list.errorForeground": milanoRed,
+    "list.filterMatchBackground": lynch + pronounced,
+    "list.filterMatchBorder": transparent,
+    "list.focusBackground": black,
+    "list.focusForeground": mystic,
+    "list.highlightForeground": mystic,
+    "list.hoverBackground": bunker,
+    "list.hoverForeground": mystic,
+    "list.inactiveFocusBackground": black,
+    "list.inactiveSelectionBackground": black,
+    "list.inactiveSelectionForeground": mystic,
+    "list.invalidItemForeground": lynch,
+    "list.warningForeground": bitterSweet,
+    "listFilterWidget.background": bunker,
+    "listFilterWidget.noMatchesOutline": milanoRed,
+    "listFilterWidget.outline": milanoRed,
     "tree.indentGuidesStroke": lynch,
 
     // Menu bar colors
     // -------------------------------------------------------------------------
-    // 'menu.background': `#ff0`,
-    // 'menu.border': `#ff0`,
-    // 'menu.foreground': `#f0f`,
-    // 'menu.selectionBackground': ``,
-    // 'menu.selectionBorder': ``,
-    // 'menu.selectionForeground': ``,
-    // 'menu.separatorBackground': ``,
-    // 'menubar.selectionBackground': ``,
-    // 'menubar.selectionBorder': ``,
-    // 'menubar.selectionForeground': ``,
+    "menu.background": ebony,
+    "menu.border": ebony,
+    "menu.foreground": nepal,
+    "menu.selectionBackground": bunker,
+    "menu.selectionBorder": bunker,
+    "menu.selectionForeground": mystic,
+    "menu.separatorBackground": transparent,
+    "menubar.selectionBackground": bunker,
+    "menubar.selectionBorder": bunker,
+    "menubar.selectionForeground": mystic,
 
-    // Merge conflicts colors | DONE
+    // Merge conflicts colors
     // -------------------------------------------------------------------------
     "editorOverviewRuler.commonContentForeground": heather,
     "editorOverviewRuler.currentContentForeground": heather,
     "editorOverviewRuler.incomingContentForeground": heather,
     "merge.border": transparent,
-    "merge.commonContentBackground": `${catskillWhite}${subtle}`,
-    "merge.commonHeaderBackground": `${catskillWhite}${pronounced}`,
-    "merge.currentContentBackground": `${red}${subtle}`,
-    "merge.currentHeaderBackground": `${red}${pronounced}`,
-    "merge.incomingContentBackground": `${tide}${subtle}`,
-    "merge.incomingHeaderBackground": `${tide}${pronounced}`,
+    "merge.commonContentBackground": catskillWhite + subtle,
+    "merge.commonHeaderBackground": catskillWhite + pronounced,
+    "merge.currentContentBackground": camouflageGreen + pronounced,
+    "merge.currentHeaderBackground": camouflageGreen + striking,
+    "merge.incomingContentBackground": greenSpring + pronounced,
+    "merge.incomingHeaderBackground": greenSpring + striking,
 
     // Minimap
     // -------------------------------------------------------------------------
-    // 'minimap.background': ``,
-    // 'minimap.errorHighlight': ``,z
-    // 'minimap.findMatchHighlight': ``,
-    // 'minimap.selectionHighlight': ``,
-    // 'minimap.warningHighlight': ``,
-    // 'minimapGutter.addedBackground': ``,
-    // 'minimapGutter.deletedBackground': ``,
-    // 'minimapGutter.modifiedBackground': ``,
-    // 'minimapSlider.activeBackground': ``,
-    // 'minimapSlider.background': ``,
-    // 'minimapSlider.hoverBackground': ``,
+    "minimap.background": ebony,
+    "minimap.errorHighlight": milanoRed,
+    "minimap.findMatchHighlight": lynch + pronounced,
+    "minimap.selectionHighlight": lynch + striking,
+    "minimap.warningHighlight": bitterSweet,
+    "minimapGutter.addedBackground": camouflageGreen,
+    "minimapGutter.deletedBackground": milanoRed,
+    "minimapGutter.modifiedBackground": catskillWhite,
+    "minimapSlider.activeBackground": lynch + striking,
+    "minimapSlider.background": lynch + subtle,
+    "minimapSlider.hoverBackground": lynch + pronounced,
 
-    // Notebook colors
+    // Notification colors
     // -------------------------------------------------------------------------
-    // 'notebook.cellBorderColor': ``,
-    // 'notebook.cellHoverBackground': ``,
-    // 'notebook.cellInsertionIndicator': ``,
-    // 'notebook.cellStatusBarItemHoverBackground': ``,
-    // 'notebook.cellToolbarSeperator': ``,
-    // 'notebook.focusedCellBackground': ``,
-    // 'notebook.focusedCellBorder': ``,
-    // 'notebook.focusedCellShadow': ``,
-    // 'notebook.focusedEditorBorder': ``,
-    // 'notebook.outputContainerBackgroundColor': ``,
-    // 'notebookScrollbarSlider.activeBackground': ``,
-    // 'notebookScrollbarSlider.background': ``,
-    // 'notebookScrollbarSlider.hoverBackground': ``,
-    // 'notebookStatusErrorIcon.foreground': ``,
-    // 'notebookStatusRunningIcon.foreground': ``,
-    // 'notebookStatusSuccessIcon.foreground': ``,
-
-    // Notification colors | DONE
-    // -------------------------------------------------------------------------
-    "notificationCenter.border": transparent,
+    "notificationCenter.border": bunker,
     "notificationCenterHeader.background": bunker,
     "notificationCenterHeader.foreground": mystic,
-    // 'notificationLink.foreground': ``,
+    "notificationLink.foreground": camouflageGreen,
     "notifications.background": bunker,
-    "notifications.border": transparent,
+    "notifications.border": bunker,
     "notifications.foreground": nepal,
     "notificationsErrorIcon.foreground": milanoRed,
     "notificationsInfoIcon.foreground": catskillWhite,
-    "notificationsWarningIcon.foreground": milanoRed,
-    "notificationToast.border": transparent,
+    "notificationsWarningIcon.foreground": bitterSweet,
+    "notificationToast.border": bunker,
 
-    // Panel colors | DONE
+    // Panel colors
     // -------------------------------------------------------------------------
-    "panel.background": black,
-    "panel.border": bunker,
+    "panel.background": bunker,
+    "panel.border": transparent,
     "panel.dropBackground": transparent,
     "panel.dropBorder": milanoRed,
-    // 'panelInput.border': ``,
-    // 'panelSection.border': ``,
-    // 'panelSection.dropBackground': ``,
-    // 'panelSectionHeader.background': ``,
-    // 'panelSectionHeader.border': ``,
-    // 'panelSectionHeader.foreground': ``,
     "panelTitle.activeBorder": transparent,
     "panelTitle.activeForeground": mystic,
     "panelTitle.inactiveForeground": nepal,
 
-    // Peek view colors | DONE
+    // Peek view colors
     // -------------------------------------------------------------------------
     "peekView.border": bunker,
-    // 'peekViewEditor.background': ``,
-    // 'peekViewEditor.matchHighlightBackground': ``,
-    // 'peekViewEditor.matchHighlightBorder': ``,
-    // 'peekViewEditorGutter.background': ``,
-    // 'peekViewResult.background': ``,
-    // 'peekViewResult.fileForeground': ``,
-    // 'peekViewResult.lineForeground': ``,
-    // 'peekViewResult.matchHighlightBackground': ``,
-    // 'peekViewResult.selectionBackground': ``,
-    // 'peekViewResult.selectionForeground': ``,
     "peekViewTitle.background": bunker,
-    "peekViewTitleDescription.foreground": heather,
+    "peekViewTitleDescription.foreground": nepal,
     "peekViewTitleLabel.foreground": mystic,
 
-    // Preview colors | DONE
+    // Preview colors
     // -------------------------------------------------------------------------
-    "imagePreview.border": milanoRed,
+    "imagePreview.border": transparent,
 
-    // Progress bar | DONE
+    // Progress bar
     // -------------------------------------------------------------------------
     "progressBar.background": milanoRed,
 
-    // Quick picker colors | DONE
+    // Quick picker colors
     // -------------------------------------------------------------------------
-    "pickerGroup.border": milanoRed,
-    "pickerGroup.foreground": nepal,
+    "pickerGroup.border": transparent,
+    "pickerGroup.foreground": mystic,
     "quickInput.background": ebony,
     "quickInput.foreground": nepal,
-    "quickInputTitle.background": heather,
 
-    // Scrollbar control | DONE
+    // Scrollbar control
     // -------------------------------------------------------------------------
     "scrollbar.shadow": transparent,
-    "scrollbarSlider.activeBackground": `${lynch}${pronounced}`,
-    "scrollbarSlider.background": `${lynch}${subtle}`,
-    "scrollbarSlider.hoverBackground": `${lynch}${pronounced}`,
+    "scrollbarSlider.activeBackground": lynch + striking,
+    "scrollbarSlider.background": lynch + subtle,
+    "scrollbarSlider.hoverBackground": lynch + pronounced,
 
-    // Settings editor colors | DONE
+    // Settings editor colors
     // -------------------------------------------------------------------------
     "settings.checkboxBackground": black,
     "settings.checkboxBorder": milanoRed,
@@ -502,7 +452,7 @@ module.exports = {
     "settings.dropdownBackground": black,
     "settings.dropdownBorder": milanoRed,
     "settings.dropdownForeground": nepal,
-    "settings.dropdownListBorder": transparent,
+    "settings.dropdownListBorder": bunker,
     "settings.headerForeground": mystic,
     "settings.modifiedItemIndicator": catskillWhite,
     "settings.numberInputBackground": black,
@@ -512,10 +462,10 @@ module.exports = {
     "settings.textInputBorder": milanoRed,
     "settings.textInputForeground": nepal,
 
-    // Side bar | DONE
+    // Side bar
     // -------------------------------------------------------------------------
     "sideBar.background": ebony,
-    "sideBar.border": transparent,
+    "sideBar.border": black,
     "sideBar.dropBackground": transparent,
     "sideBar.foreground": nepal,
     "sideBarSectionHeader.background": transparent,
@@ -523,20 +473,16 @@ module.exports = {
     "sideBarSectionHeader.foreground": heather,
     "sideBarTitle.foreground": mystic,
 
-    // Snippets colors | DONE
+    // Snippets colors
     // -------------------------------------------------------------------------
-    // 'editor.snippetFinalTabstopHighlightBackground': ``,
-    "editor.snippetFinalTabstopHighlightBorder": transparent,
-    // 'editor.snippetTabstopHighlightBackground': ``,
-    "editor.snippetTabstopHighlightBorder": transparent,
+    "editor.snippetFinalTabstopHighlightBackground": lynch + pronounced,
+    "editor.snippetFinalTabstopHighlightBorder": milanoRed,
+    "editor.snippetTabstopHighlightBackground": lynch + pronounced,
+    "editor.snippetTabstopHighlightBorder": milanoRed,
 
-    // Source control colors | DONE
+    // Status bar colors
     // -------------------------------------------------------------------------
-    "scm.providerBorder": transparent,
-
-    // Status bar colors | DONE
-    // -------------------------------------------------------------------------
-    "statusBar.background": bitter,
+    "statusBar.background": camouflageGreen,
     "statusBar.border": transparent,
     "statusBar.foreground": black,
     "statusBar.debuggingBackground": catskillWhite,
@@ -545,76 +491,71 @@ module.exports = {
     "statusBar.noFolderBackground": milanoRed,
     "statusBar.noFolderBorder": transparent,
     "statusBar.noFolderForeground": mystic,
-    "statusBarItem.activeBackground": tide,
-    "statusBarItem.hoverBackground": tide,
-    // 'statusBarItem.prominentBackground': ``,
-    // 'statusBarItem.prominentForeground': ``,
-    // 'statusBarItem.prominentHoverBackground': ``,
-    // 'statusBarItem.remoteBackground': ``,
-    // 'statusBarItem.remoteForeground': ``,
+    // "statusBarItem.activeBackground": greenSpring,
+    // "statusBarItem.hoverBackground": greenSpring,
 
-    // Symbol icons colors | DONE
+    // Symbol icons colors
     // -------------------------------------------------------------------------
-    // 'symbolIcon.arrayForeground': ``,
-    // 'symbolIcon.booleanForeground': ``,
-    // 'symbolIcon.classForeground': ``,
-    // 'symbolIcon.colorForeground': ``,
-    // 'symbolIcon.constantForeground': ``,
-    // 'symbolIcon.constructorForeground': ``,
-    // 'symbolIcon.enumeratorForeground': ``,
-    // 'symbolIcon.enumeratorMemberForeground': ``,
-    // 'symbolIcon.eventForeground': ``,
-    // 'symbolIcon.fieldForeground': ``,
-    // 'symbolIcon.fileForeground': ``,
-    // 'symbolIcon.folderForeground': ``,
-    // 'symbolIcon.functionForeground': ``,
-    // 'symbolIcon.interfaceForeground': ``,
-    // 'symbolIcon.keyForeground': ``,
-    // 'symbolIcon.keywordForeground': ``,
-    // 'symbolIcon.methodForeground': ``,
-    // 'symbolIcon.moduleForeground': ``,
-    // 'symbolIcon.namespaceForeground': ``,
-    // 'symbolIcon.nullForeground': ``,
-    // 'symbolIcon.numberForeground': ``,
-    // 'symbolIcon.objectForeground': ``,
-    // 'symbolIcon.operatorForeground': ``,
-    // 'symbolIcon.packageForeground': ``,
-    // 'symbolIcon.propertyForeground': ``,
-    // 'symbolIcon.referenceForeground': ``,
-    // 'symbolIcon.snippetForeground': ``,
-    // 'symbolIcon.stringForeground': ``,
-    // 'symbolIcon.structForeground': ``,
-    // 'symbolIcon.textForeground': ``,
-    // 'symbolIcon.typeParameterForeground': ``,
-    // 'symbolIcon.unitForeground': ``,
-    // 'symbolIcon.variableForeground': ``,
+    "symbolIcon.arrayForeground": coralRed,
+    "symbolIcon.booleanForeground": coralRed,
+    "symbolIcon.classForeground": coralRed,
+    "symbolIcon.colorForeground": coralRed,
+    "symbolIcon.constantForeground": coralRed,
+    "symbolIcon.constructorForeground": coralRed,
+    "symbolIcon.enumeratorForeground": coralRed,
+    "symbolIcon.enumeratorMemberForeground": coralRed,
+    "symbolIcon.eventForeground": coralRed,
+    "symbolIcon.fieldForeground": coralRed,
+    "symbolIcon.fileForeground": coralRed,
+    "symbolIcon.folderForeground": coralRed,
+    "symbolIcon.functionForeground": coralRed,
+    "symbolIcon.interfaceForeground": coralRed,
+    "symbolIcon.keyForeground": coralRed,
+    "symbolIcon.keywordForeground": coralRed,
+    "symbolIcon.methodForeground": coralRed,
+    "symbolIcon.moduleForeground": coralRed,
+    "symbolIcon.namespaceForeground": coralRed,
+    "symbolIcon.nullForeground": coralRed,
+    "symbolIcon.numberForeground": coralRed,
+    "symbolIcon.objectForeground": coralRed,
+    "symbolIcon.operatorForeground": coralRed,
+    "symbolIcon.packageForeground": coralRed,
+    "symbolIcon.propertyForeground": coralRed,
+    "symbolIcon.referenceForeground": coralRed,
+    "symbolIcon.snippetForeground": coralRed,
+    "symbolIcon.stringForeground": coralRed,
+    "symbolIcon.structForeground": coralRed,
+    "symbolIcon.textForeground": coralRed,
+    "symbolIcon.typeParameterForeground": coralRed,
+    "symbolIcon.unitForeground": coralRed,
+    "symbolIcon.variableForeground": coralRed,
 
-    // Text colors | DONE
+    // Text colors
     // -------------------------------------------------------------------------
     "textBlockQuote.background": transparent,
-    "textBlockQuote.border": catskillWhite,
+    "textBlockQuote.border": heather,
     "textCodeBlock.background": black,
-    "textLink.activeForeground": tide,
-    "textLink.foreground": bitter,
+    "textLink.activeForeground": greenSpring,
+    "textLink.foreground": camouflageGreen,
     "textPreformat.foreground": catskillWhite,
     "textSeparator.foreground": heather,
 
-    // Title bar colors | DONE
+    // Title bar colors
     // -------------------------------------------------------------------------
-    "titleBar.activeBackground": bunker,
+    "titleBar.activeBackground": ebony,
     "titleBar.activeForeground": mystic,
     "titleBar.border": transparent,
-    "titleBar.inactiveBackground": bunker,
-    "titleBar.inactiveForeground": mystic,
+    "titleBar.inactiveBackground": black,
+    "titleBar.inactiveForeground": heather,
 
-    // Welcome page colors | DONE
+    // Welcome page colors
     // -------------------------------------------------------------------------
     "walkThrough.embeddedEditorBackground": ebony,
     "welcomePage.background": ebony,
-    "welcomePage.buttonBackground": bitter,
-    "welcomePage.buttonHoverBackground": tide,
+    "welcomePage.buttonBackground": camouflageGreen,
+    "welcomePage.buttonHoverBackground": greenSpring,
 
-    // Window border | DONE
+    // Window border
     // -------------------------------------------------------------------------
     "window.activeBorder": bunker,
     "window.inactiveBorder": black
@@ -634,7 +575,7 @@ module.exports = {
       name: `Base constants`,
       scope: `constant`,
       settings: {
-        foreground: delta
+        foreground: bud
       }
     },
     {
@@ -663,14 +604,14 @@ module.exports = {
       name: `Base strings`,
       scope: `string`,
       settings: {
-        foreground: delta
+        foreground: bud
       }
     },
     {
       name: `Base support`,
       scope: `support`,
       settings: {
-        foreground: bittersweet
+        foreground: bitterSweet
       }
     },
     {
@@ -695,7 +636,7 @@ module.exports = {
       name: `CSS classes`,
       scope: `entity.other.attribute-name.class.css`,
       settings: {
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     },
     {
@@ -713,14 +654,14 @@ module.exports = {
         `punctuation.definition.constant.css`
       ],
       settings: {
-        foreground: bittersweet
+        foreground: bitterSweet
       }
     },
     {
       name: `CSS ids`,
       scope: `entity.other.attribute-name.id.css`,
       settings: {
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     },
     {
@@ -772,7 +713,7 @@ module.exports = {
       name: `CSS tags`,
       scope: `entity.name.tag.css`,
       settings: {
-        foreground: bitter
+        foreground: camouflageGreen
       }
     },
     {
@@ -801,7 +742,7 @@ module.exports = {
         `keyword.other.unit.vw.css`
       ],
       settings: {
-        foreground: delta
+        foreground: bud
       }
     },
     {
@@ -825,7 +766,7 @@ module.exports = {
       name: `HTML tags`,
       scope: `entity.name.tag.html`,
       settings: {
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     },
 
@@ -863,7 +804,7 @@ module.exports = {
         `support.class.builtin.js`
       ],
       settings: {
-        foreground: bitter
+        foreground: camouflageGreen
       }
     },
     {
@@ -874,14 +815,14 @@ module.exports = {
         "support.function.js"
       ],
       settings: {
-        foreground: bittersweet
+        foreground: bitterSweet
       }
     },
     {
       name: `JavaScript inherited classes`,
       scope: `entity.other.inherited-class.js`,
       settings: {
-        foreground: tide
+        foreground: greenSpring
       }
     },
     {
@@ -914,14 +855,14 @@ module.exports = {
       scope: [`meta.object-literal.key.js`, `variable.other.property.js`],
       settings: {
         fontStyle: `normal`,
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     },
     {
       name: `JavaScript regular expressions`,
       scope: `string.regexp.js`,
       settings: {
-        foreground: tide
+        foreground: greenSpring
       }
     },
     {
@@ -943,7 +884,7 @@ module.exports = {
       name: `JavaScript types`,
       scope: `entity.name.type.instance.jsdoc`,
       settings: {
-        foreground: tide
+        foreground: greenSpring
       }
     },
 
@@ -979,14 +920,14 @@ module.exports = {
       scope: `support.class.component.js.jsx`,
       settings: {
         fontStyle: `bold`,
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     },
     {
       name: `JSX tags`,
       scope: `entity.name.tag.js.jsx`,
       settings: {
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     },
 
@@ -1044,7 +985,7 @@ module.exports = {
         `string.other.link.title.markdown`
       ],
       settings: {
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     },
     {
@@ -1062,7 +1003,7 @@ module.exports = {
       scope: [`meta.attribute.python`, `meta.indexed-name.python`],
       settings: {
         fontStyle: `regular`,
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     },
     {
@@ -1104,7 +1045,7 @@ module.exports = {
       scope: `entity.name.type.class.python`,
       settings: {
         fontStyle: `regular`,
-        foreground: bitter
+        foreground: camouflageGreen
       }
     },
     {
@@ -1159,7 +1100,7 @@ module.exports = {
       ],
       settings: {
         fontStyle: `regular`,
-        foreground: bittersweet
+        foreground: bitterSweet
       }
     },
     {
@@ -1167,7 +1108,7 @@ module.exports = {
       scope: `entity.other.inherited-class.python`,
       settings: {
         fontStyle: `regular`,
-        foreground: tide
+        foreground: greenSpring
       }
     },
     {
@@ -1219,7 +1160,7 @@ module.exports = {
       scope: [`support.type.exception.python`, `support.type.python`],
       settings: {
         fontStyle: `regular`,
-        foreground: bittersweet
+        foreground: bitterSweet
       }
     },
     {
@@ -1238,12 +1179,10 @@ module.exports = {
         `constant.character.escape.backslash.regexp`,
         `keyword.operator.or.regexp`,
         `punctuation.definition.character-class.regexp`,
-        `punctuation.definition.group.regexp`,
-        `punctuation.definition.string.begin.js`,
-        `punctuation.definition.string.end.js`
+        `punctuation.definition.group.regexp`
       ],
       settings: {
-        foreground: bitter
+        foreground: camouflageGreen
       }
     },
     {
@@ -1254,7 +1193,7 @@ module.exports = {
         `constant.other.character-class.set.regexp`
       ],
       settings: {
-        foreground: tide
+        foreground: greenSpring
       }
     },
     {
@@ -1265,7 +1204,7 @@ module.exports = {
         `keyword.operator.quantifier.regexp`
       ],
       settings: {
-        foreground: tide
+        foreground: greenSpring
       }
     },
 
@@ -1304,7 +1243,7 @@ module.exports = {
       name: `SCSS functions`,
       scope: `entity.name.function.scss`,
       settings: {
-        foreground: bittersweet
+        foreground: bitterSweet
       }
     },
     {
@@ -1325,7 +1264,7 @@ module.exports = {
       name: `SCSS strings`,
       scope: `meta.attribute-selector.scss`,
       settings: {
-        foreground: delta
+        foreground: bud
       }
     },
 
@@ -1335,7 +1274,7 @@ module.exports = {
       name: `TypeScript alias types`,
       scope: `entity.name.type.alias.ts`,
       settings: {
-        foreground: tide
+        foreground: greenSpring
       }
     },
     {
@@ -1368,7 +1307,7 @@ module.exports = {
         `support.class.builtin.ts`
       ],
       settings: {
-        foreground: bitter
+        foreground: camouflageGreen
       }
     },
     {
@@ -1379,21 +1318,21 @@ module.exports = {
         "support.function.ts"
       ],
       settings: {
-        foreground: bittersweet
+        foreground: bitterSweet
       }
     },
     {
       name: `TypeScript inherited classes`,
       scope: `entity.other.inherited-class.ts`,
       settings: {
-        foreground: tide
+        foreground: greenSpring
       }
     },
     {
       name: `TypeScript interface types`,
       scope: `entity.name.type.interface.ts`,
       settings: {
-        foreground: bitter
+        foreground: camouflageGreen
       }
     },
     {
@@ -1425,7 +1364,7 @@ module.exports = {
       name: `TypeScript primitive types`,
       scope: `support.type.primitive.ts`,
       settings: {
-        foreground: tide
+        foreground: greenSpring
       }
     },
     {
@@ -1433,14 +1372,14 @@ module.exports = {
       scope: [`variable.object.property.ts`, `variable.other.property.ts`],
       settings: {
         fontStyle: `normal`,
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     },
     {
       name: `TypeScript regular expressions`,
       scope: `string.regexp.ts`,
       settings: {
-        foreground: tide
+        foreground: greenSpring
       }
     },
     {
@@ -1479,7 +1418,7 @@ module.exports = {
       name: `XML tags`,
       scope: `entity.name.tag.localname.xml`,
       settings: {
-        foreground: sunsetOrange
+        foreground: coralRed
       }
     }
   ],
