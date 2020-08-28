@@ -50,17 +50,17 @@ If you'd like to use this theme as intended, copy and paste the recommended sett
 }
 ```
 
+## Palette
+
+The palette of this theme is inspired by The Empire and The Rebellion, while meeting the contrast ratios set out in the [WCAG 2.1, Level AA Compliance Guidelines](https://www.w3.org/TR/WCAG21/).
+
+![The Empire Theme palette](./images/the-empire-theme-palette.png)
+
+![Rogue Squadron Theme palette](./images/rogue-squadron-theme-palette.png)
+
 ## Font
 
 The font used in theme examples is [Input Mono](https://input.fontbureau.com), which is **free for personal use**. See the font's [license](https://input.fontbureau.com/license/) for more information.
-
-## Additional information
-
-The color palette of this theme has been designed to reflect various galactical movements, while meeting the contrast ratios set out in the [WCAG 2.1, Level AA Compliance Guidelines](https://www.w3.org/TR/WCAG21/).
-
-![The Empire palette](./images/the-empire-theme-palette.png)
-
-![Rogue Squadron palette](./images/rogue-squadron-theme-palette.png)
 
 ## Issues
 
