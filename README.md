@@ -1,6 +1,6 @@
 # A Visual Studio Code theme from a galaxy far, far away...
 
-![Rogue Squadron Theme example](./images/the-empire-theme.png)
+![Rogue Squadron Theme example](./images/editor-examples.png)
 
 ## Installation
 
@@ -58,9 +58,9 @@ The font used in theme examples is [Input Mono](https://input.fontbureau.com), w
 
 The color palette of this theme has been designed to reflect various galactical movements, while meeting the contrast ratios set out in the [WCAG 2.1, Level AA Compliance Guidelines](https://www.w3.org/TR/WCAG21/).
 
-![The Empire palette](./images/the-empire-palette.png)
+![The Empire palette](./images/the-empire-theme-palette.png)
 
-![Rogue Squadron palette](./images/rogue-squadron-palette.png)
+![Rogue Squadron palette](./images/rogue-squadron-theme-palette.png)
 
 ## Issues
 
