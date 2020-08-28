@@ -52,7 +52,7 @@ If you'd like to use this theme as intended, copy and paste the recommended sett
 
 ## Palette
 
-The palette of this theme is inspired by The Empire and The Rebellion, while meeting the contrast ratios set out in the [WCAG 2.1, Level AA Compliance Guidelines](https://www.w3.org/TR/WCAG21/).
+The palette of this theme is inspired by The Empire and Rogue Squadron, while meeting the contrast ratios set out in the [WCAG 2.1, Level AA Compliance Guidelines](https://www.w3.org/TR/WCAG21/).
 
 ![The Empire Theme palette](./images/the-empire-theme-palette.png)
 
