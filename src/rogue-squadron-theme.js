@@ -8,13 +8,13 @@ const type = `dark`;
 // Opacity
 // =============================================================================
 const hidden = `00`;
-const subtle = `26`;
-const pronounced = `4d`;
+const subtle = `1a`;
+const pronounced = `33`;
+const striking = `4d`;
 
 // Palette
 // =============================================================================
 const appleBlossom = `#a34845`;
-const bigStone = `#182336`;
 const black = `#010203`;
 const bunker = `#0a0f17`;
 const ebony = `#04070b`;
@@ -23,12 +23,11 @@ const greyChateau = `#a8acae`;
 const indianKhaki = `#c1b398`;
 const iron = `#cacdcf`;
 const matrix = `#bc5f5d`;
-const mirage = `#101825`;
 const nepal = `#85adbc`;
 const porcelain = `#e6e8e9`;
 const rollingStone = `#7b7f81`;
 const smaltBlue = `#538397`;
-const transparent = `${black}${hidden}`;
+const transparent = black + hidden;
 const treePoppy = `#fc9d1b`;
 const trinidad = `#f4500a`;
 
@@ -36,7 +35,7 @@ const trinidad = `#f4500a`;
 // =============================================================================
 module.exports = {
   colors: {
-    // Activity bar | DONE
+    // Activity bar
     // -------------------------------------------------------------------------
     "activityBar.activeBackground": ebony,
     "activityBar.activeBorder": transparent,
@@ -50,22 +49,22 @@ module.exports = {
     "activityBarBadge.background": ecstasy,
     "activityBarBadge.foreground": black,
 
-    // Badge colors | DONE
+    // Badge colors
     // -------------------------------------------------------------------------
     "badge.background": ecstasy,
     "badge.foreground": black,
 
-    // Base colors | DONE
+    // Base colors
     // -------------------------------------------------------------------------
-    // descriptionForeground: ``,
-    // errorForeground: ``,
-    focusBorder: appleBlossom,
+    descriptionForeground: iron,
+    errorForeground: appleBlossom,
+    focusBorder: transparent,
     foreground: iron,
-    "icon.foreground": iron,
+    "icon.foreground": greyChateau,
     "selection.background": appleBlossom,
     "widget.shadow": transparent,
 
-    // Breadcrumbs colors | DONE
+    // Breadcrumbs colors
     // -------------------------------------------------------------------------
     "breadcrumb.activeSelectionForeground": porcelain,
     "breadcrumb.background": black,
@@ -73,74 +72,66 @@ module.exports = {
     "breadcrumb.foreground": rollingStone,
     "breadcrumbPicker.background": bunker,
 
-    // Button control | DONE
+    // Button control
     // -------------------------------------------------------------------------
     "button.background": smaltBlue,
     "button.foreground": black,
     "button.hoverBackground": nepal,
-    // 'button.secondaryBackground': ``,
-    // 'button.secondaryForeground': ``,
-    // 'button.secondaryHoverBackground': ``,
     "checkbox.background": black,
     "checkbox.border": appleBlossom,
     "checkbox.foreground": greyChateau,
 
-    // Contrast colors | DONE
+    // Debug colors
     // -------------------------------------------------------------------------
-    // contrastActiveBorder: ``,
-    // contrastBorder: ``,
+    "debugTokenExpression.boolean": matrix,
+    "debugTokenExpression.error": appleBlossom,
+    "debugTokenExpression.name": trinidad,
+    "debugTokenExpression.number": matrix,
+    "debugTokenExpression.string": matrix,
+    "debugTokenExpression.value": matrix,
+    "debugToolBar.background": bunker,
+    "debugToolBar.border": bunker,
+    "debugView.exceptionLabelBackground": trinidad,
+    "debugView.exceptionLabelForeground": black,
+    "debugView.stateLabelBackground": ecstasy,
+    "debugView.stateLabelForeground": black,
+    "debugView.valueChangedHighlight": indianKhaki,
+    "editor.focusedStackFrameHighlightBackground": bunker,
+    "editor.stackFrameHighlightBackground": ebony,
 
-    // Debug colors | DONE
-    // -------------------------------------------------------------------------
-    // 'debugTokenExpression.boolean': ``,
-    // 'debugTokenExpression.error': ``,
-    // 'debugTokenExpression.name': ``,
-    // 'debugTokenExpression.number': ``,
-    // 'debugTokenExpression.string': ``,
-    // 'debugTokenExpression.value': ``,
-    "debugToolBar.background": mirage,
-    "debugToolBar.border": mirage,
-    // 'debugView.exceptionLabelBackground': ``,
-    // 'debugView.exceptionLabelForeground': ``,
-    // 'debugView.stateLabelBackground': ``,
-    // 'debugView.stateLabelForeground': ``,
-    // 'debugView.valueChangedHighlight': ``,
-    // 'editor.focusedStackFrameHighlightBackground': ``,
-    // 'editor.stackFrameHighlightBackground': ``,
-
-    // Debug icons colors | DONE
+    // Debug icons colors
     // -------------------------------------------------------------------------
     "debugConsole.errorForeground": appleBlossom,
     "debugConsole.infoForeground": indianKhaki,
     "debugConsole.sourceForeground": greyChateau,
-    "debugConsole.warningForeground": appleBlossom,
-    "debugConsoleInputIcon.foreground": indianKhaki,
-    "debugIcon.breakpointCurrentStackframeForeground": indianKhaki,
-    "debugIcon.breakpointDisabledForeground": indianKhaki,
-    "debugIcon.breakpointForeground": indianKhaki,
-    "debugIcon.breakpointStackframeForeground": indianKhaki,
-    "debugIcon.breakpointUnverifiedForeground": indianKhaki,
-    "debugIcon.continueForeground": indianKhaki,
-    "debugIcon.disconnectForeground": indianKhaki,
+    "debugConsole.warningForeground": treePoppy,
+    "debugConsoleInputIcon.foreground": greyChateau,
+    "debugIcon.breakpointCurrentStackframeForeground": greyChateau,
+    "debugIcon.breakpointDisabledForeground": greyChateau,
+    "debugIcon.breakpointForeground": greyChateau,
+    "debugIcon.breakpointStackframeForeground": greyChateau,
+    "debugIcon.breakpointUnverifiedForeground": greyChateau,
+    "debugIcon.continueForeground": greyChateau,
+    "debugIcon.disconnectForeground": greyChateau,
     "debugIcon.pauseForeground": indianKhaki,
     "debugIcon.restartForeground": nepal,
-    "debugIcon.stepBackForeground": indianKhaki,
-    "debugIcon.stepIntoForeground": indianKhaki,
-    "debugIcon.stepOverForeground": indianKhaki,
-    "debugIcon.stepOutForeground": indianKhaki,
-    "debugIcon.startForeground": indianKhaki,
-    "debugIcon.stopForeground": trinidad,
+    "debugIcon.stepBackForeground": greyChateau,
+    "debugIcon.stepIntoForeground": greyChateau,
+    "debugIcon.stepOverForeground": greyChateau,
+    "debugIcon.stepOutForeground": greyChateau,
+    "debugIcon.startForeground": greyChateau,
+    "debugIcon.stopForeground": appleBlossom,
 
-    // Diff editor colors | DONE
+    // Diff editor colors
     // -------------------------------------------------------------------------
     "diffEditor.border": transparent,
-    "diffEditor.diagonalFill": transparent,
-    "diffEditor.insertedTextBackground": `${smaltBlue}${subtle}`,
-    // 'diffEditor.insertedTextBorder': ``,
-    "diffEditor.removedTextBackground": `${appleBlossom}${subtle}`,
-    // 'diffEditor.removedTextBorder': ``,
+    "diffEditor.diagonalFill": rollingStone + striking,
+    "diffEditor.insertedTextBackground": smaltBlue + pronounced,
+    "diffEditor.insertedTextBorder": transparent,
+    "diffEditor.removedTextBackground": appleBlossom + pronounced,
+    "diffEditor.removedTextBorder": transparent,
 
-    // Dropdown control | DONE
+    // Dropdown control
     // -------------------------------------------------------------------------
     "dropdown.background": black,
     "dropdown.border": appleBlossom,
@@ -150,173 +141,169 @@ module.exports = {
     // Editor colors
     // -------------------------------------------------------------------------
     "editor.background": black,
-    "editor.findMatchBackground": mirage,
+    "editor.findMatchBackground": rollingStone + pronounced,
     "editor.findMatchBorder": transparent,
-    "editor.findMatchHighlightBackground": bigStone,
+    "editor.findMatchHighlightBackground": rollingStone + pronounced,
     "editor.findMatchHighlightBorder": transparent,
-    // 'editor.findRangeHighlightBackground': ``,
-    // 'editor.findRangeHighlightBorder': ``,
-    // 'editor.foldBackground': ``,
+    "editor.findRangeHighlightBackground": rollingStone + pronounced,
+    "editor.findRangeHighlightBorder": transparent,
+    "editor.foldBackground": transparent,
     "editor.foreground": iron,
-    "editor.hoverHighlightBackground": mirage,
-    "editor.inactiveSelectionBackground": bunker,
+    "editor.hoverHighlightBackground": rollingStone + pronounced,
+    "editor.inactiveSelectionBackground": transparent,
     "editor.lineHighlightBackground": bunker,
     "editor.lineHighlightBorder": transparent,
-    "editor.rangeHighlightBackground": mirage,
-    // 'editor.rangeHighlightBorder': ``,
-    "editor.selectionBackground": mirage,
-    // 'editor.selectionForeground': ``,
-    "editor.selectionHighlightBackground": bigStone,
+    "editor.rangeHighlightBackground": rollingStone + subtle,
+    "editor.rangeHighlightBorder": transparent,
+    "editor.selectionBackground": rollingStone + striking,
+    "editor.selectionHighlightBackground": rollingStone + pronounced,
     "editor.selectionHighlightBorder": transparent,
-    // 'editor.symbolHighlightBackground': ``,
-    // 'editor.symbolHighlightBorder': ``,
-    "editor.wordHighlightBackground": mirage,
-    // 'editor.wordHighlightBorder': ``,
-    "editor.wordHighlightStrongBackground": bigStone,
-    // 'editor.wordHighlightStrongBorder': ``,
-    "editorBracketMatch.background": transparent,
-    "editorBracketMatch.border": rollingStone,
-    // 'editorCursor.background': ``,
+    "editor.symbolHighlightBackground": rollingStone + pronounced,
+    "editor.symbolHighlightBorder": transparent,
+    "editor.wordHighlightBackground": rollingStone + pronounced,
+    "editor.wordHighlightBorder": transparent,
+    "editor.wordHighlightStrongBackground": rollingStone + pronounced,
+    "editor.wordHighlightStrongBorder": transparent,
+    "editorBracketMatch.background": rollingStone + pronounced,
+    "editorBracketMatch.border": transparent,
+    "editorCursor.background": transparent,
     "editorCursor.foreground": greyChateau,
-    // 'editorCodeLens.foreground': ``,
-    // 'editorError.border': ``,
-    // 'editorError.foreground': ``,
+    "editorCodeLens.foreground": rollingStone,
+    "editorError.border": transparent,
+    "editorError.foreground": appleBlossom,
     "editorGutter.addedBackground": smaltBlue,
     "editorGutter.background": transparent,
-    // 'editorGutter.commentRangeForeground': ``,
+    "editorGutter.commentRangeForeground": transparent,
     "editorGutter.deletedBackground": appleBlossom,
-    // 'editorGutter.foldingControlForeground': ``,
+    "editorGutter.foldingControlForeground": greyChateau,
     "editorGutter.modifiedBackground": indianKhaki,
-    // 'editorHint.border': ``,
-    // 'editorHint.foreground': ``,
-    // 'editorIndentGuide.activeBackground': ``,
-    // 'editorIndentGuide.background': ``,
-    // 'editorInfo.border': ``,
-    // 'editorInfo.foreground': ``,
-    "editorLineNumber.activeForeground": porcelain,
-    "editorLineNumber.foreground": greyChateau,
-    // 'editorLightBulb.foreground': ``,
-    // 'editorLightBulbAutoFix.foreground': ``,
-    // 'editorLink.activeForeground': ``,
+    "editorHint.border": transparent,
+    "editorHint.foreground": nepal,
+    "editorInfo.border": transparent,
+    "editorInfo.foreground": indianKhaki,
+    "editorLineNumber.activeForeground": greyChateau,
+    "editorLineNumber.foreground": rollingStone,
+    "editorLightBulb.foreground": ecstasy,
+    "editorLightBulbAutoFix.foreground": ecstasy,
+    "editorLink.activeForeground": nepal,
     "editorOverviewRuler.addedForeground": smaltBlue,
     "editorOverviewRuler.background": transparent,
     "editorOverviewRuler.border": transparent,
-    // 'editorOverviewRuler.bracketMatchForeground': ``,
+    "editorOverviewRuler.bracketMatchForeground": rollingStone + pronounced,
     "editorOverviewRuler.deletedForeground": appleBlossom,
-    // 'editorOverviewRuler.errorForeground': ``,
-    // 'editorOverviewRuler.findMatchForeground': ``,
-    // 'editorOverviewRuler.infoForeground': ``,
+    "editorOverviewRuler.errorForeground": appleBlossom,
+    "editorOverviewRuler.findMatchForeground": rollingStone + pronounced,
+    "editorOverviewRuler.infoForeground": indianKhaki,
     "editorOverviewRuler.modifiedForeground": indianKhaki,
-    // 'editorOverviewRuler.rangeHighlightForeground': ``,
-    // 'editorOverviewRuler.selectionHighlightForeground': ``,
-    // 'editorOverviewRuler.warningForeground': ``,
-    // 'editorOverviewRuler.wordHighlightForeground': ``,
-    // 'editorOverviewRuler.wordHighlightStrongForeground': ``,
-    // 'editorUnnecessaryCode.border': ``,
-    // 'editorUnnecessaryCode.opacity': ``,
-    // 'editorRuler.foreground': ``,
-    // 'editorWarning.border': ``,
-    // 'editorWarning.foreground': ``,
-    // 'editorWhitespace.foreground': ``,
-    // 'problemsErrorIcon.foreground': ``,
-    // 'problemsInfoIcon.foreground': ``,
-    // 'problemsWarningIcon.foreground': ``,
-    // 'searchEditor.findMatchBackground': ``,
-    // 'searchEditor.findMatchBorder': ``,
+    "editorOverviewRuler.rangeHighlightForeground": rollingStone + pronounced,
+    "editorOverviewRuler.selectionHighlightForeground": rollingStone + striking,
+    "editorOverviewRuler.warningForeground": treePoppy,
+    "editorOverviewRuler.wordHighlightForeground": rollingStone + pronounced,
+    "editorOverviewRuler.wordHighlightStrongForeground":
+      rollingStone + pronounced,
+    "editorUnnecessaryCode.border": transparent,
+    "editorUnnecessaryCode.opacity": rollingStone + striking,
+    "editorRuler.foreground": iron,
+    "editorWarning.border": transparent,
+    "editorWarning.foreground": treePoppy,
+    "editorWhitespace.foreground": rollingStone + striking,
+    "problemsErrorIcon.foreground": appleBlossom,
+    "problemsInfoIcon.foreground": indianKhaki,
+    "problemsWarningIcon.foreground": treePoppy,
+    "searchEditor.findMatchBackground": rollingStone + pronounced,
+    "searchEditor.findMatchBorder": transparent,
     "searchEditor.textInputBorder": appleBlossom,
 
     // Editor group and tabs
     // -------------------------------------------------------------------------
-    "editorGroup.border": black,
-    // 'editorGroup.dropBackground': ``,
+    "editorGroup.border": bunker,
+    "editorGroup.dropBackground": appleBlossom,
     "editorGroup.emptyBackground": ebony,
-    // 'editorGroup.focusedEmptyBorder': ``,
-    // 'editorGroupHeader.border': ``,
-    // 'editorGroupHeader.noTabsBackground': ``,
+    "editorGroup.focusedEmptyBorder": appleBlossom,
+    "editorGroupHeader.border": transparent,
     "editorGroupHeader.tabsBackground": bunker,
     "editorGroupHeader.tabsBorder": black,
-    // 'editorPane.background': ``,
     "tab.activeBackground": black,
     "tab.activeBorder": black,
     "tab.activeBorderTop": black,
     "tab.activeForeground": porcelain,
-    // 'tab.activeModifiedBorder': ``,
+    "tab.activeModifiedBorder": bunker,
     "tab.border": bunker,
     "tab.hoverBackground": black,
-    "tab.hoverBorder": transparent,
-    // 'tab.hoverForeground': ``,
+    "tab.hoverBorder": bunker,
+    "tab.hoverForeground": porcelain,
     "tab.inactiveBackground": ebony,
-    "tab.inactiveForeground": iron,
-    // 'tab.inactiveModifiedBorder': ``,
+    "tab.inactiveForeground": greyChateau,
+    "tab.inactiveModifiedBorder": bunker,
     "tab.unfocusedActiveBackground": black,
     "tab.unfocusedActiveBorderTop": black,
     "tab.unfocusedActiveBorder": black,
     "tab.unfocusedActiveForeground": porcelain,
-    // 'tab.unfocusedActiveModifiedBorder': ``,
+    "tab.unfocusedActiveModifiedBorder": bunker,
     "tab.unfocusedHoverBackground": black,
-    "tab.unfocusedHoverBorder": transparent,
-    // 'tab.unfocusedHoverForeground': ``,
-    // 'tab.unfocusedInactiveBackground': ``,
+    "tab.unfocusedHoverBorder": bunker,
+    "tab.unfocusedHoverForeground": porcelain,
+    "tab.unfocusedInactiveBackground": ebony,
     "tab.unfocusedInactiveForeground": greyChateau,
-    // 'tab.unfocusedInactiveModifiedBorder': ``,
+    "tab.unfocusedInactiveModifiedBorder": bunker,
 
     // Editor widget colors
     // -------------------------------------------------------------------------
-    // 'debugExceptionWidget.background': ``,
-    // 'debugExceptionWidget.border': ``,
-    // 'editorHoverWidget.background': ``,
-    // 'editorHoverWidget.border': ``,
-    // 'editorHoverWidget.foreground': ``,
-    // 'editorHoverWidget.statusBarBackground': ``,
-    // 'editorMarkerNavigation.background': ``,
-    // 'editorMarkerNavigationError.background': ``,
-    // 'editorMarkerNavigationInfo.background': ``,
-    // 'editorMarkerNavigationWarning.background': ``,
-    // 'editorSuggestWidget.background': ``,
-    // 'editorSuggestWidget.border': ``,
-    // 'editorSuggestWidget.foreground': ``,
-    // 'editorSuggestWidget.highlightForeground': ``,
-    // 'editorSuggestWidget.selectedBackground': ``,
+    "debugExceptionWidget.background": bunker,
+    "debugExceptionWidget.border": appleBlossom,
+    "editorHoverWidget.background": bunker,
+    "editorHoverWidget.border": appleBlossom,
+    "editorHoverWidget.foreground": greyChateau,
+    "editorHoverWidget.statusBarBackground": bunker,
+    "editorMarkerNavigation.background": iron,
+    "editorMarkerNavigationError.background": appleBlossom,
+    "editorMarkerNavigationInfo.background": indianKhaki,
+    "editorMarkerNavigationWarning.background": treePoppy,
+    "editorSuggestWidget.background": bunker,
+    "editorSuggestWidget.border": appleBlossom,
+    "editorSuggestWidget.foreground": greyChateau,
+    "editorSuggestWidget.highlightForeground": porcelain,
+    "editorSuggestWidget.selectedBackground": black,
     "editorWidget.background": bunker,
     "editorWidget.border": appleBlossom,
-    "editorWidget.foreground": iron,
-    // 'editorWidget.resizeBorder': ``,
+    "editorWidget.foreground": greyChateau,
+    "editorWidget.resizeBorder": appleBlossom,
 
-    // Extension colors | DONE
+    // Extension colors
     // -------------------------------------------------------------------------
-    "extensionButton.prominentBackground": iron,
+    "extensionButton.prominentBackground": trinidad,
     "extensionButton.prominentForeground": black,
-    "extensionButton.prominentHoverBackground": porcelain,
-    "extensionBadge.remoteBackground": trinidad,
+    "extensionButton.prominentHoverBackground": treePoppy,
+    "extensionBadge.remoteBackground": ecstasy,
     "extensionBadge.remoteForeground": black,
 
-    // Git colors | DONE
+    // Git colors
     // -------------------------------------------------------------------------
     "gitDecoration.addedResourceForeground": smaltBlue,
-    "gitDecoration.conflictingResourceForeground": matrix,
+    "gitDecoration.conflictingResourceForeground": trinidad,
     "gitDecoration.deletedResourceForeground": appleBlossom,
     "gitDecoration.ignoredResourceForeground": rollingStone,
     "gitDecoration.modifiedResourceForeground": indianKhaki,
-    "gitDecoration.submoduleResourceForeground": iron,
-    "gitDecoration.untrackedResourceForeground": nepal,
+    "gitDecoration.submoduleResourceForeground": greyChateau,
+    "gitDecoration.untrackedResourceForeground": iron,
 
-    // Input control | DONE
+    // Input control
     // -------------------------------------------------------------------------
     "input.background": black,
     "input.border": appleBlossom,
     "input.foreground": greyChateau,
     "input.placeholderForeground": rollingStone,
     "inputOption.activeBackground": bunker,
-    "inputOption.activeBorder": appleBlossom,
-    "inputOption.activeForeground": iron,
-    // 'inputValidation.errorBackground': ``,
-    // 'inputValidation.errorBorder': ``,
-    // 'inputValidation.errorForeground': ``,
-    // 'inputValidation.infoBackground': ``,
-    // 'inputValidation.infoBorder': ``,
-    // 'inputValidation.infoForeground': ``,
+    "inputOption.activeBorder": transparent,
+    "inputOption.activeForeground": porcelain,
+    "inputValidation.errorBackground": black,
+    "inputValidation.errorBorder": appleBlossom,
+    "inputValidation.errorForeground": appleBlossom,
+    "inputValidation.infoBackground": black,
+    "inputValidation.infoBorder": appleBlossom,
+    "inputValidation.infoForeground": greyChateau,
 
-    // Integrated terminal colors | DONE
+    // Integrated terminal colors
     // -------------------------------------------------------------------------
     "terminal.ansiBlack": smaltBlue,
     "terminal.ansiBlue": smaltBlue,
@@ -334,167 +321,131 @@ module.exports = {
     "terminal.ansiRed": matrix,
     "terminal.ansiWhite": indianKhaki,
     "terminal.ansiYellow": indianKhaki,
-    "terminal.background": black,
+    "terminal.background": ebony,
     "terminal.border": transparent,
     "terminal.foreground": greyChateau,
-    "terminal.selectionBackground": `${rollingStone}${subtle}`,
+    "terminal.selectionBackground": rollingStone + striking,
     "terminalCursor.background": transparent,
     "terminalCursor.foreground": greyChateau,
 
-    // Lists and trees | DONE
+    // Lists and trees
     // -------------------------------------------------------------------------
-    // 'list.activeSelectionBackground': black,
-    // 'list.activeSelectionForeground': porcelain,
-    // 'list.deemphasizedForeground': ``,
-    // 'list.dropBackground': ``,
-    // 'list.errorForeground': ``,
-    // 'list.filterMatchBackground': ``,
-    // 'list.filterMatchBorder': ``,
-    // 'list.focusBackground': ``,
-    // 'list.focusForeground': ``,
-    // 'list.highlightForeground': ``,
-    // 'list.hoverBackground': bunker,
-    // 'list.hoverForeground': iron,
-    // 'list.inactiveFocusBackground': ``,
-    // 'list.inactiveSelectionBackground': black,
-    // 'list.inactiveSelectionForeground': porcelain,
-    // 'list.invalidItemForeground': ``,
-    // 'list.warningForeground': ``,
-    // 'listFilterWidget.background': ``,
-    // 'listFilterWidget.noMatchesOutline': ``,
-    // 'listFilterWidget.outline': ``,
+    "list.activeSelectionBackground": black,
+    "list.activeSelectionForeground": porcelain,
+    "list.deemphasizedForeground": rollingStone,
+    "list.dropBackground": appleBlossom,
+    "list.errorForeground": appleBlossom,
+    "list.filterMatchBackground": rollingStone + pronounced,
+    "list.filterMatchBorder": transparent,
+    "list.focusBackground": black,
+    "list.focusForeground": porcelain,
+    "list.highlightForeground": porcelain,
+    "list.hoverBackground": bunker,
+    "list.hoverForeground": porcelain,
+    "list.inactiveFocusBackground": black,
+    "list.inactiveSelectionBackground": black,
+    "list.inactiveSelectionForeground": porcelain,
+    "list.invalidItemForeground": rollingStone,
+    "list.warningForeground": treePoppy,
+    "listFilterWidget.background": bunker,
+    "listFilterWidget.noMatchesOutline": appleBlossom,
+    "listFilterWidget.outline": appleBlossom,
     "tree.indentGuidesStroke": rollingStone,
 
     // Menu bar colors
     // -------------------------------------------------------------------------
-    // 'menu.background': ``,
-    // 'menu.border': ``,
-    // 'menu.foreground': ``,
-    // 'menu.selectionBackground': ``,
-    // 'menu.selectionBorder': ``,
-    // 'menu.selectionForeground': ``,
-    // 'menu.separatorBackground': ``,
-    // 'menubar.selectionBackground': ``,
-    // 'menubar.selectionBorder': ``,
-    // 'menubar.selectionForeground': ``,
+    "menu.background": ebony,
+    "menu.border": ebony,
+    "menu.foreground": greyChateau,
+    "menu.selectionBackground": bunker,
+    "menu.selectionBorder": bunker,
+    "menu.selectionForeground": porcelain,
+    "menu.separatorBackground": transparent,
+    "menubar.selectionBackground": bunker,
+    "menubar.selectionBorder": bunker,
+    "menubar.selectionForeground": porcelain,
 
-    // Merge conflicts colors | DONE
+    // Merge conflicts colors
     // -------------------------------------------------------------------------
     "editorOverviewRuler.commonContentForeground": iron,
     "editorOverviewRuler.currentContentForeground": iron,
     "editorOverviewRuler.incomingContentForeground": iron,
     "merge.border": transparent,
-    "merge.commonContentBackground": `${indianKhaki}${subtle}`,
-    "merge.commonHeaderBackground": `${indianKhaki}${pronounced}`,
-    "merge.currentContentBackground": `${trinidad}${subtle}`,
-    "merge.currentHeaderBackground": `${trinidad}${pronounced}`,
-    "merge.incomingContentBackground": `${smaltBlue}${subtle}`,
-    "merge.incomingHeaderBackground": `${smaltBlue}${pronounced}`,
+    "merge.commonContentBackground": indianKhaki + subtle,
+    "merge.commonHeaderBackground": indianKhaki + pronounced,
+    "merge.currentContentBackground": trinidad + pronounced,
+    "merge.currentHeaderBackground": trinidad + striking,
+    "merge.incomingContentBackground": nepal + pronounced,
+    "merge.incomingHeaderBackground": nepal + striking,
 
     // Minimap
     // -------------------------------------------------------------------------
-    // 'minimap.background': ``,
-    // 'minimap.errorHighlight': ``,
-    // 'minimap.findMatchHighlight': ``,
-    // 'minimap.selectionHighlight': ``,
-    // 'minimap.warningHighlight': ``,
-    // 'minimapGutter.addedBackground': ``,
-    // 'minimapGutter.deletedBackground': ``,
-    // 'minimapGutter.modifiedBackground': ``,
-    // 'minimapSlider.activeBackground': ``,
-    // 'minimapSlider.background': ``,
-    // 'minimapSlider.hoverBackground': ``,
+    "minimap.background": ebony,
+    "minimap.errorHighlight": appleBlossom,
+    "minimap.findMatchHighlight": rollingStone + pronounced,
+    "minimap.selectionHighlight": rollingStone + striking,
+    "minimap.warningHighlight": treePoppy,
+    "minimapGutter.addedBackground": smaltBlue,
+    "minimapGutter.deletedBackground": appleBlossom,
+    "minimapGutter.modifiedBackground": indianKhaki,
+    "minimapSlider.activeBackground": rollingStone + striking,
+    "minimapSlider.background": rollingStone + subtle,
+    "minimapSlider.hoverBackground": rollingStone + pronounced,
 
-    // Notebook colors
+    // Notification colors
     // -------------------------------------------------------------------------
-    // 'notebook.cellBorderColor': ``,
-    // 'notebook.cellHoverBackground': ``,
-    // 'notebook.cellInsertionIndicator': ``,
-    // 'notebook.cellStatusBarItemHoverBackground': ``,
-    // 'notebook.cellToolbarSeperator': ``,
-    // 'notebook.focusedCellBackground': ``,
-    // 'notebook.focusedCellBorder': ``,
-    // 'notebook.focusedCellShadow': ``,
-    // 'notebook.focusedEditorBorder': ``,
-    // 'notebook.outputContainerBackgroundColor': ``,
-    // 'notebookScrollbarSlider.activeBackground': ``,
-    // 'notebookScrollbarSlider.background': ``,
-    // 'notebookScrollbarSlider.hoverBackground': ``,
-    // 'notebookStatusErrorIcon.foreground': ``,
-    // 'notebookStatusRunningIcon.foreground': ``,
-    // 'notebookStatusSuccessIcon.foreground': ``,
-
-    // Notification colors | DONE
-    // -------------------------------------------------------------------------
-    "notificationCenter.border": transparent,
+    "notificationCenter.border": bunker,
     "notificationCenterHeader.background": bunker,
     "notificationCenterHeader.foreground": porcelain,
-    // 'notificationLink.foreground': ``,
+    "notificationLink.foreground": smaltBlue,
     "notifications.background": bunker,
-    "notifications.border": transparent,
+    "notifications.border": bunker,
     "notifications.foreground": greyChateau,
     "notificationsErrorIcon.foreground": appleBlossom,
     "notificationsInfoIcon.foreground": indianKhaki,
-    "notificationsWarningIcon.foreground": appleBlossom,
-    "notificationToast.border": transparent,
+    "notificationsWarningIcon.foreground": treePoppy,
+    "notificationToast.border": bunker,
 
-    // Panel colors | DONE
+    // Panel colors
     // -------------------------------------------------------------------------
-    "panel.background": black,
-    "panel.border": bunker,
+    "panel.background": bunker,
+    "panel.border": transparent,
     "panel.dropBackground": transparent,
     "panel.dropBorder": appleBlossom,
-    // 'panelInput.border': ``,
-    // 'panelSection.border': ``,
-    // 'panelSection.dropBackground': ``,
-    // 'panelSectionHeader.background': ``,
-    // 'panelSectionHeader.border': ``,
-    // 'panelSectionHeader.foreground': ``,
     "panelTitle.activeBorder": transparent,
     "panelTitle.activeForeground": porcelain,
     "panelTitle.inactiveForeground": greyChateau,
 
-    // Peek view colors | DONE
+    // Peek view colors
     // -------------------------------------------------------------------------
     "peekView.border": bunker,
-    // 'peekViewEditor.background': ``,
-    // 'peekViewEditor.matchHighlightBackground': ``,
-    // 'peekViewEditor.matchHighlightBorder': ``,
-    // 'peekViewEditorGutter.background': ``,
-    // 'peekViewResult.background': ``,
-    // 'peekViewResult.fileForeground': ``,
-    // 'peekViewResult.lineForeground': ``,
-    // 'peekViewResult.matchHighlightBackground': ``,
-    // 'peekViewResult.selectionBackground': ``,
-    // 'peekViewResult.selectionForeground': ``,
     "peekViewTitle.background": bunker,
-    "peekViewTitleDescription.foreground": iron,
+    "peekViewTitleDescription.foreground": greyChateau,
     "peekViewTitleLabel.foreground": porcelain,
 
-    // Preview colors | DONE
+    // Preview colors
     // -------------------------------------------------------------------------
-    "imagePreview.border": appleBlossom,
+    "imagePreview.border": transparent,
 
-    // Progress bar | DONE
+    // Progress bar
     // -------------------------------------------------------------------------
     "progressBar.background": appleBlossom,
 
-    // Quick picker colors | DONE
+    // Quick picker colors
     // -------------------------------------------------------------------------
-    "pickerGroup.border": appleBlossom,
-    "pickerGroup.foreground": greyChateau,
+    "pickerGroup.border": transparent,
+    "pickerGroup.foreground": porcelain,
     "quickInput.background": ebony,
     "quickInput.foreground": greyChateau,
-    "quickInputTitle.background": iron,
 
-    // Scrollbar control | DONE
+    // Scrollbar control
     // -------------------------------------------------------------------------
     "scrollbar.shadow": transparent,
-    "scrollbarSlider.activeBackground": `${rollingStone}${pronounced}`,
-    "scrollbarSlider.background": `${rollingStone}${subtle}`,
-    "scrollbarSlider.hoverBackground": `${rollingStone}${pronounced}`,
+    "scrollbarSlider.activeBackground": rollingStone + striking,
+    "scrollbarSlider.background": rollingStone + subtle,
+    "scrollbarSlider.hoverBackground": rollingStone + pronounced,
 
-    // Settings editor colors | DONE
+    // Settings editor colors
     // -------------------------------------------------------------------------
     "settings.checkboxBackground": black,
     "settings.checkboxBorder": appleBlossom,
@@ -502,7 +453,7 @@ module.exports = {
     "settings.dropdownBackground": black,
     "settings.dropdownBorder": appleBlossom,
     "settings.dropdownForeground": greyChateau,
-    "settings.dropdownListBorder": transparent,
+    "settings.dropdownListBorder": bunker,
     "settings.headerForeground": porcelain,
     "settings.modifiedItemIndicator": indianKhaki,
     "settings.numberInputBackground": black,
@@ -512,10 +463,10 @@ module.exports = {
     "settings.textInputBorder": appleBlossom,
     "settings.textInputForeground": greyChateau,
 
-    // Side bar | DONE
+    // Side bar
     // -------------------------------------------------------------------------
     "sideBar.background": ebony,
-    "sideBar.border": transparent,
+    "sideBar.border": black,
     "sideBar.dropBackground": transparent,
     "sideBar.foreground": greyChateau,
     "sideBarSectionHeader.background": transparent,
@@ -523,18 +474,14 @@ module.exports = {
     "sideBarSectionHeader.foreground": iron,
     "sideBarTitle.foreground": porcelain,
 
-    // Snippets colors | DONE
+    // Snippets colors
     // -------------------------------------------------------------------------
-    // 'editor.snippetFinalTabstopHighlightBackground': ``,
-    "editor.snippetFinalTabstopHighlightBorder": transparent,
-    // 'editor.snippetTabstopHighlightBackground': ``,
-    "editor.snippetTabstopHighlightBorder": transparent,
+    "editor.snippetFinalTabstopHighlightBackground": rollingStone + pronounced,
+    "editor.snippetFinalTabstopHighlightBorder": appleBlossom,
+    "editor.snippetTabstopHighlightBackground": rollingStone,
+    "editor.snippetTabstopHighlightBorder": appleBlossom,
 
-    // Source control colors | DONE
-    // -------------------------------------------------------------------------
-    "scm.providerBorder": transparent,
-
-    // Status bar colors | DONE
+    // Status bar colors
     // -------------------------------------------------------------------------
     "statusBar.background": smaltBlue,
     "statusBar.border": transparent,
@@ -545,76 +492,71 @@ module.exports = {
     "statusBar.noFolderBackground": appleBlossom,
     "statusBar.noFolderBorder": transparent,
     "statusBar.noFolderForeground": porcelain,
-    "statusBarItem.activeBackground": nepal,
-    "statusBarItem.hoverBackground": nepal,
-    // 'statusBarItem.prominentBackground': ``,
-    // 'statusBarItem.prominentForeground': ``,
-    // 'statusBarItem.prominentHoverBackground': ``,
-    // 'statusBarItem.remoteBackground': ``,
-    // 'statusBarItem.remoteForeground': ``,
+    // "statusBarItem.activeBackground": nepal,
+    // "statusBarItem.hoverBackground": nepal,
 
-    // Symbol icons colors | DONE
+    // Symbol icons colors
     // -------------------------------------------------------------------------
-    // 'symbolIcon.arrayForeground': ``,
-    // 'symbolIcon.booleanForeground': ``,
-    // 'symbolIcon.classForeground': ``,
-    // 'symbolIcon.colorForeground': ``,
-    // 'symbolIcon.constantForeground': ``,
-    // 'symbolIcon.constructorForeground': ``,
-    // 'symbolIcon.enumeratorForeground': ``,
-    // 'symbolIcon.enumeratorMemberForeground': ``,
-    // 'symbolIcon.eventForeground': ``,
-    // 'symbolIcon.fieldForeground': ``,
-    // 'symbolIcon.fileForeground': ``,
-    // 'symbolIcon.folderForeground': ``,
-    // 'symbolIcon.functionForeground': ``,
-    // 'symbolIcon.interfaceForeground': ``,
-    // 'symbolIcon.keyForeground': ``,
-    // 'symbolIcon.keywordForeground': ``,
-    // 'symbolIcon.methodForeground': ``,
-    // 'symbolIcon.moduleForeground': ``,
-    // 'symbolIcon.namespaceForeground': ``,
-    // 'symbolIcon.nullForeground': ``,
-    // 'symbolIcon.numberForeground': ``,
-    // 'symbolIcon.objectForeground': ``,
-    // 'symbolIcon.operatorForeground': ``,
-    // 'symbolIcon.packageForeground': ``,
-    // 'symbolIcon.propertyForeground': ``,
-    // 'symbolIcon.referenceForeground': ``,
-    // 'symbolIcon.snippetForeground': ``,
-    // 'symbolIcon.stringForeground': ``,
-    // 'symbolIcon.structForeground': ``,
-    // 'symbolIcon.textForeground': ``,
-    // 'symbolIcon.typeParameterForeground': ``,
-    // 'symbolIcon.unitForeground': ``,
-    // 'symbolIcon.variableForeground': ``,
+    "symbolIcon.arrayForeground": ecstasy,
+    "symbolIcon.booleanForeground": ecstasy,
+    "symbolIcon.classForeground": ecstasy,
+    "symbolIcon.colorForeground": ecstasy,
+    "symbolIcon.constantForeground": ecstasy,
+    "symbolIcon.constructorForeground": ecstasy,
+    "symbolIcon.enumeratorForeground": ecstasy,
+    "symbolIcon.enumeratorMemberForeground": ecstasy,
+    "symbolIcon.eventForeground": ecstasy,
+    "symbolIcon.fieldForeground": ecstasy,
+    "symbolIcon.fileForeground": ecstasy,
+    "symbolIcon.folderForeground": ecstasy,
+    "symbolIcon.functionForeground": ecstasy,
+    "symbolIcon.interfaceForeground": ecstasy,
+    "symbolIcon.keyForeground": ecstasy,
+    "symbolIcon.keywordForeground": ecstasy,
+    "symbolIcon.methodForeground": ecstasy,
+    "symbolIcon.moduleForeground": ecstasy,
+    "symbolIcon.namespaceForeground": ecstasy,
+    "symbolIcon.nullForeground": ecstasy,
+    "symbolIcon.numberForeground": ecstasy,
+    "symbolIcon.objectForeground": ecstasy,
+    "symbolIcon.operatorForeground": ecstasy,
+    "symbolIcon.packageForeground": ecstasy,
+    "symbolIcon.propertyForeground": ecstasy,
+    "symbolIcon.referenceForeground": ecstasy,
+    "symbolIcon.snippetForeground": ecstasy,
+    "symbolIcon.stringForeground": ecstasy,
+    "symbolIcon.structForeground": ecstasy,
+    "symbolIcon.textForeground": ecstasy,
+    "symbolIcon.typeParameterForeground": ecstasy,
+    "symbolIcon.unitForeground": ecstasy,
+    "symbolIcon.variableForeground": ecstasy,
 
-    // Text colors | DONE
+    // Text colors
     // -------------------------------------------------------------------------
     "textBlockQuote.background": transparent,
-    "textBlockQuote.border": indianKhaki,
+    "textBlockQuote.border": iron,
     "textCodeBlock.background": black,
     "textLink.activeForeground": nepal,
     "textLink.foreground": smaltBlue,
     "textPreformat.foreground": indianKhaki,
     "textSeparator.foreground": iron,
 
-    // Title bar colors | DONE
+    // Title bar colors
     // -------------------------------------------------------------------------
-    "titleBar.activeBackground": bunker,
+    "titleBar.activeBackground": ebony,
     "titleBar.activeForeground": porcelain,
     "titleBar.border": transparent,
-    "titleBar.inactiveBackground": bunker,
-    "titleBar.inactiveForeground": porcelain,
+    "titleBar.inactiveBackground": black,
+    "titleBar.inactiveForeground": iron,
 
-    // Welcome page colors | DONE
+    // Welcome page colors
     // -------------------------------------------------------------------------
     "walkThrough.embeddedEditorBackground": ebony,
     "welcomePage.background": ebony,
     "welcomePage.buttonBackground": smaltBlue,
     "welcomePage.buttonHoverBackground": nepal,
 
-    // Window border | DONE
+    // Window border
     // -------------------------------------------------------------------------
     "window.activeBorder": bunker,
     "window.inactiveBorder": black
@@ -1237,9 +1179,7 @@ module.exports = {
         `constant.character.escape.backslash.regexp`,
         `keyword.operator.or.regexp`,
         `punctuation.definition.character-class.regexp`,
-        `punctuation.definition.group.regexp`,
-        `punctuation.definition.string.begin.js`,
-        `punctuation.definition.string.end.js`
+        `punctuation.definition.group.regexp`
       ],
       settings: {
         foreground: smaltBlue
