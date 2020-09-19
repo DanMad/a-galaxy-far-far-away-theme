@@ -1,7 +1,7 @@
 {
   "name": "a-galaxy-far-far-away-theme",
   "displayName": "A Galaxy Far, Far Away Theme",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "private": true,
   "description": "A Visual Studio Code theme from a galaxy far, far away...",
   "categories": [
@@ -66,7 +66,7 @@
   "engines": {
     "vscode": "^1.42.0"
   },
-  "icon": "icon.png",
+  "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#04070b",
     "theme": "dark"
