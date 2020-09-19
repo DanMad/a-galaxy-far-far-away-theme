@@ -541,14 +541,6 @@ module.exports = {
     "textPreformat.foreground": indianKhaki,
     "textSeparator.foreground": iron,
 
-    // Title bar colors
-    // -------------------------------------------------------------------------
-    "titleBar.activeBackground": ebony,
-    "titleBar.activeForeground": porcelain,
-    "titleBar.border": transparent,
-    "titleBar.inactiveBackground": black,
-    "titleBar.inactiveForeground": iron,
-
     // Welcome page colors
     // -------------------------------------------------------------------------
     "walkThrough.embeddedEditorBackground": ebony,
