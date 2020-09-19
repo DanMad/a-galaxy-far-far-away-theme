@@ -14,13 +14,11 @@ const striking = `4d`;
 
 // Palette
 // =============================================================================
-const bitterSweet = `#ff6e6e`;
 const black = `#010203`;
 const bud = `#9fa599`;
 const bunker = `#0a0f17`;
 const camouflageGreen = `#777d72`;
 const catskillWhite = `#fbfcfd`;
-const coralRed = `#fa3f3f`;
 const ebony = `#04070b`;
 const greenSpring = `#bec4b7`;
 const heather = `#becbd8`;
@@ -29,7 +27,9 @@ const milanoRed = `#af0505`;
 const mystic = `#dee6ec`;
 const nepal = `#98abc1`;
 const red = `#f50a0a`;
+const sunsetOrange = `#fa4848`;
 const transparent = black + hidden;
+const vividTangerine = `#ff8080`;
 
 // Exports
 // =============================================================================
@@ -46,12 +46,12 @@ module.exports = {
     "activityBar.dropBorder": milanoRed,
     "activityBar.foreground": mystic,
     "activityBar.inactiveForeground": nepal,
-    "activityBarBadge.background": coralRed,
+    "activityBarBadge.background": sunsetOrange,
     "activityBarBadge.foreground": black,
 
     // Badge colors
     // -------------------------------------------------------------------------
-    "badge.background": coralRed,
+    "badge.background": sunsetOrange,
     "badge.foreground": black,
 
     // Base colors
@@ -93,7 +93,7 @@ module.exports = {
     "debugToolBar.border": bunker,
     "debugView.exceptionLabelBackground": red,
     "debugView.exceptionLabelForeground": black,
-    "debugView.stateLabelBackground": coralRed,
+    "debugView.stateLabelBackground": sunsetOrange,
     "debugView.stateLabelForeground": black,
     "debugView.valueChangedHighlight": catskillWhite,
     "editor.focusedStackFrameHighlightBackground": bunker,
@@ -104,7 +104,7 @@ module.exports = {
     "debugConsole.errorForeground": milanoRed,
     "debugConsole.infoForeground": catskillWhite,
     "debugConsole.sourceForeground": nepal,
-    "debugConsole.warningForeground": bitterSweet,
+    "debugConsole.warningForeground": vividTangerine,
     "debugConsoleInputIcon.foreground": nepal,
     "debugIcon.breakpointCurrentStackframeForeground": nepal,
     "debugIcon.breakpointDisabledForeground": nepal,
@@ -183,8 +183,8 @@ module.exports = {
     "editorInfo.foreground": catskillWhite,
     "editorLineNumber.activeForeground": nepal,
     "editorLineNumber.foreground": lynch,
-    "editorLightBulb.foreground": coralRed,
-    "editorLightBulbAutoFix.foreground": coralRed,
+    "editorLightBulb.foreground": sunsetOrange,
+    "editorLightBulbAutoFix.foreground": sunsetOrange,
     "editorLink.activeForeground": greenSpring,
     "editorOverviewRuler.addedForeground": camouflageGreen,
     "editorOverviewRuler.background": transparent,
@@ -197,18 +197,18 @@ module.exports = {
     "editorOverviewRuler.modifiedForeground": catskillWhite,
     "editorOverviewRuler.rangeHighlightForeground": lynch + pronounced,
     "editorOverviewRuler.selectionHighlightForeground": lynch + striking,
-    "editorOverviewRuler.warningForeground": bitterSweet,
+    "editorOverviewRuler.warningForeground": vividTangerine,
     "editorOverviewRuler.wordHighlightForeground": lynch + pronounced,
     "editorOverviewRuler.wordHighlightStrongForeground": lynch + pronounced,
     "editorUnnecessaryCode.border": transparent,
     "editorUnnecessaryCode.opacity": catskillWhite + striking,
     "editorRuler.foreground": heather,
     "editorWarning.border": transparent,
-    "editorWarning.foreground": bitterSweet,
+    "editorWarning.foreground": vividTangerine,
     "editorWhitespace.foreground": lynch + striking,
     "problemsErrorIcon.foreground": milanoRed,
     "problemsInfoIcon.foreground": catskillWhite,
-    "problemsWarningIcon.foreground": bitterSweet,
+    "problemsWarningIcon.foreground": vividTangerine,
     "searchEditor.findMatchBackground": lynch + pronounced,
     "searchEditor.findMatchBorder": transparent,
     "searchEditor.textInputBorder": milanoRed,
@@ -257,7 +257,7 @@ module.exports = {
     "editorMarkerNavigation.background": heather,
     "editorMarkerNavigationError.background": milanoRed,
     "editorMarkerNavigationInfo.background": catskillWhite,
-    "editorMarkerNavigationWarning.background": bitterSweet,
+    "editorMarkerNavigationWarning.background": vividTangerine,
     "editorSuggestWidget.background": bunker,
     "editorSuggestWidget.border": milanoRed,
     "editorSuggestWidget.foreground": nepal,
@@ -272,8 +272,8 @@ module.exports = {
     // -------------------------------------------------------------------------
     "extensionButton.prominentBackground": red,
     "extensionButton.prominentForeground": black,
-    "extensionButton.prominentHoverBackground": bitterSweet,
-    "extensionBadge.remoteBackground": coralRed,
+    "extensionButton.prominentHoverBackground": vividTangerine,
+    "extensionBadge.remoteBackground": sunsetOrange,
     "extensionBadge.remoteForeground": black,
 
     // Git colors
@@ -345,7 +345,7 @@ module.exports = {
     "list.inactiveSelectionBackground": black,
     "list.inactiveSelectionForeground": mystic,
     "list.invalidItemForeground": lynch,
-    "list.warningForeground": bitterSweet,
+    "list.warningForeground": vividTangerine,
     "listFilterWidget.background": bunker,
     "listFilterWidget.noMatchesOutline": milanoRed,
     "listFilterWidget.outline": milanoRed,
@@ -383,7 +383,7 @@ module.exports = {
     "minimap.errorHighlight": milanoRed,
     "minimap.findMatchHighlight": lynch + pronounced,
     "minimap.selectionHighlight": lynch + striking,
-    "minimap.warningHighlight": bitterSweet,
+    "minimap.warningHighlight": vividTangerine,
     "minimapGutter.addedBackground": camouflageGreen,
     "minimapGutter.deletedBackground": milanoRed,
     "minimapGutter.modifiedBackground": catskillWhite,
@@ -402,7 +402,7 @@ module.exports = {
     "notifications.foreground": nepal,
     "notificationsErrorIcon.foreground": milanoRed,
     "notificationsInfoIcon.foreground": catskillWhite,
-    "notificationsWarningIcon.foreground": bitterSweet,
+    "notificationsWarningIcon.foreground": vividTangerine,
     "notificationToast.border": bunker,
 
     // Panel colors
@@ -496,39 +496,39 @@ module.exports = {
 
     // Symbol icons colors
     // -------------------------------------------------------------------------
-    "symbolIcon.arrayForeground": coralRed,
-    "symbolIcon.booleanForeground": coralRed,
-    "symbolIcon.classForeground": coralRed,
-    "symbolIcon.colorForeground": coralRed,
-    "symbolIcon.constantForeground": coralRed,
-    "symbolIcon.constructorForeground": coralRed,
-    "symbolIcon.enumeratorForeground": coralRed,
-    "symbolIcon.enumeratorMemberForeground": coralRed,
-    "symbolIcon.eventForeground": coralRed,
-    "symbolIcon.fieldForeground": coralRed,
-    "symbolIcon.fileForeground": coralRed,
-    "symbolIcon.folderForeground": coralRed,
-    "symbolIcon.functionForeground": coralRed,
-    "symbolIcon.interfaceForeground": coralRed,
-    "symbolIcon.keyForeground": coralRed,
-    "symbolIcon.keywordForeground": coralRed,
-    "symbolIcon.methodForeground": coralRed,
-    "symbolIcon.moduleForeground": coralRed,
-    "symbolIcon.namespaceForeground": coralRed,
-    "symbolIcon.nullForeground": coralRed,
-    "symbolIcon.numberForeground": coralRed,
-    "symbolIcon.objectForeground": coralRed,
-    "symbolIcon.operatorForeground": coralRed,
-    "symbolIcon.packageForeground": coralRed,
-    "symbolIcon.propertyForeground": coralRed,
-    "symbolIcon.referenceForeground": coralRed,
-    "symbolIcon.snippetForeground": coralRed,
-    "symbolIcon.stringForeground": coralRed,
-    "symbolIcon.structForeground": coralRed,
-    "symbolIcon.textForeground": coralRed,
-    "symbolIcon.typeParameterForeground": coralRed,
-    "symbolIcon.unitForeground": coralRed,
-    "symbolIcon.variableForeground": coralRed,
+    "symbolIcon.arrayForeground": sunsetOrange,
+    "symbolIcon.booleanForeground": sunsetOrange,
+    "symbolIcon.classForeground": sunsetOrange,
+    "symbolIcon.colorForeground": sunsetOrange,
+    "symbolIcon.constantForeground": sunsetOrange,
+    "symbolIcon.constructorForeground": sunsetOrange,
+    "symbolIcon.enumeratorForeground": sunsetOrange,
+    "symbolIcon.enumeratorMemberForeground": sunsetOrange,
+    "symbolIcon.eventForeground": sunsetOrange,
+    "symbolIcon.fieldForeground": sunsetOrange,
+    "symbolIcon.fileForeground": sunsetOrange,
+    "symbolIcon.folderForeground": sunsetOrange,
+    "symbolIcon.functionForeground": sunsetOrange,
+    "symbolIcon.interfaceForeground": sunsetOrange,
+    "symbolIcon.keyForeground": sunsetOrange,
+    "symbolIcon.keywordForeground": sunsetOrange,
+    "symbolIcon.methodForeground": sunsetOrange,
+    "symbolIcon.moduleForeground": sunsetOrange,
+    "symbolIcon.namespaceForeground": sunsetOrange,
+    "symbolIcon.nullForeground": sunsetOrange,
+    "symbolIcon.numberForeground": sunsetOrange,
+    "symbolIcon.objectForeground": sunsetOrange,
+    "symbolIcon.operatorForeground": sunsetOrange,
+    "symbolIcon.packageForeground": sunsetOrange,
+    "symbolIcon.propertyForeground": sunsetOrange,
+    "symbolIcon.referenceForeground": sunsetOrange,
+    "symbolIcon.snippetForeground": sunsetOrange,
+    "symbolIcon.stringForeground": sunsetOrange,
+    "symbolIcon.structForeground": sunsetOrange,
+    "symbolIcon.textForeground": sunsetOrange,
+    "symbolIcon.typeParameterForeground": sunsetOrange,
+    "symbolIcon.unitForeground": sunsetOrange,
+    "symbolIcon.variableForeground": sunsetOrange,
 
     // Text colors
     // -------------------------------------------------------------------------
@@ -539,14 +539,6 @@ module.exports = {
     "textLink.foreground": camouflageGreen,
     "textPreformat.foreground": catskillWhite,
     "textSeparator.foreground": heather,
-
-    // Title bar colors
-    // -------------------------------------------------------------------------
-    "titleBar.activeBackground": ebony,
-    "titleBar.activeForeground": mystic,
-    "titleBar.border": transparent,
-    "titleBar.inactiveBackground": black,
-    "titleBar.inactiveForeground": heather,
 
     // Welcome page colors
     // -------------------------------------------------------------------------
@@ -611,7 +603,7 @@ module.exports = {
       name: `Base support`,
       scope: `support`,
       settings: {
-        foreground: bitterSweet
+        foreground: vividTangerine
       }
     },
     {
@@ -636,7 +628,7 @@ module.exports = {
       name: `CSS classes`,
       scope: `entity.other.attribute-name.class.css`,
       settings: {
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     },
     {
@@ -654,14 +646,14 @@ module.exports = {
         `punctuation.definition.constant.css`
       ],
       settings: {
-        foreground: bitterSweet
+        foreground: vividTangerine
       }
     },
     {
       name: `CSS ids`,
       scope: `entity.other.attribute-name.id.css`,
       settings: {
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     },
     {
@@ -766,7 +758,7 @@ module.exports = {
       name: `HTML tags`,
       scope: `entity.name.tag.html`,
       settings: {
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     },
 
@@ -815,7 +807,7 @@ module.exports = {
         "support.function.js"
       ],
       settings: {
-        foreground: bitterSweet
+        foreground: vividTangerine
       }
     },
     {
@@ -855,7 +847,7 @@ module.exports = {
       scope: [`meta.object-literal.key.js`, `variable.other.property.js`],
       settings: {
         fontStyle: `normal`,
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     },
     {
@@ -920,14 +912,14 @@ module.exports = {
       scope: `support.class.component.js.jsx`,
       settings: {
         fontStyle: `bold`,
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     },
     {
       name: `JSX tags`,
       scope: `entity.name.tag.js.jsx`,
       settings: {
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     },
 
@@ -985,7 +977,7 @@ module.exports = {
         `string.other.link.title.markdown`
       ],
       settings: {
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     },
     {
@@ -1003,7 +995,7 @@ module.exports = {
       scope: [`meta.attribute.python`, `meta.indexed-name.python`],
       settings: {
         fontStyle: `regular`,
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     },
     {
@@ -1100,7 +1092,7 @@ module.exports = {
       ],
       settings: {
         fontStyle: `regular`,
-        foreground: bitterSweet
+        foreground: vividTangerine
       }
     },
     {
@@ -1160,7 +1152,7 @@ module.exports = {
       scope: [`support.type.exception.python`, `support.type.python`],
       settings: {
         fontStyle: `regular`,
-        foreground: bitterSweet
+        foreground: vividTangerine
       }
     },
     {
@@ -1243,7 +1235,7 @@ module.exports = {
       name: `SCSS functions`,
       scope: `entity.name.function.scss`,
       settings: {
-        foreground: bitterSweet
+        foreground: vividTangerine
       }
     },
     {
@@ -1318,7 +1310,7 @@ module.exports = {
         "support.function.ts"
       ],
       settings: {
-        foreground: bitterSweet
+        foreground: vividTangerine
       }
     },
     {
@@ -1372,7 +1364,7 @@ module.exports = {
       scope: [`variable.object.property.ts`, `variable.other.property.ts`],
       settings: {
         fontStyle: `normal`,
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     },
     {
@@ -1418,7 +1410,7 @@ module.exports = {
       name: `XML tags`,
       scope: `entity.name.tag.localname.xml`,
       settings: {
-        foreground: coralRed
+        foreground: sunsetOrange
       }
     }
   ],
