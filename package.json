@@ -10,14 +10,16 @@
   ],
   "keywords": [
     "a11y",
+    "css",
     "Dark theme",
     "The Empire",
+    "html",
     "Rogue Squadron",
     "Star Wars",
     "Theme",
     "VSCode"
   ],
-  "homepage": "https://github.com/danmad/a-galaxy-far-far-away-theme#readme",
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=DanMad.a-galaxy-far-far-away-theme",
   "bugs": {
     "url": "https://github.com/danmad/a-galaxy-far-far-away-theme/issues"
   },
