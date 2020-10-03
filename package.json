@@ -29,7 +29,7 @@
   "author": "DanMad",
   "publisher": "DanMad",
   "scripts": {
-    "build": "npm run build:the-empire-theme & npm run build:rogue-squadron-theme",
+    "build": "npm run build:the-empire-theme && npm run build:rogue-squadron-theme && npm run sort-package",
     "build:rogue-squadron-theme": "json-stringify src/rogue-squadron-theme.js --out themes/rogue-squadron-theme.json",
     "build:the-empire-theme": "json-stringify src/the-empire-theme.js --out themes/the-empire-theme.json",
     "package": "npx vsce package",
