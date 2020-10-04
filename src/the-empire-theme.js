@@ -8,9 +8,9 @@ const type = `dark`;
 // Opacity
 // =============================================================================
 const hidden = `00`;
-const subtle = `1a`;
 const pronounced = `33`;
 const striking = `4d`;
+const subtle = `1a`;
 
 // Palette
 // =============================================================================
