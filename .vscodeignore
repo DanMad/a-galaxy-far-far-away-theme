@@ -1,5 +1,5 @@
 # Artwork
-images
+*.fig
 *.psd
 *.sketch
 
@@ -16,4 +16,5 @@ node_modules
 .vscode
 
 # Source
+images
 src

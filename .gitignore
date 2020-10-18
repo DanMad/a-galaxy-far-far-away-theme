@@ -1,4 +1,5 @@
 # Artwork
+*.fig
 *.psd
 *.sketch
 
