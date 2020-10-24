@@ -9,9 +9,13 @@ node_modules
 # Ignore files
 .gitignore
 .prettierignore
+.vscodeignore
 
 # Images
 images
+
+# License
+LICENSE
 
 # MacOS
 .DS_Store
@@ -19,8 +23,5 @@ images
 # Package files
 package-lock.json
 
-# Source code
-src
-
-# VS Code settings
-.vscode
+# Themes
+themes

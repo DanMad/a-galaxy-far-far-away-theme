@@ -9,5 +9,5 @@ node_modules
 # MacOS
 .DS_Store
 
-# Packages
+# Package files
 *.vsix
