@@ -844,7 +844,11 @@ module.exports = {
     },
     {
       name: `JavaScript properties`,
-      scope: [`meta.object-literal.key.js`, `variable.other.property.js`],
+      scope: [
+        `meta.object-literal.key.js`,
+        `variable.other.object.property.js`,
+        `variable.other.property.js`
+      ],
       settings: {
         fontStyle: `normal`,
         foreground: sunsetOrange
@@ -1361,7 +1365,11 @@ module.exports = {
     },
     {
       name: `TypeScript properties`,
-      scope: [`variable.object.property.ts`, `variable.other.property.ts`],
+      scope: [
+        `variable.object.property.ts`,
+        `variable.other.object.property.ts`,
+        `variable.other.property.ts`
+      ],
       settings: {
         fontStyle: `normal`,
         foreground: sunsetOrange
