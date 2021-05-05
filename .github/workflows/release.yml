@@ -1,0 +1,26 @@
+name: Release VSCode Theme
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+        with:
+          ref: main
+      - name: Install Yarn
+        run: npm install --global yarn@1.22.10
+      - name: Setup CI
+        run: yarn ci
+      - name: Build
+        run: yarn build
+      - name: Release
+        run: yarn package && yarn publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
