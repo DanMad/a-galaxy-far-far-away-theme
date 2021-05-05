@@ -6,10 +6,11 @@
 # Dependencies
 node_modules
 
+# Hidden directories
+.*/**
+
 # Ignore files
-.gitignore
-.prettierignore
-.vscodeignore
+.*ignore
 
 # Images
 images
@@ -21,7 +22,10 @@ LICENSE
 .DS_Store
 
 # Package files
-package-lock.json
+yarn.lock
+
+# Run Command files
+.*rc
 
 # Themes
 themes
