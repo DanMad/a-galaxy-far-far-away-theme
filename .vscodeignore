@@ -6,9 +6,11 @@
 # Dependencies
 node_modules
 
+# Hidden directories
+.*/**
+
 # Ignore files
-.gitignore
-.prettierignore
+.*ignore
 
 # Images
 images
@@ -17,9 +19,12 @@ images
 .DS_Store
 
 # Package files
-package-lock.json
+yarn.lock
 
-# Source code
+# Run Command files
+.*rc
+
+# Source
 src
 
 # VS Code settings
