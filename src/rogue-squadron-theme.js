@@ -551,7 +551,7 @@ module.exports = {
     // Window border
     // -------------------------------------------------------------------------
     "window.activeBorder": bunker,
-    "window.inactiveBorder": black
+    "window.inactiveBorder": black,
   },
   name,
   tokenColors: [
@@ -561,59 +561,59 @@ module.exports = {
       name: `Base comments`,
       scope: `comment`,
       settings: {
-        foreground: rollingStone
-      }
+        foreground: rollingStone,
+      },
     },
     {
       name: `Base constants`,
       scope: `constant`,
       settings: {
-        foreground: matrix
-      }
+        foreground: matrix,
+      },
     },
     {
       name: `Base entities`,
       scope: `constant.character.entity`,
       settings: {
         fontStyle: `italic`,
-        foreground: trinidad
-      }
+        foreground: trinidad,
+      },
     },
     {
       name: `Base keywords`,
       scope: `keyword`,
       settings: {
-        foreground: indianKhaki
-      }
+        foreground: indianKhaki,
+      },
     },
     {
       name: `Base storage`,
       scope: `storage`,
       settings: {
-        foreground: indianKhaki
-      }
+        foreground: indianKhaki,
+      },
     },
     {
       name: `Base strings`,
       scope: `string`,
       settings: {
-        foreground: matrix
-      }
+        foreground: matrix,
+      },
     },
     {
       name: `Base support`,
       scope: `support`,
       settings: {
-        foreground: treePoppy
-      }
+        foreground: treePoppy,
+      },
     },
     {
       name: `Base variables`,
       scope: `variable`,
       settings: {
         fontStyle: `italic`,
-        foreground: trinidad
-      }
+        foreground: trinidad,
+      },
     },
 
     // CSS tokens
@@ -622,92 +622,92 @@ module.exports = {
       name: `CSS attributes`,
       scope: `entity.other.attribute-name.css`,
       settings: {
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `CSS classes`,
       scope: `entity.other.attribute-name.class.css`,
       settings: {
-        foreground: ecstasy
-      }
+        foreground: ecstasy,
+      },
     },
     {
       name: `CSS entities`,
       scope: `punctuation.definition.entity.css`,
       settings: {
         fontStyle: `normal`,
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `CSS hexadecimals`,
       scope: [
         `constant.other.color.rgb-value.hex.css`,
-        `punctuation.definition.constant.css`
+        `punctuation.definition.constant.css`,
       ],
       settings: {
-        foreground: treePoppy
-      }
+        foreground: treePoppy,
+      },
     },
     {
       name: `CSS ids`,
       scope: `entity.other.attribute-name.id.css`,
       settings: {
-        foreground: ecstasy
-      }
+        foreground: ecstasy,
+      },
     },
     {
       name: `CSS important`,
       scope: `keyword.other.important.css`,
       settings: {
-        fontStyle: `bold`
-      }
+        fontStyle: `bold`,
+      },
     },
     {
       name: `CSS operators`,
       scope: [
         `keyword.operator.arithmetic.css`,
         `keyword.operator.combinator.css`,
-        `keyword.operator.pattern.css`
+        `keyword.operator.pattern.css`,
       ],
       settings: {
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `CSS properties`,
       scope: `support.type.property-name.css`,
       settings: {
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `CSS property values`,
       scope: [
         `support.constant.color.current.css`,
-        `support.constant.property-value.css`
+        `support.constant.property-value.css`,
       ],
       settings: {
-        foreground: indianKhaki
-      }
+        foreground: indianKhaki,
+      },
     },
     {
       name: `CSS pseudo`,
       scope: [
         `entity.other.attribute-name.pseudo-class.css`,
-        `entity.other.attribute-name.pseudo-element.css`
+        `entity.other.attribute-name.pseudo-element.css`,
       ],
       settings: {
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `CSS tags`,
       scope: `entity.name.tag.css`,
       settings: {
-        foreground: smaltBlue
-      }
+        foreground: smaltBlue,
+      },
     },
     {
       name: `CSS units`,
@@ -732,18 +732,18 @@ module.exports = {
         `keyword.other.unit.vmax.css`,
         `keyword.other.unit.vmin.css`,
         `keyword.other.unit.vh.css`,
-        `keyword.other.unit.vw.css`
+        `keyword.other.unit.vw.css`,
       ],
       settings: {
-        foreground: matrix
-      }
+        foreground: matrix,
+      },
     },
     {
       name: `CSS vendor-prefixed properties`,
       scope: `support.type.vendored.property-name.css`,
       settings: {
-        foreground: greyChateau
-      }
+        foreground: greyChateau,
+      },
     },
 
     // HTML tokens
@@ -752,15 +752,15 @@ module.exports = {
       name: `HTML attributes`,
       scope: `entity.other.attribute-name.html`,
       settings: {
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `HTML tags`,
       scope: `entity.name.tag.html`,
       settings: {
-        foreground: ecstasy
-      }
+        foreground: ecstasy,
+      },
     },
 
     // JavaScript tokens
@@ -769,8 +769,8 @@ module.exports = {
       name: `JavaScript block comments`,
       scope: [`comment.block.documentation.js`, `comment.block.js`],
       settings: {
-        foreground: greyChateau
-      }
+        foreground: greyChateau,
+      },
     },
     {
       name: `JavaScript brackets`,
@@ -783,47 +783,47 @@ module.exports = {
         `punctuation.definition.bracket.curly.end.jsdoc`,
         `punctuation.definition.template-expression.begin.js`,
         `punctuation.definition.template-expression.end.js`,
-        `punctuation.separator.key-value.js`
+        `punctuation.separator.key-value.js`,
       ],
       settings: {
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `JavaScript classes`,
       scope: [
         `entity.name.type.class.js`,
         `entity.name.type.js`,
-        `support.class.builtin.js`
+        `support.class.builtin.js`,
       ],
       settings: {
-        foreground: smaltBlue
-      }
+        foreground: smaltBlue,
+      },
     },
     {
       name: `JavaScript functions`,
       scope: [
         `entity.name.function.js`,
         `support.function.console.js`,
-        "support.function.js"
+        "support.function.js",
       ],
       settings: {
-        foreground: treePoppy
-      }
+        foreground: treePoppy,
+      },
     },
     {
       name: `JavaScript inherited classes`,
       scope: `entity.other.inherited-class.js`,
       settings: {
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
     {
       name: `JavaScript null`,
       scope: `constant.language.null.js`,
       settings: {
-        foreground: greyChateau
-      }
+        foreground: greyChateau,
+      },
     },
     {
       name: `JavaScript operators`,
@@ -837,59 +837,59 @@ module.exports = {
         `keyword.operator.increment.js`,
         `keyword.operator.logical.js`,
         `keyword.operator.relational.js`,
-        `keyword.operator.ternary.js`
+        `keyword.operator.ternary.js`,
       ],
       settings: {
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `JavaScript properties`,
       scope: [
         `meta.object-literal.key.js`,
         `variable.other.object.property.js`,
-        `variable.other.property.js`
+        `variable.other.property.js`,
       ],
       settings: {
         fontStyle: `normal`,
-        foreground: ecstasy
-      }
+        foreground: ecstasy,
+      },
     },
     {
       name: `JavaScript regular expressions`,
       scope: `string.regexp.js`,
       settings: {
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
     {
       name: `JavaScript super`,
       scope: `variable.language.super.js`,
       settings: {
         fontStyle: `normal`,
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `JavaScript this`,
       scope: `variable.language.this.js`,
       settings: {
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `JavaScript types`,
       scope: `entity.name.type.instance.jsdoc`,
       settings: {
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
     {
       name: `JavaScript undefined`,
       scope: `constant.language.undefined.js`,
       settings: {
-        foreground: greyChateau
-      }
+        foreground: greyChateau,
+      },
     },
 
     // JSON tokens
@@ -898,8 +898,8 @@ module.exports = {
       name: `JSON properties`,
       scope: `support.type.property-name.json`,
       settings: {
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
 
     // JSX tokens
@@ -908,23 +908,23 @@ module.exports = {
       name: `JSX attributes`,
       scope: `entity.other.attribute-name.js.jsx`,
       settings: {
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `JSX component tags`,
       scope: `support.class.component.js.jsx`,
       settings: {
         fontStyle: `bold`,
-        foreground: ecstasy
-      }
+        foreground: ecstasy,
+      },
     },
     {
       name: `JSX tags`,
       scope: `entity.name.tag.js.jsx`,
       settings: {
-        foreground: ecstasy
-      }
+        foreground: ecstasy,
+      },
     },
 
     // Markdown tokens
@@ -933,25 +933,25 @@ module.exports = {
       name: `Markdown backtick strings`,
       scope: `markup.inline.raw.string.markdown`,
       settings: {
-        foreground: trinidad
-      }
+        foreground: trinidad,
+      },
     },
     {
       name: `Markdown bold`,
       scope: `markup.bold.markdown`,
       settings: {
-        fontStyle: `bold`
-      }
+        fontStyle: `bold`,
+      },
     },
     {
       name: `Markdown definitions`,
       scope: [
         `punctuation.definition.bold.markdown`,
-        `punctuation.definition.italic.markdown`
+        `punctuation.definition.italic.markdown`,
       ],
       settings: {
-        fontStyle: `regular`
-      }
+        fontStyle: `regular`,
+      },
     },
     {
       name: `Markdown headings`,
@@ -961,35 +961,35 @@ module.exports = {
         `heading.3.markdown`,
         `heading.4.markdown`,
         `heading.5.markdown`,
-        `heading.6.markdown`
+        `heading.6.markdown`,
       ],
       settings: {
-        foreground: indianKhaki
-      }
+        foreground: indianKhaki,
+      },
     },
     {
       name: `Markdown italics`,
       scope: `markup.italic.markdown`,
       settings: {
-        fontStyle: `italic`
-      }
+        fontStyle: `italic`,
+      },
     },
     {
       name: `Markdown link titles`,
       scope: [
         `string.other.link.description.markdown`,
-        `string.other.link.title.markdown`
+        `string.other.link.title.markdown`,
       ],
       settings: {
-        foreground: ecstasy
-      }
+        foreground: ecstasy,
+      },
     },
     {
       name: `Markdown links`,
       scope: `markup.underline.link.markdown`,
       settings: {
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
 
     // Python tokens
@@ -999,8 +999,8 @@ module.exports = {
       scope: [`meta.attribute.python`, `meta.indexed-name.python`],
       settings: {
         fontStyle: `regular`,
-        foreground: ecstasy
-      }
+        foreground: ecstasy,
+      },
     },
     {
       name: `Python brackets`,
@@ -1029,62 +1029,62 @@ module.exports = {
         `punctuation.separator.inheritance.python`,
         `punctuation.separator.slice.python`,
         `punctuation.separator.parameters.python`,
-        `punctuation.separator.period.python`
+        `punctuation.separator.period.python`,
       ],
       settings: {
         fontStyle: `regular`,
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `Python classes`,
       scope: `entity.name.type.class.python`,
       settings: {
         fontStyle: `regular`,
-        foreground: smaltBlue
-      }
+        foreground: smaltBlue,
+      },
     },
     {
       name: `Python comments`,
       scope: `comment.line.number-sign.python`,
       settings: {
-        fontStyle: `regular`
-      }
+        fontStyle: `regular`,
+      },
     },
     {
       name: `Python constants`,
       scope: [
         `constant.language.python`,
         `constant.numeric.dec.python`,
-        `constant.numeric.float.python`
+        `constant.numeric.float.python`,
       ],
       settings: {
-        fontStyle: `regular`
-      }
+        fontStyle: `regular`,
+      },
     },
     {
       name: `Python doc strings`,
       scope: `string.quoted.docstring.multi.python`,
       settings: {
         fontStyle: `regular`,
-        foreground: greyChateau
-      }
+        foreground: greyChateau,
+      },
     },
     {
       name: `Python escaped characters`,
       scope: `constant.character.escape.python`,
       settings: {
         fontStyle: `regular`,
-        foreground: trinidad
-      }
+        foreground: trinidad,
+      },
     },
     {
       name: `Python foreground`,
       scope: `source.python`,
       settings: {
         fontStyle: `italic`,
-        foreground: trinidad
-      }
+        foreground: trinidad,
+      },
     },
     {
       name: `Python functions`,
@@ -1092,31 +1092,31 @@ module.exports = {
         `entity.name.function.python`,
         `meta.function-call.generic.python`,
         `support.function.builtin.python`,
-        `support.function.magic.python`
+        `support.function.magic.python`,
       ],
       settings: {
         fontStyle: `regular`,
-        foreground: treePoppy
-      }
+        foreground: treePoppy,
+      },
     },
     {
       name: `Python inherited classes`,
       scope: `entity.other.inherited-class.python`,
       settings: {
         fontStyle: `regular`,
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
     {
       name: `Python keywords`,
       scope: [
         `keyword.control.flow.python`,
         `keyword.control.import.python`,
-        `keyword.operator.logical.python` // Should this be scoped to Python operators?
+        `keyword.operator.logical.python`, // Should this be scoped to Python operators?
       ],
       settings: {
-        fontStyle: `regular`
-      }
+        fontStyle: `regular`,
+      },
     },
     {
       name: `Python operators`,
@@ -1127,44 +1127,44 @@ module.exports = {
         `keyword.operator.comparison.python`,
         `keyword.operator.python`,
         `keyword.operator.unpacking.arguments.python`,
-        `keyword.operator.unpacking.parameter.python`
+        `keyword.operator.unpacking.parameter.python`,
       ],
       settings: {
         fontStyle: `regular`,
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `Python storage`,
       scope: [`storage.type.class.python`, `storage.type.function.python`],
       settings: {
-        fontStyle: `regular`
-      }
+        fontStyle: `regular`,
+      },
     },
     {
       name: `Python strings`,
       scope: [
         `string.quoted.docstring.single.python`,
-        `string.quoted.single.python`
+        `string.quoted.single.python`,
       ],
       settings: {
-        fontStyle: `regular`
-      }
+        fontStyle: `regular`,
+      },
     },
     {
       name: `Python types`,
       scope: [`support.type.exception.python`, `support.type.python`],
       settings: {
         fontStyle: `regular`,
-        foreground: treePoppy
-      }
+        foreground: treePoppy,
+      },
     },
     {
       name: `Python variables`,
       scope: `constant.other.caps.python`,
       settings: {
-        foreground: trinidad
-      }
+        foreground: trinidad,
+      },
     },
 
     // Regular expression tokens
@@ -1175,33 +1175,33 @@ module.exports = {
         `constant.character.escape.backslash.regexp`,
         `keyword.operator.or.regexp`,
         `punctuation.definition.character-class.regexp`,
-        `punctuation.definition.group.regexp`
+        `punctuation.definition.group.regexp`,
       ],
       settings: {
-        foreground: smaltBlue
-      }
+        foreground: smaltBlue,
+      },
     },
     {
       name: `Regular expression constants`,
       scope: [
         `constant.other.character-class.range.regexp`,
         `constant.other.character-class.regexp`,
-        `constant.other.character-class.set.regexp`
+        `constant.other.character-class.set.regexp`,
       ],
       settings: {
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
     {
       name: `Regular expression keywords`,
       scope: [
         `keyword.control.anchor.regexp`,
         `keyword.operator.negation.regexp`,
-        `keyword.operator.quantifier.regexp`
+        `keyword.operator.quantifier.regexp`,
       ],
       settings: {
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
 
     // SCSS tokens
@@ -1210,15 +1210,15 @@ module.exports = {
       name: `SCSS attributes`,
       scope: `entity.other.attribute-name.attribute.scss`,
       settings: {
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `SCSS block comments`,
       scope: `comment.block.scss`,
       settings: {
-        foreground: greyChateau
-      }
+        foreground: greyChateau,
+      },
     },
     {
       name: `SCSS brackets`,
@@ -1228,41 +1228,58 @@ module.exports = {
         `punctuation.definition.interpolation.begin.bracket.curly.scss`,
         `punctuation.definition.interpolation.end.bracket.curly.scss`,
         `punctuation.section.function.scss`,
-        `punctuation.separator.delimiter.scss`
+        `punctuation.separator.delimiter.scss`,
       ],
       settings: {
         fontStyle: `regular`,
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
 
     {
       name: `SCSS functions`,
       scope: `entity.name.function.scss`,
       settings: {
-        foreground: treePoppy
-      }
+        foreground: treePoppy,
+      },
     },
     {
       name: `SCSS important`,
       scope: `keyword.other.important.scss`,
       settings: {
-        fontStyle: `bold`
-      }
+        fontStyle: `bold`,
+      },
     },
     {
       name: `SCSS operators`,
       scope: `keyword.operator.scss`,
       settings: {
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `SCSS strings`,
       scope: `meta.attribute-selector.scss`,
       settings: {
-        foreground: matrix
-      }
+        foreground: matrix,
+      },
+    },
+
+    // TSX tokens
+    // -------------------------------------------------------------------------
+    {
+      name: `TSX block comments`,
+      scope: `comment.block.tsx`,
+      settings: {
+        foreground: greyChateau,
+      },
+    },
+    {
+      name: `TSX interface types`,
+      scope: `entity.name.type.interface.tsx`,
+      settings: {
+        foreground: smaltBlue,
+      },
     },
 
     // TypeScript tokens
@@ -1271,15 +1288,15 @@ module.exports = {
       name: `TypeScript alias types`,
       scope: `entity.name.type.alias.ts`,
       settings: {
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
     {
       name: `TypeScript block comments`,
       scope: [`comment.block.documentation.ts`, `comment.block.ts`],
       settings: {
-        foreground: greyChateau
-      }
+        foreground: greyChateau,
+      },
     },
     {
       name: `TypeScript brackets`,
@@ -1290,54 +1307,54 @@ module.exports = {
         `punctuation.accessor.ts`,
         `punctuation.definition.block.ts`,
         `punctuation.definition.template-expression.begin.ts`,
-        `punctuation.definition.template-expression.end.ts`
+        `punctuation.definition.template-expression.end.ts`,
       ],
       settings: {
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `TypeScript classes`,
       scope: [
         `entity.name.type.class.ts`,
         `entity.name.type.ts`,
-        `support.class.builtin.ts`
+        `support.class.builtin.ts`,
       ],
       settings: {
-        foreground: smaltBlue
-      }
+        foreground: smaltBlue,
+      },
     },
     {
       name: `TypeScript functions`,
       scope: [
         `entity.name.function.ts`,
         `support.function.console.ts`,
-        "support.function.ts"
+        "support.function.ts",
       ],
       settings: {
-        foreground: treePoppy
-      }
+        foreground: treePoppy,
+      },
     },
     {
       name: `TypeScript inherited classes`,
       scope: `entity.other.inherited-class.ts`,
       settings: {
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
     {
       name: `TypeScript interface types`,
       scope: `entity.name.type.interface.ts`,
       settings: {
-        foreground: smaltBlue
-      }
+        foreground: smaltBlue,
+      },
     },
     {
       name: `TypeScript null`,
       scope: `constant.language.null.ts`,
       settings: {
-        foreground: greyChateau
-      }
+        foreground: greyChateau,
+      },
     },
     {
       name: `TypeScript operators`,
@@ -1351,59 +1368,59 @@ module.exports = {
         `keyword.operator.increment.ts`,
         `keyword.operator.logical.ts`,
         `keyword.operator.relational.ts`,
-        `keyword.operator.ternary.ts`
+        `keyword.operator.ternary.ts`,
       ],
       settings: {
-        foreground: iron
-      }
+        foreground: iron,
+      },
     },
     {
       name: `TypeScript primitive types`,
       scope: `support.type.primitive.ts`,
       settings: {
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
     {
       name: `TypeScript properties`,
       scope: [
         `variable.object.property.ts`,
         `variable.other.object.property.ts`,
-        `variable.other.property.ts`
+        `variable.other.property.ts`,
       ],
       settings: {
         fontStyle: `normal`,
-        foreground: ecstasy
-      }
+        foreground: ecstasy,
+      },
     },
     {
       name: `TypeScript regular expressions`,
       scope: `string.regexp.ts`,
       settings: {
-        foreground: nepal
-      }
+        foreground: nepal,
+      },
     },
     {
       name: `TypeScript super`,
       scope: `variable.language.super.ts`,
       settings: {
         fontStyle: `normal`,
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `TypeScript this`,
       scope: `variable.language.this.ts`,
       settings: {
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `TypeScript undefined`,
       scope: `constant.language.undefined.ts`,
       settings: {
-        foreground: greyChateau
-      }
+        foreground: greyChateau,
+      },
     },
 
     // XML tokens
@@ -1412,16 +1429,16 @@ module.exports = {
       name: `XML attributes`,
       scope: `entity.other.attribute-name.localname.xml`,
       settings: {
-        foreground: porcelain
-      }
+        foreground: porcelain,
+      },
     },
     {
       name: `XML tags`,
       scope: `entity.name.tag.localname.xml`,
       settings: {
-        foreground: ecstasy
-      }
-    }
+        foreground: ecstasy,
+      },
+    },
   ],
-  type
+  type,
 };

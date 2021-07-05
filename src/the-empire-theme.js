@@ -1264,6 +1264,23 @@ module.exports = {
       },
     },
 
+    // TSX tokens
+    // -------------------------------------------------------------------------
+    {
+      name: `TSX block comments`,
+      scope: `comment.block.tsx`,
+      settings: {
+        foreground: nepal,
+      },
+    },
+    {
+      name: `TSX interface types`,
+      scope: `entity.name.type.interface.tsx`,
+      settings: {
+        foreground: camouflageGreen,
+      },
+    },
+
     // TypeScript tokens
     // -------------------------------------------------------------------------
     {
@@ -1403,18 +1420,6 @@ module.exports = {
       settings: {
         foreground: nepal,
       },
-    },
-
-    // TSX tokens
-    // -------------------------------------------------------------------------
-    {
-      name: `TSX attributes`,
-    },
-    {
-      name: `TSX component tags`,
-    },
-    {
-      name: `TSX tags`,
     },
 
     // XML tokens
