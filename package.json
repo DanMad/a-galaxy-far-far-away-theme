@@ -52,9 +52,9 @@
     ]
   },
   "devDependencies": {
-    "husky": "^6.0.0",
+    "husky": "^7.0.0",
     "json-stringify-cli": "^1.0.1",
-    "lint-staged": "^10.4.2",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.2.1",
     "sort-package-json": "^1.46.0",
     "vsce": "^1.80.0"
