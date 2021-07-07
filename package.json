@@ -28,7 +28,6 @@
     "build:rogue-squadron-theme": "json-stringify src/rogue-squadron-theme.js --out themes/rogue-squadron-theme.json",
     "build:the-empire-theme": "json-stringify src/the-empire-theme.js --out themes/the-empire-theme.json",
     "package": "npx vsce package",
-    "prepare": "husky install",
     "publish": "npx vsce publish",
     "sort-package": "sort-package-json"
   },
