@@ -930,6 +930,16 @@
       "settings": { "foreground": "#bc5f5d" }
     },
     {
+      "name": "TSX block comments",
+      "scope": "comment.block.tsx",
+      "settings": { "foreground": "#a8acae" }
+    },
+    {
+      "name": "TSX interface types",
+      "scope": "entity.name.type.interface.tsx",
+      "settings": { "foreground": "#538397" }
+    },
+    {
       "name": "TypeScript alias types",
       "scope": "entity.name.type.alias.ts",
       "settings": { "foreground": "#85adbc" }
