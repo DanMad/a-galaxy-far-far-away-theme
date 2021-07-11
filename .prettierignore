@@ -1,31 +1,32 @@
-# Artwork
-*.fig
-*.psd
-*.sketch
-
 # Dependencies
-node_modules
+node_modules/
 
 # Hidden directories
 .*/**
+!.github/**
 
 # Ignore files
 .*ignore
 
-# Images
-images
+# Images directory
+images/
 
 # License
 LICENSE
 
-# MacOS
+# Log files
+*.log
+
+# Operating System
 .DS_Store
+Thumbs.db
 
 # Package files
 yarn.lock
+*.vsix
 
 # Run Command files
 .*rc
 
-# Themes
-themes
+# Themes directory
+themes/

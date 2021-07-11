@@ -1,10 +1,5 @@
-# Artwork
-*.fig
-*.psd
-*.sketch
-
 # Dependencies
-node_modules
+node_modules/
 
 # Hidden directories
 .*/**
@@ -12,11 +7,15 @@ node_modules
 # Ignore files
 .*ignore
 
-# Images
-images
+# Images directory
+images/
 
-# MacOS
+# Log files
+*.log
+
+# Operating System
 .DS_Store
+Thumbs.db
 
 # Package files
 yarn.lock
@@ -24,8 +23,8 @@ yarn.lock
 # Run Command files
 .*rc
 
-# Source
-src
+# Source directory
+src/
 
-# VS Code settings
-.vscode
+# VSCode directory
+.vscode/

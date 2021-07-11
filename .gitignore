@@ -1,13 +1,15 @@
-# Artwork
-*.fig
-*.psd
-*.sketch
-
 # Dependencies
-node_modules
+node_modules/
 
-# MacOS
+# Log files
+*.log
+
+# Operating System
 .DS_Store
+Thumbs.db
 
 # Package files
 *.vsix
+
+# Themes directory
+themes/
