@@ -24,7 +24,7 @@
   "author": "DanMad",
   "publisher": "DanMad",
   "scripts": {
-    "bootstrap": "yarn install && husky install && chmod ug+x .husky/*",
+    "bootstrap": "yarn install && husky install && chmod +x .husky/*",
     "build": "rm -rf themes && mkdir themes && yarn build:the-empire-theme && yarn build:rogue-squadron-theme",
     "build:rogue-squadron-theme": "json-stringify src/rogue-squadron-theme.js -o themes/rogue-squadron-theme.json",
     "build:the-empire-theme": "json-stringify src/the-empire-theme.js -o themes/the-empire-theme.json",
