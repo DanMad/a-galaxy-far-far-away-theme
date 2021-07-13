@@ -25,6 +25,3 @@ yarn.lock
 
 # Source directory
 src/
-
-# VSCode directory
-.vscode/
