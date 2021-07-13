@@ -8,8 +8,12 @@ node_modules/
 # Ignore files
 .*ignore
 
-# Images directory
-images/
+# Image files
+*.gif
+*.ico
+*.jpg
+*.jpeg
+*.png
 
 # License
 LICENSE
