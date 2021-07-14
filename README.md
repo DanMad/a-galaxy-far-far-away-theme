@@ -1,6 +1,6 @@
 # A Visual Studio Code theme from a galaxy far, far away...
 
-![Rogue Squadron Theme example](https://github.com/DanMad/a-galaxy-far-far-away-theme/images/editor-examples.png)
+![Rogue Squadron Theme example](./images/editor-examples.png)
 
 ## Installation
 
@@ -54,9 +54,9 @@ If you'd like to use this theme as intended, copy and paste the recommended sett
 
 The palette of this theme is inspired by The Empire and Rogue Squadron, while meeting the contrast ratios set out in the [WCAG 2.1, Level AA Compliance Guidelines](https://www.w3.org/TR/WCAG21/).
 
-![The Empire Theme palette](https://github.com/DanMad/a-galaxy-far-far-away-theme/images/the-empire-theme-palette.png)
+![The Empire Theme palette](./images/the-empire-theme-palette.png)
 
-![Rogue Squadron Theme palette](https://github.com/DanMad/a-galaxy-far-far-away-theme/images/rogue-squadron-theme-palette.png)
+![Rogue Squadron Theme palette](./images/rogue-squadron-theme-palette.png)
 
 ## Font
 
