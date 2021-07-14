@@ -19,7 +19,10 @@
   ],
   "homepage": "https://marketplace.visualstudio.com/items?itemName=DanMad.a-galaxy-far-far-away-theme",
   "bugs": "https://github.com/DanMad/a-galaxy-far-far-away-theme/issues",
-  "repository": "https://github.com/DanMad/a-galaxy-far-far-away-theme.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanMad/a-galaxy-far-far-away-theme.git"
+  },
   "license": "MIT",
   "author": "DanMad",
   "publisher": "DanMad",
