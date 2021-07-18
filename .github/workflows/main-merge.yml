@@ -1,0 +1,68 @@
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  get_package_version:
+    name: Get Package Version
+    outputs:
+      git_tag_name: ${{ steps.tag_check.outputs.git_tag_name }}
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - id: tag_check
+        uses: dudo/tag_check@v1.0.0
+        with:
+          git_tag_prefix: v
+
+    runs-on: ubuntu-latest
+
+  create_github_release:
+    env:
+      GITHUB_TAG: ${{ needs.get_package_version.outputs.git_tag_name }}
+
+    name: Create GitHub Release
+    needs: get_package_version
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/fermium'
+
+      - run: .github/scripts/create-github-release.sh
+
+    runs-on: ubuntu-latest
+
+  create_vscode_release:
+    name: Create VSCode Release
+    needs: create_github_release
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/fermium'
+
+      - run: rm -rf node_modules
+
+      - run: npm install --global yarn
+
+      - run: yarn install --frozen-lockfile
+
+      - run: yarn build
+
+      - run: yarn publish
+
+name: Merge Pull Request
+
+on:
+  push:
+    branches:
+      - main
