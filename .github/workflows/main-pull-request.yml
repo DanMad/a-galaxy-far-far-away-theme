@@ -15,7 +15,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
-name: Create Pull Request
+name: Pull Request (main)
 
 on:
   pull_request:

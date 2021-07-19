@@ -34,6 +34,8 @@ jobs:
         with:
           node-version: 'lts/fermium'
 
+      - run: chmod +x .github/scripts/create-github-release.sh
+
       - run: .github/scripts/create-github-release.sh
 
     runs-on: ubuntu-latest
@@ -58,9 +60,9 @@ jobs:
 
       - run: yarn build
 
-      - run: yarn publish
+      - run: yarn deploy
 
-name: Merge Pull Request
+name: Push (main)
 
 on:
   push:

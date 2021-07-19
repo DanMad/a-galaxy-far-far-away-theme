@@ -35,5 +35,5 @@ yarn.lock
 # Themes directory
 themes/
 
-# Shell scripts
+# Script files
 *.sh
