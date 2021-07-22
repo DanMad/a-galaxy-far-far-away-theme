@@ -3,7 +3,7 @@ node_modules/
 
 # Hidden directories
 .*/**
-!.github/**
+!.github/workflows/**
 
 # Ignore files
 .*ignore

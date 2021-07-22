@@ -1,23 +1,26 @@
-jobs:
-  check_package_version:
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    name: Check Package Version
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-
-      - uses: dudo/tag_check@v1.0.0
-        with:
-          git_tag_prefix: v
-
-    runs-on: ubuntu-latest
+---
 
 name: Pull Request (main)
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 on:
   pull_request:
     branches:
       - main
+
+jobs:
+  check_package_version:
+    name: Check Package Version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/fermium'
+      - run: chmod +x .github/check-package-version
+      - run: .github/check-package-version
+
