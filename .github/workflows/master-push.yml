@@ -1,6 +1,6 @@
 ---
 
-name: Push (main)
+name: Push (master)
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -8,7 +8,7 @@ env:
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   create_github_release:

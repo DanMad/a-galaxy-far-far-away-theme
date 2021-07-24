@@ -1,6 +1,6 @@
 ---
 
-name: Pull Request (main)
+name: Pull Request (master)
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -8,7 +8,7 @@ env:
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   check_package_version:
