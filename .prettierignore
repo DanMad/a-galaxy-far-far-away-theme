@@ -26,8 +26,8 @@ LICENSE
 Thumbs.db
 
 # Package files
-yarn.lock
 *.vsix
+yarn.lock
 
 # Run Command files
 .*rc
