@@ -1,35 +1,35 @@
-`use strict`;
+'use strict';
 
 // Config
 // =============================================================================
-const name = `Rogue Squadron`;
-const type = `dark`;
+const name = 'Rogue Squadron';
+const type = 'dark';
 
 // Opacity
 // =============================================================================
-const hidden = `00`;
-const pronounced = `33`;
-const striking = `4d`;
-const subtle = `1a`;
+const hidden = '00';
+const pronounced = '33';
+const striking = '4d';
+const subtle = '1a';
 
 // Palette
 // =============================================================================
-const appleBlossom = `#a34845`;
-const black = `#010203`;
-const bunker = `#0a0f17`;
-const ebony = `#04070b`;
-const ecstasy = `#fa7d12`;
-const greyChateau = `#a8acae`;
-const indianKhaki = `#c1b398`;
-const iron = `#cacdcf`;
-const matrix = `#bc5f5d`;
-const nepal = `#85adbc`;
-const porcelain = `#e6e8e9`;
-const rollingStone = `#7b7f81`;
-const smaltBlue = `#538397`;
+const appleBlossom = '#a34845';
+const black = '#010203';
+const bunker = '#0a0f17';
+const ebony = '#04070b';
+const ecstasy = '#fa7d12';
+const greyChateau = '#a8acae';
+const indianKhaki = '#c1b398';
+const iron = '#cacdcf';
+const matrix = '#bc5f5d';
+const nepal = '#85adbc';
+const porcelain = '#e6e8e9';
+const rollingStone = '#7b7f81';
+const smaltBlue = '#538397';
 const transparent = black + hidden;
-const treePoppy = `#fc9d1b`;
-const trinidad = `#f4500a`;
+const treePoppy = '#fc9d1b';
+const trinidad = '#f4500a';
 
 // Exports
 // =============================================================================
@@ -492,8 +492,6 @@ module.exports = {
     'statusBar.noFolderBackground': appleBlossom,
     'statusBar.noFolderBorder': transparent,
     'statusBar.noFolderForeground': porcelain,
-    // "statusBarItem.activeBackground": nepal,
-    // "statusBarItem.hoverBackground": nepal,
 
     // Symbol icons colors
     // -------------------------------------------------------------------------
@@ -558,60 +556,60 @@ module.exports = {
     // Base tokens
     // -------------------------------------------------------------------------
     {
-      name: `Base comments`,
-      scope: `comment`,
+      name: 'Base comments',
+      scope: 'comment',
       settings: {
         foreground: rollingStone,
       },
     },
     {
-      name: `Base constants`,
-      scope: `constant`,
+      name: 'Base constants',
+      scope: 'constant',
       settings: {
         foreground: matrix,
       },
     },
     {
-      name: `Base entities`,
-      scope: `constant.character.entity`,
+      name: 'Base entities',
+      scope: 'constant.character.entity',
       settings: {
-        fontStyle: `italic`,
+        fontStyle: 'italic',
         foreground: trinidad,
       },
     },
     {
-      name: `Base keywords`,
-      scope: `keyword`,
+      name: 'Base keywords',
+      scope: 'keyword',
       settings: {
         foreground: indianKhaki,
       },
     },
     {
-      name: `Base storage`,
-      scope: `storage`,
+      name: 'Base storage',
+      scope: 'storage',
       settings: {
         foreground: indianKhaki,
       },
     },
     {
-      name: `Base strings`,
-      scope: `string`,
+      name: 'Base strings',
+      scope: 'string',
       settings: {
         foreground: matrix,
       },
     },
     {
-      name: `Base support`,
-      scope: `support`,
+      name: 'Base support',
+      scope: 'support',
       settings: {
         foreground: treePoppy,
       },
     },
     {
-      name: `Base variables`,
-      scope: `variable`,
+      name: 'Base variables',
+      scope: 'variable',
       settings: {
-        fontStyle: `italic`,
+        fontStyle: 'italic',
         foreground: trinidad,
       },
     },
@@ -619,128 +617,128 @@ module.exports = {
     // CSS tokens
     // -------------------------------------------------------------------------
     {
-      name: `CSS attributes`,
-      scope: `entity.other.attribute-name.css`,
+      name: 'CSS attributes',
+      scope: 'entity.other.attribute-name.css',
       settings: {
         foreground: porcelain,
       },
     },
     {
-      name: `CSS classes`,
-      scope: `entity.other.attribute-name.class.css`,
+      name: 'CSS classes',
+      scope: 'entity.other.attribute-name.class.css',
       settings: {
         foreground: ecstasy,
       },
     },
     {
-      name: `CSS entities`,
-      scope: `punctuation.definition.entity.css`,
+      name: 'CSS entities',
+      scope: 'punctuation.definition.entity.css',
       settings: {
-        fontStyle: `normal`,
+        fontStyle: 'normal',
         foreground: iron,
       },
     },
     {
-      name: `CSS hexadecimals`,
+      name: 'CSS hexadecimals',
       scope: [
-        `constant.other.color.rgb-value.hex.css`,
-        `punctuation.definition.constant.css`,
+        'constant.other.color.rgb-value.hex.css',
+        'punctuation.definition.constant.css',
       ],
       settings: {
         foreground: treePoppy,
       },
     },
     {
-      name: `CSS ids`,
-      scope: `entity.other.attribute-name.id.css`,
+      name: 'CSS ids',
+      scope: 'entity.other.attribute-name.id.css',
       settings: {
         foreground: ecstasy,
       },
     },
     {
-      name: `CSS important`,
-      scope: `keyword.other.important.css`,
+      name: 'CSS important',
+      scope: 'keyword.other.important.css',
       settings: {
-        fontStyle: `bold`,
+        fontStyle: 'bold',
       },
     },
     {
-      name: `CSS operators`,
+      name: 'CSS operators',
       scope: [
-        `keyword.operator.arithmetic.css`,
-        `keyword.operator.combinator.css`,
-        `keyword.operator.pattern.css`,
+        'keyword.operator.arithmetic.css',
+        'keyword.operator.combinator.css',
+        'keyword.operator.pattern.css',
       ],
       settings: {
         foreground: iron,
       },
     },
     {
-      name: `CSS properties`,
-      scope: `support.type.property-name.css`,
+      name: 'CSS properties',
+      scope: 'support.type.property-name.css',
       settings: {
         foreground: iron,
       },
     },
     {
-      name: `CSS property values`,
+      name: 'CSS property values',
       scope: [
-        `support.constant.color.current.css`,
-        `support.constant.property-value.css`,
+        'support.constant.color.current.css',
+        'support.constant.property-value.css',
       ],
       settings: {
         foreground: indianKhaki,
       },
     },
     {
-      name: `CSS pseudo`,
+      name: 'CSS pseudo',
       scope: [
-        `entity.other.attribute-name.pseudo-class.css`,
-        `entity.other.attribute-name.pseudo-element.css`,
+        'entity.other.attribute-name.pseudo-class.css',
+        'entity.other.attribute-name.pseudo-element.css',
       ],
       settings: {
         foreground: porcelain,
       },
     },
     {
-      name: `CSS tags`,
-      scope: `entity.name.tag.css`,
+      name: 'CSS tags',
+      scope: 'entity.name.tag.css',
       settings: {
         foreground: smaltBlue,
       },
     },
     {
-      name: `CSS units`,
+      name: 'CSS units',
       scope: [
-        `entity.other.keyframe-offset.percentage.css`,
-        `keyword.other.unit.%.css`,
-        `keyword.other.unit.ch.css`,
-        `keyword.other.unit.cm.css`,
-        `keyword.other.unit.deg.css`,
-        `keyword.other.unit.em.css`,
-        `keyword.other.unit.ex.css`,
-        `keyword.other.unit.in.css`,
-        `keyword.other.unit.mm.css`,
-        `keyword.other.unit.ms.css`,
-        `keyword.other.unit.pc.css`,
-        `keyword.other.unit.percentage.css`,
-        `keyword.other.unit.pt.css`,
-        `keyword.other.unit.px.css`,
-        `keyword.other.unit.q.css`,
-        `keyword.other.unit.rem.css`,
-        `keyword.other.unit.s.css`,
-        `keyword.other.unit.vmax.css`,
-        `keyword.other.unit.vmin.css`,
-        `keyword.other.unit.vh.css`,
-        `keyword.other.unit.vw.css`,
+        'entity.other.keyframe-offset.percentage.css',
+        'keyword.other.unit.%.css',
+        'keyword.other.unit.ch.css',
+        'keyword.other.unit.cm.css',
+        'keyword.other.unit.deg.css',
+        'keyword.other.unit.em.css',
+        'keyword.other.unit.ex.css',
+        'keyword.other.unit.in.css',
+        'keyword.other.unit.mm.css',
+        'keyword.other.unit.ms.css',
+        'keyword.other.unit.pc.css',
+        'keyword.other.unit.percentage.css',
+        'keyword.other.unit.pt.css',
+        'keyword.other.unit.px.css',
+        'keyword.other.unit.q.css',
+        'keyword.other.unit.rem.css',
+        'keyword.other.unit.s.css',
+        'keyword.other.unit.vmax.css',
+        'keyword.other.unit.vmin.css',
+        'keyword.other.unit.vh.css',
+        'keyword.other.unit.vw.css',
       ],
       settings: {
         foreground: matrix,
       },
     },
     {
-      name: `CSS vendor-prefixed properties`,
-      scope: `support.type.vendored.property-name.css`,
+      name: 'CSS vendor-prefixed properties',
+      scope: 'support.type.vendored.property-name.css',
       settings: {
         foreground: greyChateau,
       },
@@ -749,15 +747,15 @@ module.exports = {
     // HTML tokens
     // -------------------------------------------------------------------------
     {
-      name: `HTML attributes`,
-      scope: `entity.other.attribute-name.html`,
+      name: 'HTML attributes',
+      scope: 'entity.other.attribute-name.html',
       settings: {
         foreground: porcelain,
       },
     },
     {
-      name: `HTML tags`,
-      scope: `entity.name.tag.html`,
+      name: 'HTML tags',
+      scope: 'entity.name.tag.html',
       settings: {
         foreground: ecstasy,
       },
@@ -766,45 +764,45 @@ module.exports = {
     // JavaScript tokens
     // -------------------------------------------------------------------------
     {
-      name: `JavaScript block comments`,
-      scope: [`comment.block.documentation.js`, `comment.block.js`],
+      name: 'JavaScript block comments',
+      scope: ['comment.block.documentation.js', 'comment.block.js'],
       settings: {
         foreground: greyChateau,
       },
     },
     {
-      name: `JavaScript brackets`,
+      name: 'JavaScript brackets',
       scope: [
-        `meta.brace.round.js`,
-        `meta.brace.square.js`,
-        `punctuation.accessor.js`,
-        `punctuation.definition.block.js`,
-        `punctuation.definition.bracket.curly.begin.jsdoc`,
-        `punctuation.definition.bracket.curly.end.jsdoc`,
-        `punctuation.definition.template-expression.begin.js`,
-        `punctuation.definition.template-expression.end.js`,
-        `punctuation.separator.key-value.js`,
+        'meta.brace.round.js',
+        'meta.brace.square.js',
+        'punctuation.accessor.js',
+        'punctuation.definition.block.js',
+        'punctuation.definition.bracket.curly.begin.jsdoc',
+        'punctuation.definition.bracket.curly.end.jsdoc',
+        'punctuation.definition.template-expression.begin.js',
+        'punctuation.definition.template-expression.end.js',
+        'punctuation.separator.key-value.js',
       ],
       settings: {
         foreground: iron,
       },
     },
     {
-      name: `JavaScript classes`,
+      name: 'JavaScript classes',
       scope: [
-        `entity.name.type.class.js`,
-        `entity.name.type.js`,
-        `support.class.builtin.js`,
+        'entity.name.type.class.js',
+        'entity.name.type.js',
+        'support.class.builtin.js',
       ],
       settings: {
         foreground: smaltBlue,
       },
     },
     {
-      name: `JavaScript functions`,
+      name: 'JavaScript functions',
       scope: [
-        `entity.name.function.js`,
-        `support.function.console.js`,
+        'entity.name.function.js',
+        'support.function.console.js',
         'support.function.js',
       ],
       settings: {
@@ -812,81 +810,81 @@ module.exports = {
       },
     },
     {
-      name: `JavaScript inherited classes`,
-      scope: `entity.other.inherited-class.js`,
+      name: 'JavaScript inherited classes',
+      scope: 'entity.other.inherited-class.js',
       settings: {
         foreground: nepal,
       },
     },
     {
-      name: `JavaScript null`,
-      scope: `constant.language.null.js`,
+      name: 'JavaScript null',
+      scope: 'constant.language.null.js',
       settings: {
         foreground: greyChateau,
       },
     },
     {
-      name: `JavaScript operators`,
+      name: 'JavaScript operators',
       scope: [
-        `keyword.operator.arithmetic.js`,
-        `keyword.operator.assignment.compound.bitwise.js`,
-        `keyword.operator.assignment.compound.js`,
-        `keyword.operator.assignment.js`,
-        `keyword.operator.comparison.js`,
-        `keyword.operator.decrement.js`,
-        `keyword.operator.increment.js`,
-        `keyword.operator.logical.js`,
-        `keyword.operator.relational.js`,
-        `keyword.operator.ternary.js`,
+        'keyword.operator.arithmetic.js',
+        'keyword.operator.assignment.compound.bitwise.js',
+        'keyword.operator.assignment.compound.js',
+        'keyword.operator.assignment.js',
+        'keyword.operator.comparison.js',
+        'keyword.operator.decrement.js',
+        'keyword.operator.increment.js',
+        'keyword.operator.logical.js',
+        'keyword.operator.relational.js',
+        'keyword.operator.ternary.js',
       ],
       settings: {
         foreground: iron,
       },
     },
     {
-      name: `JavaScript properties`,
+      name: 'JavaScript properties',
       scope: [
-        `meta.object-literal.key.js`,
-        `variable.other.object.property.js`,
-        `variable.other.property.js`,
+        'meta.object-literal.key.js',
+        'variable.other.object.property.js',
+        'variable.other.property.js',
       ],
       settings: {
-        fontStyle: `normal`,
+        fontStyle: 'normal',
         foreground: ecstasy,
       },
     },
     {
-      name: `JavaScript regular expressions`,
-      scope: `string.regexp.js`,
+      name: 'JavaScript regular expressions',
+      scope: 'string.regexp.js',
       settings: {
         foreground: nepal,
       },
     },
     {
-      name: `JavaScript super`,
-      scope: `variable.language.super.js`,
+      name: 'JavaScript super',
+      scope: 'variable.language.super.js',
       settings: {
-        fontStyle: `normal`,
+        fontStyle: 'normal',
         foreground: porcelain,
       },
     },
     {
-      name: `JavaScript this`,
-      scope: `variable.language.this.js`,
+      name: 'JavaScript this',
+      scope: 'variable.language.this.js',
       settings: {
         foreground: porcelain,
       },
     },
     {
-      name: `JavaScript types`,
-      scope: `entity.name.type.instance.jsdoc`,
+      name: 'JavaScript types',
+      scope: 'entity.name.type.instance.jsdoc',
       settings: {
         foreground: nepal,
       },
     },
     {
-      name: `JavaScript undefined`,
-      scope: `constant.language.undefined.js`,
+      name: 'JavaScript undefined',
+      scope: 'constant.language.undefined.js',
       settings: {
         foreground: greyChateau,
       },
@@ -895,8 +893,8 @@ module.exports = {
     // JSON tokens
     // -------------------------------------------------------------------------
     {
-      name: `JSON properties`,
-      scope: `support.type.property-name.json`,
+      name: 'JSON properties',
+      scope: 'support.type.property-name.json',
       settings: {
         foreground: iron,
       },
@@ -905,23 +903,23 @@ module.exports = {
     // JSX tokens
     // -------------------------------------------------------------------------
     {
-      name: `JSX attributes`,
-      scope: `entity.other.attribute-name.js.jsx`,
+      name: 'JSX attributes',
+      scope: 'entity.other.attribute-name.js.jsx',
       settings: {
         foreground: porcelain,
       },
     },
     {
-      name: `JSX component tags`,
-      scope: `support.class.component.js.jsx`,
+      name: 'JSX component tags',
+      scope: 'support.class.component.js.jsx',
       settings: {
-        fontStyle: `bold`,
+        fontStyle: 'bold',
         foreground: ecstasy,
       },
     },
     {
-      name: `JSX tags`,
-      scope: `entity.name.tag.js.jsx`,
+      name: 'JSX tags',
+      scope: 'entity.name.tag.js.jsx',
       settings: {
         foreground: ecstasy,
       },
@@ -930,63 +928,63 @@ module.exports = {
     // Markdown tokens
     // -------------------------------------------------------------------------
     {
-      name: `Markdown backtick strings`,
-      scope: `markup.inline.raw.string.markdown`,
+      name: 'Markdown backtick strings',
+      scope: 'markup.inline.raw.string.markdown',
       settings: {
         foreground: trinidad,
       },
     },
     {
-      name: `Markdown bold`,
-      scope: `markup.bold.markdown`,
+      name: 'Markdown bold',
+      scope: 'markup.bold.markdown',
       settings: {
-        fontStyle: `bold`,
+        fontStyle: 'bold',
       },
     },
     {
-      name: `Markdown definitions`,
+      name: 'Markdown definitions',
       scope: [
-        `punctuation.definition.bold.markdown`,
-        `punctuation.definition.italic.markdown`,
+        'punctuation.definition.bold.markdown',
+        'punctuation.definition.italic.markdown',
       ],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
       },
     },
     {
-      name: `Markdown headings`,
+      name: 'Markdown headings',
       scope: [
-        `heading.1.markdown`,
-        `heading.2.markdown`,
-        `heading.3.markdown`,
-        `heading.4.markdown`,
-        `heading.5.markdown`,
-        `heading.6.markdown`,
+        'heading.1.markdown',
+        'heading.2.markdown',
+        'heading.3.markdown',
+        'heading.4.markdown',
+        'heading.5.markdown',
+        'heading.6.markdown',
       ],
       settings: {
         foreground: indianKhaki,
       },
     },
     {
-      name: `Markdown italics`,
-      scope: `markup.italic.markdown`,
+      name: 'Markdown italics',
+      scope: 'markup.italic.markdown',
       settings: {
-        fontStyle: `italic`,
+        fontStyle: 'italic',
       },
     },
     {
-      name: `Markdown link titles`,
+      name: 'Markdown link titles',
       scope: [
-        `string.other.link.description.markdown`,
-        `string.other.link.title.markdown`,
+        'string.other.link.description.markdown',
+        'string.other.link.title.markdown',
       ],
       settings: {
         foreground: ecstasy,
       },
     },
     {
-      name: `Markdown links`,
-      scope: `markup.underline.link.markdown`,
+      name: 'Markdown links',
+      scope: 'markup.underline.link.markdown',
       settings: {
         foreground: porcelain,
       },
@@ -995,173 +993,170 @@ module.exports = {
     // Python tokens
     // -------------------------------------------------------------------------
     {
-      name: `Python attributes`,
-      scope: [`meta.attribute.python`, `meta.indexed-name.python`],
+      name: 'Python attributes',
+      scope: ['meta.attribute.python', 'meta.indexed-name.python'],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: ecstasy,
       },
     },
     {
-      name: `Python brackets`,
+      name: 'Python brackets',
       scope: [
-        `constant.character.format.placeholder.other.python`,
-        `constant.other.ellipsis.python`,
-        `punctuation.definition.arguments.begin.python`,
-        `punctuation.definition.arguments.end.python`,
-        `punctuation.definition.dict.begin.python`,
-        `punctuation.definition.dict.end.python`,
-        `punctuation.definition.inheritance.begin.python`,
-        `punctuation.definition.inheritance.end.python`,
-        `punctuation.definition.list.begin.python`,
-        `punctuation.definition.list.end.python`,
-        `punctuation.definition.parameters.begin.python`,
-        `punctuation.definition.parameters.end.python`,
-        `punctuation.parenthesis.begin.python`,
-        `punctuation.parenthesis.end.python`,
-        `punctuation.section.class.begin.python`,
-        `punctuation.section.function.begin.python`,
-        `punctuation.separator.annotation.python`,
-        `punctuation.separator.annotation.result.python`,
-        `punctuation.separator.arguments.python`,
-        `punctuation.separator.colon.python`,
-        `punctuation.separator.element.python`,
-        `punctuation.separator.inheritance.python`,
-        `punctuation.separator.slice.python`,
-        `punctuation.separator.parameters.python`,
-        `punctuation.separator.period.python`,
+        'constant.character.format.placeholder.other.python',
+        'constant.other.ellipsis.python',
+        'punctuation.definition.arguments.begin.python',
+        'punctuation.definition.arguments.end.python',
+        'punctuation.definition.dict.begin.python',
+        'punctuation.definition.dict.end.python',
+        'punctuation.definition.inheritance.begin.python',
+        'punctuation.definition.inheritance.end.python',
+        'punctuation.definition.list.begin.python',
+        'punctuation.definition.list.end.python',
+        'punctuation.definition.parameters.begin.python',
+        'punctuation.definition.parameters.end.python',
+        'punctuation.parenthesis.begin.python',
+        'punctuation.parenthesis.end.python',
+        'punctuation.section.class.begin.python',
+        'punctuation.section.function.begin.python',
+        'punctuation.separator.annotation.python',
+        'punctuation.separator.annotation.result.python',
+        'punctuation.separator.arguments.python',
+        'punctuation.separator.colon.python',
+        'punctuation.separator.element.python',
+        'punctuation.separator.inheritance.python',
+        'punctuation.separator.slice.python',
+        'punctuation.separator.parameters.python',
+        'punctuation.separator.period.python',
       ],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: iron,
       },
     },
     {
-      name: `Python classes`,
-      scope: `entity.name.type.class.python`,
+      name: 'Python classes',
+      scope: 'entity.name.type.class.python',
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: smaltBlue,
       },
     },
     {
-      name: `Python comments`,
-      scope: `comment.line.number-sign.python`,
+      name: 'Python comments',
+      scope: 'comment.line.number-sign.python',
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
       },
     },
     {
-      name: `Python constants`,
+      name: 'Python constants',
       scope: [
-        `constant.language.python`,
-        `constant.numeric.dec.python`,
-        `constant.numeric.float.python`,
+        'constant.language.python',
+        'constant.numeric.dec.python',
+        'constant.numeric.float.python',
       ],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
       },
     },
     {
-      name: `Python doc strings`,
-      scope: `string.quoted.docstring.multi.python`,
+      name: 'Python doc strings',
+      scope: 'string.quoted.docstring.multi.python',
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: greyChateau,
       },
     },
     {
-      name: `Python escaped characters`,
-      scope: `constant.character.escape.python`,
+      name: 'Python escaped characters',
+      scope: 'constant.character.escape.python',
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: trinidad,
       },
     },
     {
-      name: `Python foreground`,
-      scope: `source.python`,
+      name: 'Python foreground',
+      scope: 'source.python',
       settings: {
-        fontStyle: `italic`,
+        fontStyle: 'italic',
         foreground: trinidad,
       },
     },
     {
-      name: `Python functions`,
+      name: 'Python functions',
       scope: [
-        `entity.name.function.python`,
-        `meta.function-call.generic.python`,
-        `support.function.builtin.python`,
-        `support.function.magic.python`,
+        'entity.name.function.python',
+        'meta.function-call.generic.python',
+        'support.function.builtin.python',
+        'support.function.magic.python',
       ],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: treePoppy,
       },
     },
     {
-      name: `Python inherited classes`,
-      scope: `entity.other.inherited-class.python`,
+      name: 'Python inherited classes',
+      scope: 'entity.other.inherited-class.python',
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: nepal,
       },
     },
     {
-      name: `Python keywords`,
-      scope: [
-        `keyword.control.flow.python`,
-        `keyword.control.import.python`,
-        `keyword.operator.logical.python`, // Should this be scoped to Python operators?
-      ],
+      name: 'Python keywords',
+      scope: ['keyword.control.flow.python', 'keyword.control.import.python'],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
       },
     },
     {
-      name: `Python operators`,
+      name: 'Python operators',
       scope: [
-        `keyword.operator.arithmetic.python`,
-        `keyword.operator.assignment.python`,
-        `keyword.operator.bitwise.python`,
-        `keyword.operator.comparison.python`,
-        `keyword.operator.python`,
-        `keyword.operator.unpacking.arguments.python`,
-        `keyword.operator.unpacking.parameter.python`,
+        'keyword.operator.arithmetic.python',
+        'keyword.operator.assignment.python',
+        'keyword.operator.bitwise.python',
+        'keyword.operator.comparison.python',
+        'keyword.operator.logical.python',
+        'keyword.operator.python',
+        'keyword.operator.unpacking.arguments.python',
+        'keyword.operator.unpacking.parameter.python',
       ],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: iron,
       },
     },
     {
-      name: `Python storage`,
-      scope: [`storage.type.class.python`, `storage.type.function.python`],
+      name: 'Python storage',
+      scope: ['storage.type.class.python', 'storage.type.function.python'],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
       },
     },
     {
-      name: `Python strings`,
+      name: 'Python strings',
       scope: [
-        `string.quoted.docstring.single.python`,
-        `string.quoted.single.python`,
+        'string.quoted.docstring.single.python',
+        'string.quoted.single.python',
       ],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
       },
     },
     {
-      name: `Python types`,
-      scope: [`support.type.exception.python`, `support.type.python`],
+      name: 'Python types',
+      scope: ['support.type.exception.python', 'support.type.python'],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: treePoppy,
       },
     },
     {
-      name: `Python variables`,
-      scope: `constant.other.caps.python`,
+      name: 'Python variables',
+      scope: 'constant.other.caps.python',
       settings: {
         foreground: trinidad,
       },
@@ -1170,34 +1165,34 @@ module.exports = {
     // Regular expression tokens
     // -------------------------------------------------------------------------
     {
-      name: `Regular expression brackets`,
+      name: 'Regular expression brackets',
       scope: [
-        `constant.character.escape.backslash.regexp`,
-        `keyword.operator.or.regexp`,
-        `punctuation.definition.character-class.regexp`,
-        `punctuation.definition.group.regexp`,
+        'constant.character.escape.backslash.regexp',
+        'keyword.operator.or.regexp',
+        'punctuation.definition.character-class.regexp',
+        'punctuation.definition.group.regexp',
       ],
       settings: {
         foreground: smaltBlue,
       },
     },
     {
-      name: `Regular expression constants`,
+      name: 'Regular expression constants',
       scope: [
-        `constant.other.character-class.range.regexp`,
-        `constant.other.character-class.regexp`,
-        `constant.other.character-class.set.regexp`,
+        'constant.other.character-class.range.regexp',
+        'constant.other.character-class.regexp',
+        'constant.other.character-class.set.regexp',
       ],
       settings: {
         foreground: nepal,
       },
     },
     {
-      name: `Regular expression keywords`,
+      name: 'Regular expression keywords',
       scope: [
-        `keyword.control.anchor.regexp`,
-        `keyword.operator.negation.regexp`,
-        `keyword.operator.quantifier.regexp`,
+        'keyword.control.anchor.regexp',
+        'keyword.operator.negation.regexp',
+        'keyword.operator.quantifier.regexp',
       ],
       settings: {
         foreground: nepal,
@@ -1207,59 +1202,58 @@ module.exports = {
     // SCSS tokens
     // -------------------------------------------------------------------------
     {
-      name: `SCSS attributes`,
-      scope: `entity.other.attribute-name.attribute.scss`,
+      name: 'SCSS attributes',
+      scope: 'entity.other.attribute-name.attribute.scss',
       settings: {
         foreground: porcelain,
       },
     },
     {
-      name: `SCSS block comments`,
-      scope: `comment.block.scss`,
+      name: 'SCSS block comments',
+      scope: 'comment.block.scss',
       settings: {
         foreground: greyChateau,
       },
     },
     {
-      name: `SCSS brackets`,
+      name: 'SCSS brackets',
       scope: [
-        `punctuation.definition.attribute-selector.begin.bracket.square.scss`,
-        `punctuation.definition.attribute-selector.end.bracket.square.scss`,
-        `punctuation.definition.interpolation.begin.bracket.curly.scss`,
-        `punctuation.definition.interpolation.end.bracket.curly.scss`,
-        `punctuation.section.function.scss`,
-        `punctuation.separator.delimiter.scss`,
+        'punctuation.definition.attribute-selector.begin.bracket.square.scss',
+        'punctuation.definition.attribute-selector.end.bracket.square.scss',
+        'punctuation.definition.interpolation.begin.bracket.curly.scss',
+        'punctuation.definition.interpolation.end.bracket.curly.scss',
+        'punctuation.section.function.scss',
+        'punctuation.separator.delimiter.scss',
       ],
       settings: {
-        fontStyle: `regular`,
+        fontStyle: 'regular',
         foreground: iron,
       },
     },
-
     {
-      name: `SCSS functions`,
-      scope: `entity.name.function.scss`,
+      name: 'SCSS functions',
+      scope: 'entity.name.function.scss',
       settings: {
         foreground: treePoppy,
       },
     },
     {
-      name: `SCSS important`,
-      scope: `keyword.other.important.scss`,
+      name: 'SCSS important',
+      scope: 'keyword.other.important.scss',
       settings: {
-        fontStyle: `bold`,
+        fontStyle: 'bold',
       },
     },
     {
-      name: `SCSS operators`,
-      scope: `keyword.operator.scss`,
+      name: 'SCSS operators',
+      scope: 'keyword.operator.scss',
       settings: {
         foreground: iron,
       },
     },
     {
-      name: `SCSS strings`,
-      scope: `meta.attribute-selector.scss`,
+      name: 'SCSS strings',
+      scope: 'meta.attribute-selector.scss',
       settings: {
         foreground: matrix,
       },
@@ -1268,67 +1262,221 @@ module.exports = {
     // TSX tokens
     // -------------------------------------------------------------------------
     {
-      name: `TSX block comments`,
-      scope: `comment.block.tsx`,
-      settings: {
-        foreground: greyChateau,
-      },
-    },
-    {
-      name: `TSX interface types`,
-      scope: `entity.name.type.interface.tsx`,
-      settings: {
-        foreground: smaltBlue,
-      },
-    },
-
-    // TypeScript tokens
-    // -------------------------------------------------------------------------
-    {
-      name: `TypeScript alias types`,
-      scope: `entity.name.type.alias.ts`,
+      name: 'TSX alias types',
+      scope: 'entity.name.type.alias.tsx',
       settings: {
         foreground: nepal,
       },
     },
     {
-      name: `TypeScript block comments`,
-      scope: [`comment.block.documentation.ts`, `comment.block.ts`],
+      name: 'TSX attributes',
+      scope: 'entity.other.attribute-name.tsx',
+      settings: {
+        foreground: porcelain,
+      },
+    },
+    {
+      name: 'TSX block comments',
+      scope: ['comment.block.documentation.tsx', 'comment.block.tsx'],
       settings: {
         foreground: greyChateau,
       },
     },
     {
-      name: `TypeScript brackets`,
+      name: 'TSX brackets',
       scope: [
-        `keyword.operator.type.annotation.ts`,
-        `meta.brace.round.ts`,
-        `meta.brace.square.ts`,
-        `punctuation.accessor.ts`,
-        `punctuation.definition.block.ts`,
-        `punctuation.definition.template-expression.begin.ts`,
-        `punctuation.definition.template-expression.end.ts`,
+        'keyword.operator.type.annotation.tsx',
+        'meta.brace.round.tsx',
+        'meta.brace.square.tsx',
+        'punctuation.accessor.tsx',
+        'punctuation.definition.block.tsx',
+        'punctuation.definition.template-expression.begin.tsx',
+        'punctuation.definition.template-expression.end.tsx',
+        'punctuation.separator.key-value.tsx',
       ],
       settings: {
         foreground: iron,
       },
     },
     {
-      name: `TypeScript classes`,
+      name: 'TSX classes',
       scope: [
-        `entity.name.type.class.ts`,
-        `entity.name.type.ts`,
-        `support.class.builtin.ts`,
+        'entity.name.type.class.tsx',
+        'entity.name.type.tsx',
+        'support.class.builtin.tsx',
       ],
       settings: {
         foreground: smaltBlue,
       },
     },
     {
-      name: `TypeScript functions`,
+      name: 'TSX component tags',
+      scope: 'support.class.component.tsx',
+      settings: {
+        fontStyle: 'bold',
+        foreground: ecstasy,
+      },
+    },
+    {
+      name: 'TSX functions',
       scope: [
-        `entity.name.function.ts`,
-        `support.function.console.ts`,
+        'entity.name.function.tsx',
+        'support.function.console.tsx',
+        'support.function.tsx',
+      ],
+      settings: {
+        foreground: treePoppy,
+      },
+    },
+    {
+      name: 'TSX inherited classes',
+      scope: 'entity.other.inherited-class.tsx',
+      settings: {
+        foreground: nepal,
+      },
+    },
+    {
+      name: 'TSX interface types',
+      scope: 'entity.name.type.interface.tsx',
+      settings: {
+        foreground: smaltBlue,
+      },
+    },
+    {
+      name: 'TSX null',
+      scope: 'constant.language.null.tsx',
+      settings: {
+        foreground: greyChateau,
+      },
+    },
+    {
+      name: 'TSX module types',
+      scope: 'entity.name.type.module.tsx',
+      settings: {
+        foreground: smaltBlue,
+      },
+    },
+    {
+      name: 'TSX operators',
+      scope: [
+        'keyword.operator.arithmetic.tsx',
+        'keyword.operator.assignment.compound.bitwise.tsx',
+        'keyword.operator.assignment.compound.tsx',
+        'keyword.operator.assignment.tsx',
+        'keyword.operator.comparison.tsx',
+        'keyword.operator.decrement.tsx',
+        'keyword.operator.increment.tsx',
+        'keyword.operator.logical.tsx',
+        'keyword.operator.relational.tsx',
+        'keyword.operator.ternary.tsx',
+      ],
+      settings: {
+        foreground: iron,
+      },
+    },
+    {
+      name: 'TSX primitive types',
+      scope: 'support.type.primitive.tsx',
+      settings: {
+        foreground: nepal,
+      },
+    },
+    {
+      name: 'TSX properties',
+      scope: [
+        'meta.object-literal.key.tsx',
+        'variable.other.object.property.tsx',
+        'variable.other.property.tsx',
+      ],
+      settings: {
+        fontStyle: 'normal',
+        foreground: ecstasy,
+      },
+    },
+    {
+      name: 'TSX regular expressions',
+      scope: 'string.regexp.tsx',
+      settings: {
+        foreground: nepal,
+      },
+    },
+    {
+      name: 'TSX super',
+      scope: 'variable.language.super.tsx',
+      settings: {
+        fontStyle: 'normal',
+        foreground: porcelain,
+      },
+    },
+    {
+      name: 'TSX tags',
+      scope: 'entity.name.tag.tsx',
+      settings: {
+        foreground: ecstasy,
+      },
+    },
+    {
+      name: 'TSX this',
+      scope: 'variable.language.this.tsx',
+      settings: {
+        foreground: porcelain,
+      },
+    },
+    {
+      name: 'TSX undefined',
+      scope: 'constant.language.undefined.tsx',
+      settings: {
+        foreground: greyChateau,
+      },
+    },
+
+    // TypeScript tokens
+    // -------------------------------------------------------------------------
+    {
+      name: 'TypeScript alias types',
+      scope: 'entity.name.type.alias.ts',
+      settings: {
+        foreground: nepal,
+      },
+    },
+    {
+      name: 'TypeScript block comments',
+      scope: ['comment.block.documentation.ts', 'comment.block.ts'],
+      settings: {
+        foreground: greyChateau,
+      },
+    },
+    {
+      name: 'TypeScript brackets',
+      scope: [
+        'keyword.operator.type.annotation.ts',
+        'meta.brace.round.ts',
+        'meta.brace.square.ts',
+        'punctuation.accessor.ts',
+        'punctuation.definition.block.ts',
+        'punctuation.definition.template-expression.begin.ts',
+        'punctuation.definition.template-expression.end.ts',
+      ],
+      settings: {
+        foreground: iron,
+      },
+    },
+    {
+      name: 'TypeScript classes',
+      scope: [
+        'entity.name.type.class.ts',
+        'entity.name.type.ts',
+        'support.class.builtin.ts',
+      ],
+      settings: {
+        foreground: smaltBlue,
+      },
+    },
+    {
+      name: 'TypeScript functions',
+      scope: [
+        'entity.name.function.ts',
+        'support.function.console.ts',
         'support.function.ts',
       ],
       settings: {
@@ -1336,88 +1484,95 @@ module.exports = {
       },
     },
     {
-      name: `TypeScript inherited classes`,
-      scope: `entity.other.inherited-class.ts`,
+      name: 'TypeScript inherited classes',
+      scope: 'entity.other.inherited-class.ts',
       settings: {
         foreground: nepal,
       },
     },
     {
-      name: `TypeScript interface types`,
-      scope: `entity.name.type.interface.ts`,
+      name: 'TypeScript interface types',
+      scope: 'entity.name.type.interface.ts',
       settings: {
         foreground: smaltBlue,
       },
     },
     {
-      name: `TypeScript null`,
-      scope: `constant.language.null.ts`,
+      name: 'TypeScript null',
+      scope: 'constant.language.null.ts',
       settings: {
         foreground: greyChateau,
       },
     },
     {
-      name: `TypeScript operators`,
+      name: 'TypeScript module types',
+      scope: 'entity.name.type.module.ts',
+      settings: {
+        foreground: smaltBlue,
+      },
+    },
+    {
+      name: 'TypeScript operators',
       scope: [
-        `keyword.operator.arithmetic.ts`,
-        `keyword.operator.assignment.compound.bitwise.ts`,
-        `keyword.operator.assignment.compound.ts`,
-        `keyword.operator.assignment.ts`,
-        `keyword.operator.comparison.ts`,
-        `keyword.operator.decrement.ts`,
-        `keyword.operator.increment.ts`,
-        `keyword.operator.logical.ts`,
-        `keyword.operator.relational.ts`,
-        `keyword.operator.ternary.ts`,
+        'keyword.operator.arithmetic.ts',
+        'keyword.operator.assignment.compound.bitwise.ts',
+        'keyword.operator.assignment.compound.ts',
+        'keyword.operator.assignment.ts',
+        'keyword.operator.comparison.ts',
+        'keyword.operator.decrement.ts',
+        'keyword.operator.increment.ts',
+        'keyword.operator.logical.ts',
+        'keyword.operator.relational.ts',
+        'keyword.operator.ternary.ts',
       ],
       settings: {
         foreground: iron,
       },
     },
     {
-      name: `TypeScript primitive types`,
-      scope: `support.type.primitive.ts`,
+      name: 'TypeScript primitive types',
+      scope: 'support.type.primitive.ts',
       settings: {
         foreground: nepal,
       },
     },
     {
-      name: `TypeScript properties`,
+      name: 'TypeScript properties',
       scope: [
-        `variable.object.property.ts`,
-        `variable.other.object.property.ts`,
-        `variable.other.property.ts`,
+        'variable.object.property.ts',
+        'variable.other.object.property.ts',
+        'variable.other.property.ts',
       ],
       settings: {
-        fontStyle: `normal`,
+        fontStyle: 'normal',
         foreground: ecstasy,
       },
     },
     {
-      name: `TypeScript regular expressions`,
-      scope: `string.regexp.ts`,
+      name: 'TypeScript regular expressions',
+      scope: 'string.regexp.ts',
       settings: {
         foreground: nepal,
       },
     },
     {
-      name: `TypeScript super`,
-      scope: `variable.language.super.ts`,
+      name: 'TypeScript super',
+      scope: 'variable.language.super.ts',
       settings: {
-        fontStyle: `normal`,
+        fontStyle: 'normal',
         foreground: porcelain,
       },
     },
     {
-      name: `TypeScript this`,
-      scope: `variable.language.this.ts`,
+      name: 'TypeScript this',
+      scope: 'variable.language.this.ts',
       settings: {
         foreground: porcelain,
       },
     },
     {
-      name: `TypeScript undefined`,
-      scope: `constant.language.undefined.ts`,
+      name: 'TypeScript undefined',
+      scope: 'constant.language.undefined.ts',
       settings: {
         foreground: greyChateau,
       },
@@ -1426,15 +1581,15 @@ module.exports = {
     // XML tokens
     // -------------------------------------------------------------------------
     {
-      name: `XML attributes`,
-      scope: `entity.other.attribute-name.localname.xml`,
+      name: 'XML attributes',
+      scope: 'entity.other.attribute-name.localname.xml',
       settings: {
         foreground: porcelain,
       },
     },
     {
-      name: `XML tags`,
-      scope: `entity.name.tag.localname.xml`,
+      name: 'XML tags',
+      scope: 'entity.name.tag.localname.xml',
       settings: {
         foreground: ecstasy,
       },
