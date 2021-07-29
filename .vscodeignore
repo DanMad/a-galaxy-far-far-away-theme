@@ -1,26 +1,32 @@
-# Artwork
-*.fig
-*.psd
-*.sketch
-
 # Dependencies
-node_modules
+node_modules/
+
+# Hidden directories
+.*/**
 
 # Ignore files
-.gitignore
-.prettierignore
+.*ignore
 
-# Images
-images
+# Image files
+*.gif
+*.ico
+*.jpg
+*.jpeg
+*.png
+!icon.png
 
-# MacOS
+# Log files
+*.log
+
+# Operating System
 .DS_Store
+Thumbs.db
 
 # Package files
-package-lock.json
+yarn.lock
 
-# Source code
-src
+# Run Command files
+.*rc
 
-# VS Code settings
-.vscode
+# Source directory
+src/
