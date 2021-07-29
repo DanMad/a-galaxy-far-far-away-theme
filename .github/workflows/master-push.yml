@@ -4,6 +4,7 @@ name: Push (master)
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
 
 on:
   push:
