@@ -39,4 +39,4 @@ jobs:
       - run: npm install --global yarn
       - run: yarn install --frozen-lockfile
       - run: yarn build
-      - run: yarn deploy
+      - run: yarn deploy -p $VSCE_TOKEN
