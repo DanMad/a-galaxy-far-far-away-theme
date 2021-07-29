@@ -64,8 +64,8 @@ The font used in theme examples is [Input Mono](https://input.fontbureau.com), w
 
 ## Issues
 
-If you encounter any bugs, please [post an issue](https://github.com/DanMad/a-galaxy-far-far-away-theme/issues).
+If you encounter any bugs, please [post an issue](https://github.com/DanMad/a-galaxy-far-far-away-theme/issues/new).
 
 ## Contributing
 
-Contributions are more than welcome. Ensure you read through the [contributing guidelines](https://github.com/DanMad/a-galaxy-far-far-away-theme/blob/main/CONTRIBUTING.md) before submitting a pull request.
+Contributions are more than welcome. Ensure you read through the [contributing guidelines](https://github.com/DanMad/a-galaxy-far-far-away-theme/blob/master/CONTRIBUTING.md) before submitting a pull request.

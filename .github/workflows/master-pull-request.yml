@@ -1,0 +1,26 @@
+---
+
+name: Pull Request (master)
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check_package_version:
+    name: Check Package Version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/fermium'
+      - run: chmod +x .github/check-package-version
+      - run: .github/check-package-version
+
