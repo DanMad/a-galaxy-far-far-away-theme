@@ -15,7 +15,8 @@ jobs:
     name: Check Package Version
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - run: chmod +x .github/check-package-version
-      - run: .github/check-package-version
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+    - run: |
+        chmod +x .github/check-package-version
+        .github/check-package-version
