@@ -19,8 +19,8 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
     - run: |
-        chmod +x .github/create-github-release
-        .github/create-github-release
+        chmod +x .github/scripts/create-github-release.sh
+        .github/scripts/create-github-release.sh
 
   create_vscode_release:
     name: Create VSCode Release
@@ -30,8 +30,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
     - run: |
-        rm -rf node_modules
         npm install --global yarn
-        yarn install --frozen-lockfile
+        yarn bootstrap-frozen
         yarn build
         yarn deploy -p $VSCE_TOKEN
