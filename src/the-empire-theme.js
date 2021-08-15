@@ -254,7 +254,7 @@ module.exports = {
     'editorHoverWidget.border': milanoRed,
     'editorHoverWidget.foreground': nepal,
     'editorHoverWidget.statusBarBackground': bunker,
-    'editorMarkerNavigation.background': heather,
+    'editorMarkerNavigation.background': bunker,
     'editorMarkerNavigationError.background': milanoRed,
     'editorMarkerNavigationInfo.background': catskillWhite,
     'editorMarkerNavigationWarning.background': vividTangerine,
