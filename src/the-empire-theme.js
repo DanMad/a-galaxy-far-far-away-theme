@@ -304,7 +304,7 @@ module.exports = {
 
     // Integrated terminal colors
     // -------------------------------------------------------------------------
-    'terminal.ansiBlack': camouflageGreen,
+    'terminal.ansiBlack': ebony,
     'terminal.ansiBlue': camouflageGreen,
     'terminal.ansiBrightBlack': camouflageGreen,
     'terminal.ansiBrightBlue': camouflageGreen,
