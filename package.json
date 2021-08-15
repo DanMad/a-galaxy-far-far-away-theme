@@ -1,7 +1,7 @@
 {
   "name": "a-galaxy-far-far-away-theme",
   "displayName": "A Galaxy Far, Far Away Theme",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "private": true,
   "description": "A Visual Studio Code theme from a galaxy far, far away...",
   "categories": [
@@ -28,6 +28,7 @@
   "publisher": "DanMad",
   "scripts": {
     "bootstrap": "rm -rf node_modules && yarn install && husky install && chmod +x .husky/*",
+    "bootstrap-frozen": "rm -rf node_modules && yarn install --frozen-lockfile && husky install && chmod +x .husky/*",
     "build": "rm -rf themes && mkdir themes && json-stringify src/the-empire-theme.js -o themes/the-empire-theme.json && json-stringify src/rogue-squadron-theme.js -o themes/rogue-squadron-theme.json",
     "deploy": "vsce publish",
     "format": "sort-package-json && prettier --write \"**/*\""
@@ -49,7 +50,7 @@
   "devDependencies": {
     "husky": "^7.0.1",
     "json-stringify-cli": "^1.0.1",
-    "lint-staged": "^11.1.1",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.2.1",
     "sort-package-json": "^1.46.0",
     "vsce": "^1.96.1"
