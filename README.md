@@ -27,7 +27,6 @@ If you'd like to use this theme as intended, copy and paste the recommended sett
   "editor.autoIndent": "full",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorWidth": 1,
-  "editor.fontFamily": "Input Mono, Inconsolata, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.fontWeight": "400",
@@ -41,7 +40,6 @@ If you'd like to use this theme as intended, copy and paste the recommended sett
   "editor.tabSize": 2,
   "editor.renderWhitespace": "all",
   "editor.wordWrap": "on",
-  "terminal.integrated.fontFamily": "Input Mono, Inconsolata, monospace",
   "workbench.colorCustomizations": {},
   "workbench.colorTheme": "Rogue Squadron",
   "workbench.fontAliasing": "antialiased",
@@ -57,10 +55,6 @@ The palette of this theme is inspired by The Empire and Rogue Squadron, while me
 ![The Empire Theme palette](./images/the-empire-theme-palette.png)
 
 ![Rogue Squadron Theme palette](./images/rogue-squadron-theme-palette.png)
-
-## Font
-
-The font used in theme examples is [Input Mono](https://input.fontbureau.com), which is **free for personal use**. See the font's [license](https://input.fontbureau.com/license/) for more information.
 
 ## Issues
 
