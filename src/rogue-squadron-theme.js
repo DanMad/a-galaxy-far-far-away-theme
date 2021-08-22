@@ -845,6 +845,7 @@ module.exports = {
       name: 'JavaScript properties',
       scope: [
         'meta.object-literal.key.js',
+        'variable.other.constant.property.js',
         'variable.other.object.property.js',
         'variable.other.property.js',
       ],
@@ -1218,6 +1219,7 @@ module.exports = {
     {
       name: 'SCSS brackets',
       scope: [
+        'punctuation.access.module.scss',
         'punctuation.definition.attribute-selector.begin.bracket.square.scss',
         'punctuation.definition.attribute-selector.end.bracket.square.scss',
         'punctuation.definition.interpolation.begin.bracket.curly.scss',
@@ -1385,6 +1387,7 @@ module.exports = {
       name: 'TSX properties',
       scope: [
         'meta.object-literal.key.tsx',
+        'variable.other.constant.property.tsx',
         'variable.other.object.property.tsx',
         'variable.other.property.tsx',
       ],
@@ -1540,6 +1543,7 @@ module.exports = {
       name: 'TypeScript properties',
       scope: [
         'variable.object.property.ts',
+        'variable.other.constant.property.ts',
         'variable.other.object.property.ts',
         'variable.other.property.ts',
       ],
