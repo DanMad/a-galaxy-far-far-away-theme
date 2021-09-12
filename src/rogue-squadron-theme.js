@@ -929,17 +929,20 @@ module.exports = {
     // Markdown tokens
     // -------------------------------------------------------------------------
     {
-      name: 'Markdown backtick strings',
-      scope: 'markup.inline.raw.string.markdown',
-      settings: {
-        foreground: trinidad,
-      },
-    },
-    {
       name: 'Markdown bold',
       scope: 'markup.bold.markdown',
       settings: {
         fontStyle: 'bold',
+      },
+    },
+    {
+      name: 'Markdown code',
+      scope: [
+        'markup.fenced_code.block.markdown',
+        'markup.inline.raw.string.markdown',
+      ],
+      settings: {
+        foreground: trinidad,
       },
     },
     {
@@ -974,7 +977,7 @@ module.exports = {
       },
     },
     {
-      name: 'Markdown link titles',
+      name: 'Markdown link descriptions',
       scope: [
         'string.other.link.description.markdown',
         'string.other.link.title.markdown',
