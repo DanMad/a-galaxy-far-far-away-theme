@@ -781,6 +781,7 @@ module.exports = {
         'punctuation.definition.bracket.curly.end.jsdoc',
         'punctuation.definition.template-expression.begin.js',
         'punctuation.definition.template-expression.end.js',
+        'punctuation.separator.comma.js',
         'punctuation.separator.key-value.js',
       ],
       settings: {
@@ -1297,6 +1298,7 @@ module.exports = {
         'punctuation.definition.block.tsx',
         'punctuation.definition.template-expression.begin.tsx',
         'punctuation.definition.template-expression.end.tsx',
+        'punctuation.separator.comma.tsx',
         'punctuation.separator.key-value.tsx',
       ],
       settings: {
