@@ -1,3 +1,12 @@
+# Asset files
+*.gif
+*.ico
+*.jpg
+*.jpeg
+*.png
+*.svg
+!icon.png
+
 # Dependencies
 node_modules/
 
@@ -6,14 +15,6 @@ node_modules/
 
 # Ignore files
 .*ignore
-
-# Image files
-*.gif
-*.ico
-*.jpg
-*.jpeg
-*.png
-!icon.png
 
 # Log files
 *.log
