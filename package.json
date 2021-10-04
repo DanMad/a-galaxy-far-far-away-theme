@@ -51,9 +51,9 @@
     "husky": "^7.0.2",
     "json-stringify-cli": "^1.0.1",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.4.0",
-    "sort-package-json": "^1.51.0",
-    "vsce": "^1.99.0"
+    "prettier": "^2.4.1",
+    "sort-package-json": "^1.52.0",
+    "vsce": "^1.100.1"
   },
   "engines": {
     "vscode": "^1.42.0"
