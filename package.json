@@ -53,7 +53,7 @@
     "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
     "sort-package-json": "^1.52.0",
-    "vsce": "^1.100.2"
+    "vsce": "^2.2.0"
   },
   "engines": {
     "vscode": "^1.42.0"
