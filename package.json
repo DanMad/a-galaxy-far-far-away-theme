@@ -50,10 +50,10 @@
   "devDependencies": {
     "husky": "^7.0.4",
     "json-stringify-cli": "^1.0.1",
-    "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1",
-    "sort-package-json": "^1.52.0",
-    "vsce": "^2.2.0"
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1",
+    "sort-package-json": "^1.54.0",
+    "vsce": "^2.6.7"
   },
   "engines": {
     "vscode": "^1.42.0"
