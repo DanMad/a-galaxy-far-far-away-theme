@@ -10,24 +10,17 @@
 # Dependencies
 node_modules/
 
-# Hidden directories
-.*/**
-
-# Ignore files
-.*ignore
+# Hidden directories and files
+.*
 
 # Log files
 *.log
 
 # Operating System
-.DS_Store
 Thumbs.db
 
 # Package files
 yarn.lock
-
-# Run Command files
-.*rc
 
 # Source directory
 src/

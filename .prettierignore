@@ -9,12 +9,9 @@
 # Dependencies
 node_modules/
 
-# Hidden directories
-.*/**
+# Hidden directories and files
+.*
 !.github/workflows/**
-
-# Ignore files
-.*ignore
 
 # License
 LICENSE
@@ -23,15 +20,11 @@ LICENSE
 *.log
 
 # Operating System
-.DS_Store
 Thumbs.db
 
 # Package files
 *.vsix
 yarn.lock
-
-# Run Command files
-.*rc
 
 # Themes directory
 themes/
