@@ -27,11 +27,10 @@
   "author": "DanMad",
   "publisher": "DanMad",
   "scripts": {
-    "bootstrap": "rm -rf node_modules && yarn install && husky install && chmod +x .husky/*",
-    "bootstrap-frozen": "rm -rf node_modules && yarn install --frozen-lockfile && husky install && chmod +x .husky/*",
+    "bootstrap": "yarn install",
+    "postbootstrap": "husky install && chmod +x .husky/*",
     "build": "rm -rf themes && mkdir themes && json-stringify src/the-empire-theme.js -o themes/the-empire-theme.json && json-stringify src/rogue-squadron-theme.js -o themes/rogue-squadron-theme.json",
-    "deploy": "vsce publish",
-    "format": "sort-package-json && prettier --write \"**/*\""
+    "unstrap": "rm -rf node_modules themes yarn-error.log"
   },
   "contributes": {
     "themes": [

@@ -31,6 +31,6 @@ jobs:
     - uses: actions/setup-node@v3
     - run: |
         npm install --global yarn
-        yarn bootstrap-frozen
+        yarn bootstrap --frozen-lockfile
         yarn build
-        yarn deploy -p $VSCE_TOKEN
+        vsce publish -p $VSCE_TOKEN
