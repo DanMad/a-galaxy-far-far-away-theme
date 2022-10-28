@@ -16,6 +16,9 @@ node_modules/
 # Log files
 *.log
 
+# Markdown files
+*.md
+
 # Operating System
 Thumbs.db
 
