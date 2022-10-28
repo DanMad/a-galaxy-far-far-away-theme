@@ -9,7 +9,7 @@
     "Themes"
   ],
   "keywords": [
-    "a11y",
+    "Accessible",
     "Dark Theme",
     "The Empire",
     "Rogue Squadron",
@@ -26,7 +26,7 @@
   "scripts": {
     "bootstrap": "yarn install",
     "postbootstrap": "husky install && chmod +x .husky/*",
-    "build": "rm -rf themes && mkdir themes && json-stringify src/the-empire-theme.js -o themes/the-empire-theme.json && json-stringify src/rogue-squadron-theme.js -o themes/rogue-squadron-theme.json",
+    "build": "webpack",
     "unstrap": "rm -rf node_modules themes yarn-error.log"
   },
   "contributes": {
@@ -44,12 +44,15 @@
     ]
   },
   "devDependencies": {
-    "husky": "^7.0.4",
-    "json-stringify-cli": "^1.0.1",
-    "lint-staged": "^12.3.4",
+    "generate-json-webpack-plugin": "^2.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.5.1",
-    "sort-package-json": "^1.54.0",
-    "vsce": "^2.6.7"
+    "remove-files-webpack-plugin": "^1.5.0",
+    "sort-package-json": "^2.0.0",
+    "vsce": "^2.6.7",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "engines": {
     "vscode": "^1.42.0"
