@@ -1,5 +1,5 @@
-# Dependencies
-node_modules/
+# Build files
+themes
 
 # Log files
 *.log
@@ -8,8 +8,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Package files
+# Packages
 *.vsix
-
-# Themes directory
-themes/
+node_modules
