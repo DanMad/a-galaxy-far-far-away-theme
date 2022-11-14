@@ -45,12 +45,12 @@
   },
   "devDependencies": {
     "generate-json-webpack-plugin": "^2.0.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.5.1",
     "remove-files-webpack-plugin": "^1.5.0",
-    "sort-package-json": "^2.0.0",
-    "vsce": "^2.6.7",
+    "sort-package-json": "^2.1.0",
+    "vsce": "^2.14.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   },
