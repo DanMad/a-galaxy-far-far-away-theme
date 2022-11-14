@@ -1,6 +1,7 @@
 const GenerateJsonPlugin = require('generate-json-webpack-plugin');
 const RemovePlugin = require('remove-files-webpack-plugin');
 const path = require('path');
+
 const rogueSquadronTheme = require('./src/rogue-squadron-theme.js');
 const theEmpireTheme = require('./src/the-empire-theme.js');
 
