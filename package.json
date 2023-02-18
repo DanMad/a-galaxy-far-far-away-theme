@@ -9,7 +9,7 @@
     "Themes"
   ],
   "keywords": [
-    "Accessible",
+    "Accessibility",
     "Dark Theme",
     "The Empire",
     "Rogue Squadron",
@@ -21,12 +21,17 @@
   "bugs": "https://github.com/danmad/a-galaxy-far-far-away-theme/issues",
   "repository": "https://github.com/danmad/a-galaxy-far-far-away-theme.git",
   "license": "MIT",
-  "author": "DanMad <hooky.mounted_0n@icloud.com>",
-  "publisher": "DanMad",
+  "author": {
+    "name": "Daniel Maddison",
+    "email": "hello@danielmaddison.io",
+    "url": "https://www.danielmaddison.io"
+  },
+  "publisher": "Daniel Maddison",
   "scripts": {
     "bootstrap": "yarn install",
     "postbootstrap": "husky install && chmod +x .husky/*",
-    "build": "webpack",
+    "prebuild": "rm -rf themes && mkdir themes",
+    "build": "json-stringify src/the-empire-theme.js -o themes/the-empire-theme.json && json-stringify src/rogue-squadron-theme.js -o themes/rogue-squadron-theme.json",
     "unstrap": "rm -rf node_modules themes yarn-error.log"
   },
   "contributes": {
