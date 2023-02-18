@@ -628,6 +628,13 @@ module.exports = {
       },
     },
     {
+      name: 'CSS brackets',
+      scope: 'punctuation.terminator.rule.css',
+      settings: {
+        foreground: heather,
+      },
+    },
+    {
       name: 'CSS classes',
       scope: 'entity.other.attribute-name.class.css',
       settings: {
@@ -755,6 +762,13 @@ module.exports = {
       scope: 'entity.other.attribute-name.html',
       settings: {
         foreground: mystic,
+      },
+    },
+    {
+      name: 'HTML brackets',
+      scope: 'punctuation.separator.key-value.html',
+      settings: {
+        foreground: heather,
       },
     },
     {
@@ -993,6 +1007,13 @@ module.exports = {
       },
     },
     {
+      name: 'Markdown language definitions',
+      scope: 'fenced_code.block.language.markdown',
+      settings: {
+        foreground: catskillWhite,
+      },
+    },
+    {
       name: 'Markdown links',
       scope: 'markup.underline.link.markdown',
       settings: {
@@ -1228,6 +1249,8 @@ module.exports = {
     {
       name: 'SCSS brackets',
       scope: [
+        'meta.embedded.block.scss',
+        'meta.property-list.scss',
         'punctuation.access.module.scss',
         'punctuation.definition.attribute-selector.begin.bracket.square.scss',
         'punctuation.definition.attribute-selector.end.bracket.square.scss',
@@ -1235,6 +1258,7 @@ module.exports = {
         'punctuation.definition.interpolation.end.bracket.curly.scss',
         'punctuation.section.function.scss',
         'punctuation.separator.delimiter.scss',
+        'punctuation.separator.key-value.scss',
       ],
       settings: {
         fontStyle: 'regular',
