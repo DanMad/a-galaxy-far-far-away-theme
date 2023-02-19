@@ -26,7 +26,7 @@
     "email": "hello@danielmaddison.io",
     "url": "https://www.danielmaddison.io"
   },
-  "publisher": "Daniel Maddison",
+  "publisher": "DanMad",
   "scripts": {
     "bootstrap": "yarn install",
     "postbootstrap": "husky install && chmod +x .husky/*",
