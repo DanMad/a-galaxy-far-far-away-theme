@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PACKAGE_VERSION=$(cat package.json | jq -r .version)
-GITHUB_ENDPOINT="${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/git/ref/tags/v${PACKAGE_VERSION}"
+GITHUB_ENDPOINT="${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/git/ref/tags/${PACKAGE_VERSION}"
 GITHUB_ENDPOINT_STATUS=$(
   curl \
     -LI $GITHUB_ENDPOINT \

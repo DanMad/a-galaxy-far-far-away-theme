@@ -2,10 +2,10 @@
 
 PACKAGE_VERSION=$(cat package.json | jq -r .version)
 PAYLOAD="{ \
-  \"tag_name\": \"v${PACKAGE_VERSION}\", \
+  \"tag_name\": \"${PACKAGE_VERSION}\", \
   \"target_commitish\": \"${GITHUB_SHA}\", \
-  \"name\": \"v${PACKAGE_VERSION}\", \"body\": \
-  \"Release Version ${PACKAGE_VERSION}\", \
+  \"name\": \"${PACKAGE_VERSION}\", \
+  \"body\": \"Release Version ${PACKAGE_VERSION}\", \
   \"draft\": false, \
   \"prerelease\": false \
 }"

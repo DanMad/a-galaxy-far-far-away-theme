@@ -1,26 +1,19 @@
-# Asset files
-*.gif
-*.ico
-*.jpg
-*.jpeg
-*.png
-*.svg
-!icon.png
+# Docs
+*.md
 
-# Dependencies
-node_modules/
-
-# Hidden directories and files
+# Hidden
 .*
 
-# Log files
-*.log
+# Logs
+*.Logs
 
 # Operating System
+.DS_Store
 Thumbs.db
 
-# Package files
+# Packages
+node_modules
 yarn.lock
 
-# Source directory
-src/
+# Source
+src

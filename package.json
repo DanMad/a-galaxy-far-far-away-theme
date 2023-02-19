@@ -1,15 +1,15 @@
 {
   "name": "a-galaxy-far-far-away-theme",
   "displayName": "A Galaxy Far, Far Away Theme",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "private": true,
   "description": "A Visual Studio Code theme from a galaxy far, far away...",
   "categories": [
-    "Themes",
-    "Other"
+    "Other",
+    "Themes"
   ],
   "keywords": [
-    "a11y",
+    "Accessibility",
     "Dark Theme",
     "The Empire",
     "Rogue Squadron",
@@ -17,43 +17,44 @@
     "Theme",
     "VSCode"
   ],
-  "homepage": "https://marketplace.visualstudio.com/items?itemName=DanMad.a-galaxy-far-far-away-theme",
-  "bugs": "https://github.com/DanMad/a-galaxy-far-far-away-theme/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DanMad/a-galaxy-far-far-away-theme.git"
-  },
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=danmad.a-galaxy-far-far-away-theme",
+  "bugs": "https://github.com/danmad/a-galaxy-far-far-away-theme/issues",
+  "repository": "https://github.com/danmad/a-galaxy-far-far-away-theme.git",
   "license": "MIT",
-  "author": "DanMad",
-  "publisher": "DanMad",
+  "author": {
+    "name": "Daniel Maddison",
+    "email": "hello@danielmaddison.io",
+    "url": "https://www.danielmaddison.io"
+  },
+  "publisher": "Daniel Maddison",
   "scripts": {
-    "bootstrap": "rm -rf node_modules && yarn install && husky install && chmod +x .husky/*",
-    "bootstrap-frozen": "rm -rf node_modules && yarn install --frozen-lockfile && husky install && chmod +x .husky/*",
-    "build": "rm -rf themes && mkdir themes && json-stringify src/the-empire-theme.js -o themes/the-empire-theme.json && json-stringify src/rogue-squadron-theme.js -o themes/rogue-squadron-theme.json",
-    "deploy": "vsce publish",
-    "format": "sort-package-json && prettier --write \"**/*\""
+    "bootstrap": "yarn install",
+    "postbootstrap": "husky install && chmod +x .husky/*",
+    "prebuild": "rm -rf themes && mkdir themes",
+    "build": "json-stringify src/the-empire-theme.js -o themes/the-empire-theme.json && json-stringify src/rogue-squadron-theme.js -o themes/rogue-squadron-theme.json",
+    "unstrap": "rm -rf node_modules themes yarn-error.log"
   },
   "contributes": {
     "themes": [
       {
-        "label": "The Empire",
-        "path": "./themes/the-empire-theme.json",
+        "label": "Rogue Squadron",
+        "path": "./themes/rogue-squadron-theme.json",
         "uiTheme": "vs-dark"
       },
       {
-        "label": "Rogue Squadron",
-        "path": "./themes/rogue-squadron-theme.json",
+        "label": "The Empire",
+        "path": "./themes/the-empire-theme.json",
         "uiTheme": "vs-dark"
       }
     ]
   },
   "devDependencies": {
-    "husky": "^7.0.4",
+    "husky": "^8.0.3",
     "json-stringify-cli": "^1.0.1",
-    "lint-staged": "^12.3.4",
-    "prettier": "^2.5.1",
-    "sort-package-json": "^1.54.0",
-    "vsce": "^2.6.7"
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
+    "sort-package-json": "^2.4.1",
+    "vsce": "^2.15.0"
   },
   "engines": {
     "vscode": "^1.42.0"

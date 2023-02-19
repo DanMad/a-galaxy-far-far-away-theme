@@ -1,15 +1,13 @@
-# Dependencies
-node_modules/
+# Bundle
+themes
 
-# Log files
+# Logs
 *.log
 
 # Operating System
 .DS_Store
 Thumbs.db
 
-# Package files
+# Packages
 *.vsix
-
-# Themes directory
-themes/
+node_modules
