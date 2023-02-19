@@ -33,4 +33,4 @@ jobs:
         npm install --global yarn
         yarn bootstrap --frozen-lockfile
         yarn build
-        vsce publish -p $VSCE_TOKEN
+        yarn vsce publish -p $VSCE_TOKEN
