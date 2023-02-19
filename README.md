@@ -1,4 +1,4 @@
-![Rogue Squadron Theme example](./images/editor-examples.png)
+![Rogue Squadron Theme example](https://github.com/DanMad/a-galaxy-far-far-away-theme/blob/resources/editor-examples.png)
 
 # A Galaxy Far, Far Away Theme
 
@@ -29,10 +29,10 @@ Now you're good to go!
 Use either theme by navigating to `Code > Preferences > Color Theme` and selecting one of the following:
 
 - The Empire
-  ![The Empire Theme palette](./images/the-empire-theme-palette.png)
+  ![The Empire Theme palette](https://github.com/DanMad/a-galaxy-far-far-away-theme/blob/resources/the-empire-theme-palette.png)
 
 - Rogue Squadron
-  ![Rogue Squadron Theme palette](./images/rogue-squadron-theme-palette.png)
+  ![Rogue Squadron Theme palette](https://github.com/DanMad/a-galaxy-far-far-away-theme/blob/resources/rogue-squadron-theme-palette.png)
 
 ## Issues
 
